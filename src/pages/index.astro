@@ -2,21 +2,39 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 <main>
 	<section class="w-full lg:w-[740px] mx-auto py-44">
-	<h1 class="text-white text-5xl font-bold justify-center flex-row">
-		Hey, I'm Camilo<Badge>Available for hire</Badge>
+	<h1 class="text-[#1D1735] text-5xl font-bold flex flex-row gap-x-4 pb-4">
+		Hey, I'm Camilo <a 
+		href="https://www.linkedin.com/in/johan-caicedo/"
+		target="_blank"
+		rel="noopener"
+		class="flex justify-center items-center"
+		>
+		
+			<Badge>Available for hire</Badge>
+			
+		
+		<a/>
 	</h1>
-	<h2>
+	<h2 class="text-xl text-wrap">
 		Digital and multimedia designer with 3 years of experience.
-		From Bogotá DC, Colombia 🇨🇴. 
-		Specializing in creating impactful visual identities and intuitive user experiences. 
+		From Bogotá DC, Colombia. <br/>
+		<span class="text-[#372C7A] text-sm">Specializing in creating impactful visual identities and intuitive user experiences.</span> 
 		
 	</h2>
- <ul></ul>
+ 	<ul>
+		<li>
+			<a href="https://www.linkedin.com/in/johan-caicedo/">
+				<LinkedIn class="w-6 h-6"/>
+				LinkedIn
+			</a>
+		</li>
+	</ul>
 </section>
 
 </main>
