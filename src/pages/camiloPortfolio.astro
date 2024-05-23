@@ -1,13 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import { Fragment } from "react"
 import Badge from "../components/Badge.astro";
 import LinkedIn from "../icons/LinkedInTabler.astro";
+import SocialPills from '../components/SocialPills.jsx';
 import MailIcon from "../icons/Mail.astro";
 import GithubIcon from "../icons/Github.astro";
 import InstagramIcon from "../icons/Instagram.astro";
 import PhoneIcon from "../icons/Phone.astro";
-import SocialPils from "../components/SocialPils.astro";
+
 import BehanceIcon from "../icons/Behance.astro";
 ---
 
@@ -36,34 +37,47 @@ import BehanceIcon from "../icons/Behance.astro";
 					>
 				</h2>
 				<nav class="flex gap-x-2">
-					<SocialPils
-						href="https://www.linkedin.com/in/johan-caicedo/"
-					>
-						<LinkedIn class="w-6 h-6" />
+					
+					<Fragment>
+						<SocialPills
+						  href="https://www.linkedin.com/in/johan-caicedo/"
+						  client:load 
+						>
+						  <LinkedIn class="w-6 h-6" />
+						  LinkedIn
+						</SocialPills>
+						<SocialPills
+						 	href="mailto:camilo.design07@gmail.com"
+							 client:load
+							>
+							<MailIcon class="w-6 h-6" />
+	
+							Mail
+						</SocialPills>
+						<SocialPills
+						 href="https://github.com/JohanCaicedo"
+						 client:load>
+							<GithubIcon class="w-6 h-6" />
+	
+							Github
+						</SocialPils>
+	
+						<SocialPills href="tel:+573503482505"
+						client:load>
+							<PhoneIcon class="w-6 h-6" />
+	
+							Phone CO
+						</SocialPills>
+						<SocialPills href="https://www.behance.net/johanccaicedo"
+						client:load>
+							<BehanceIcon class="w-6 h-6" />
+	
+							Behance
+						</SocialPils>
 
-						LinkedIn
-					</SocialPils>
-					<SocialPils href="mailto:camilo.design07@gmail.com">
-						<MailIcon class="w-6 h-6" />
+					  
+					  </Fragment>
 
-						Mail
-					</SocialPils>
-					<SocialPils href="https://github.com/JohanCaicedo">
-						<GithubIcon class="w-6 h-6" />
-
-						Github
-					</SocialPils>
-
-					<SocialPils href="tel:+573503482505">
-						<PhoneIcon class="w-6 h-6" />
-
-						Phone CO
-					</SocialPils>
-					<SocialPils href="https://www.behance.net/johanccaicedo">
-						<BehanceIcon class="w-6 h-6" />
-
-						Behance
-					</SocialPils>
 				</nav>
 			</h1>
 		</section>
