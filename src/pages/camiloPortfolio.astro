@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedIn from "../icons/LinkedInTabler.astro";
+import MailIcon from "../icons/Mail.astro";
+import GithubIcon from "../icons/Github.astro";
+import InstagramIcon from "../icons/Instagram.astro";
+import PhoneIcon from "../icons/Phone.astro";
+import SocialPils from "../components/SocialPils.astro";
+import BehanceIcon from "../icons/Behance.astro";
+---
+
+<Layout title="Johan Caicedo Portfolio">
+	<main>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<h1
+				class="text-[#1D1735] text-5xl font-bold flex flex-row gap-x-4 pb-4"
+			>
+				Hey, I'm Camilo <a
+					href="https://www.linkedin.com/in/johan-caicedo/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge>Available for hire</Badge>
+
+					<a></a>
+				</a>
+				<h2 class="text-xl text-wrap">
+					Digital and multimedia designer with 3 years of profesional
+					experience. From Bogotá DC, Colombia. <br />
+					<span class="text-[#372C7A] text-sm"
+						>Specializing in creating impactful visual identities
+						and intuitive user experiences.</span
+					>
+				</h2>
+				<nav class="flex gap-x-2">
+					<SocialPils
+						href="https://www.linkedin.com/in/johan-caicedo/"
+					>
+						<LinkedIn class="w-6 h-6" />
+
+						LinkedIn
+					</SocialPils>
+					<SocialPils href="mailto:camilo.design07@gmail.com">
+						<MailIcon class="w-6 h-6" />
+
+						Mail
+					</SocialPils>
+					<SocialPils href="https://github.com/JohanCaicedo">
+						<GithubIcon class="w-6 h-6" />
+
+						Github
+					</SocialPils>
+
+					<SocialPils href="tel:+573503482505">
+						<PhoneIcon class="w-6 h-6" />
+
+						Phone CO
+					</SocialPils>
+					<SocialPils href="https://www.behance.net/johanccaicedo">
+						<BehanceIcon class="w-6 h-6" />
+
+						Behance
+					</SocialPils>
+				</nav>
+			</h1>
+		</section>
+	</main>
+</Layout>
