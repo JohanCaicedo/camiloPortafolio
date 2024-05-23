@@ -1,23 +1,50 @@
 ---
-// src/layouts/Layout.astro
-import Layout from './Layout.astro';
+import Footer from '../components/Footer.astro';
+
+import '@fontsource/twinkle-star';
+import '@fontsource/karma';
+// Supports weights 100-900
+import '@fontsource-variable/work-sans';
 interface Props {
-  title: string;
+	title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Paper Fox Studio Official Web Site" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
     <slot />
-  </body>
+		
+	</body>
 </html>
+<style is:global>
+	:root {
+		color-scheme: light dark;
+
+	}
+	html {
+		
+		
+		font-family: 'Work Sans Variable',system-ui, sans-serif;
+		
+	}
+	body{
+		color:white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+</style>

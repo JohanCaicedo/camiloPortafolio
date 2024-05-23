@@ -1,13 +1,23 @@
 ---
 import LayoutStudio from '../layouts/LayoutStudio.astro';
+import ButtonPortfolio from '../components/Button.astro';
 import Portfolio from './portfolio.astro';
 ---
 <LayoutStudio title="Paper Fox Studio">
-  <main>
-    <section>
-      <h1>This website it's under construction</h1>
-      <p>We working to this site are online soon</p>
-      <a href="/portafolio.astro/">Johan Caicedo Portfolio</a> 
+
+  <main class="flex justify-center">
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <section class="flex flex-col items-center">
+      <h1 class="text-wihite text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Paper Fox Studio's web site
+      </h1>
+      <h4 class="text-wihite text-3xl font-bold flex flex-row gap-x-4 pb-4">
+        It's under construction</h4>
+      <p>We're working to be online as soon as possible</p>
+      <div class="mt-10">
+        <a href='/portfolio/'><ButtonPortfolio /></a>
+    </div>
     </section>
   </main>
+
 </LayoutStudio>
