@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Fragment } from "react"
+import { Fragment } from "react";
 import Badge from "../components/Badge.astro";
 import LinkedIn from "../icons/LinkedInTabler.astro";
-import SocialPills from '../components/SocialPills.jsx';
+import SocialPills from "../components/SocialPills.jsx";
 import MailIcon from "../icons/Mail.astro";
 import GithubIcon from "../icons/Github.astro";
 import InstagramIcon from "../icons/Instagram.astro";
@@ -11,78 +11,78 @@ import PhoneIcon from "../icons/Phone.astro";
 
 import BehanceIcon from "../icons/Behance.astro";
 import Cart from "../components/Cart.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Arrow from "../icons/Arrow.astro";
 ---
 
-<Layout title="Johan Caicedo Portfolio">
-	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<h1
-				class="text-[#1D1735] text-5xl font-bold flex flex-row gap-x-4 pb-4"
-			>
-				Hey, I'm Camilo  <a
-					href="https://www.linkedin.com/in/johan-caicedo/"
-					target="_blank"
-					rel="noopener"
-					class="flex justify-center items-center"
-				>
-					<Badge>Available for work</Badge>
+<Layout
+  title="Johan Caicedo - Portfolio",
 
-					
-				</a>
-					</h1>
-				<h2 class="text-xl text-wrap">
-					Digital and multimedia designer with 3 years of profesional
-					experience. From Bogotá DC, Colombia. <br />
-					<span class="text-[#372C7A] text-sm"
-						>Specializing in creating impactful visual identities
-						and intuitive user experiences.</span
-					>
-				</h2>
-				<nav class="flex gap-x-2">
-					
-					<Fragment>
-						<SocialPills
-						  href="https://www.linkedin.com/in/johan-caicedo/"
-						  client:load 
-						>
-						  <LinkedIn class="w-6 h-6" />
-						  LinkedIn
-						</SocialPills>
-						<SocialPills
-						 	href="mailto:camilo.design07@gmail.com"
-							 client:load
-							>
-							<MailIcon class="w-6 h-6" />
-	
-							Mail
-						</SocialPills>
-						<SocialPills
-						 href="https://github.com/JohanCaicedo"
-						 client:load>
-							<GithubIcon class="w-6 h-6" />
-	
-							Github
-						</SocialPils>
-	
-						<SocialPills href="tel:+573503482505"
-						client:load>
-							<PhoneIcon class="w-6 h-6" />
-	
-							Phone CO
-						</SocialPills>
-						<SocialPills href="https://www.behance.net/johanccaicedo"
-						client:load>
-							<BehanceIcon class="w-6 h-6" />
-	
-							Behance
-						</SocialPils>
+>
+  <main>
+    <SectionContainer id="about">
+      <h1 class="text-[#1D1735] text-5xl font-bold flex flex-row gap-x-4 pb-4 mt-30">
+        Hey, I'm Camilo <a
+          href="https://www.linkedin.com/in/johan-caicedo/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Available for work</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        Digital and multimedia designer with 3 years of profesional experience.<br/>
+        <sapn class="text-[#372C7A] text-xl text-bold">
+        Design with soul, development with logic, animation with passion.<br />
+      </sapn>
+    <sapn class="text-[#372C7A] text-sm">
+        From Bogotá DC, Colombia.<br />
+      </sapn>
 
-					  
-					  </Fragment>
+      </h2>
+      <nav class="flex gap-x-2">
+        <Fragment>
+          <SocialPills
+            href="https://www.linkedin.com/in/johan-caicedo/"
+            client:load
+          >
+            <LinkedIn class="size-6" />
+            LinkedIn
+          </SocialPills>
+          <SocialPills href="mailto:camilo.design07@gmail.com" client:load>
+            <MailIcon class="size-6" />
 
-				</nav>
-			
-		</section>
-		<Cart/>
-	</main>
+            Mail
+          </SocialPills>
+          <SocialPills href="https://github.com/JohanCaicedo" client:load>
+            <GithubIcon class="size-6" />
+
+            Github
+          </SocialPills>
+
+          <SocialPills href="tel:+573503482505" client:load>
+            <PhoneIcon class="size-6" />
+
+            Phone CO
+          </SocialPills>
+          <SocialPills href="https://www.behance.net/johanccaicedo" client:load>
+            <BehanceIcon class="size-6" />
+
+            Behance
+          </SocialPills>
+        </Fragment>
+      </nav>
+
+    </SectionContainer>
+  <SectionContainer id="experience">
+    <h2 class="flex gap-x-2 items-center text-3xl font-semibold text-[#1D1735] mb-6 mt-30 pt-8">
+      <Arrow class="size-6"/>
+      Profesional experience
+    </h2>
+      
+    <Experience />
+</SectionContainer>
+  </main>
 </Layout>
