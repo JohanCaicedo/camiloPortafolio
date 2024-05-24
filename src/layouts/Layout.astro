@@ -1,9 +1,9 @@
 ---
 import Header from '../components/Header.astro';
 
+import '@fontsource/twinkle-star';
+import '@fontsource/karma';
 import '@fontsource-variable/work-sans';
-import '@fontsource-variable/noto-emoji';
-import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
@@ -33,7 +33,6 @@ const { title } = Astro.props;
       <main class="mt-8 w-full flex flex-col justify-center items-center">
         <slot />
       </main>
-      <Footer/>
     </div>
   </body>
 </html>
@@ -43,8 +42,7 @@ const { title } = Astro.props;
     color-scheme: light dark;
   }
   html {
-    font-family: 'Work Sans Variable','noto-emoji', system-ui, sans-serif;
-    
+    font-family: 'Work Sans Variable', system-ui, sans-serif;
   }
   body {
     color: #1D1735;

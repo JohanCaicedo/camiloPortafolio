@@ -1,6 +1,4 @@
----
----
-<header class="flex flex-col md:flex-row justify-between items-center py-5 mb-10 w-full max-w-[1128px] mx-auto px-4 md:px-0">
+<header class="flex justify-between items-center py-5 mb-10 w-full max-w-[1120px] mx-auto px-4 md:px-0">
   <div class="group relative rounded-full overflow-hidden w-16 h-16"> 
     <a href="https://www.linkedin.com/in/johan-caicedo/" class="block w-full h-full">
       <img
@@ -19,11 +17,26 @@
       />
     </a>
   </div>
-  <nav class="flex flex-col md:flex-row gap-y-2 md:gap-x-10 mt-4 md:mt-0">
+  <button id="menu-button" class="block md:hidden">
+    <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+  <nav id="menu" class="hidden md:flex flex-col md:flex-row gap-y-2 md:gap-x-10 mt-4 md:mt-0">
     <a href="#top" class="text-center md:text-left">Home</a>
     <a href="#about" class="text-center md:text-left">About</a>
     <a href="#proyect" class="text-center md:text-left">Proyects</a>
     <a href="#experience" class="text-center md:text-left">Experience</a>
     <a href="#contact" class="text-center md:text-left">Contact</a>
   </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuButton = document.getElementById('menu-button');
+      const menu = document.getElementById('menu');
+      menuButton.addEventListener('click', function () {
+        menu.classList.toggle('hidden');
+      });
+    });
+  </script>
 </header>
