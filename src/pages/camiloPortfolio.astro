@@ -10,6 +10,7 @@ import InstagramIcon from "../icons/Instagram.astro";
 import PhoneIcon from "../icons/Phone.astro";
 
 import BehanceIcon from "../icons/Behance.astro";
+import Cart from "../components/Cart.astro";
 ---
 
 <Layout title="Johan Caicedo Portfolio">
@@ -18,16 +19,17 @@ import BehanceIcon from "../icons/Behance.astro";
 			<h1
 				class="text-[#1D1735] text-5xl font-bold flex flex-row gap-x-4 pb-4"
 			>
-				Hey, I'm Camilo <a
+				Hey, I'm Camilo  <a
 					href="https://www.linkedin.com/in/johan-caicedo/"
 					target="_blank"
 					rel="noopener"
 					class="flex justify-center items-center"
 				>
-					<Badge>Available for hire</Badge>
+					<Badge>Available for work</Badge>
 
-					<a></a>
+					
 				</a>
+					</h1>
 				<h2 class="text-xl text-wrap">
 					Digital and multimedia designer with 3 years of profesional
 					experience. From Bogotá DC, Colombia. <br />
@@ -79,7 +81,8 @@ import BehanceIcon from "../icons/Behance.astro";
 					  </Fragment>
 
 				</nav>
-			</h1>
+			
 		</section>
+		<Cart/>
 	</main>
 </Layout>
