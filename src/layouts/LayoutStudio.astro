@@ -3,6 +3,7 @@ import '@fontsource/twinkle-star';
 import '@fontsource/karma';
 // Supports weights 100-900
 import '@fontsource-variable/work-sans';
+
 interface Props {
 	title: string;
 	description: string;
@@ -22,8 +23,9 @@ const {description, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.9),rgba(255,255,255,0))]"></div>
 		<slot/>
+		
 		
 		</div>    
 		
@@ -38,6 +40,7 @@ const {description, title } = Astro.props;
 		
 		
 		font-family: 'Work Sans Variable',system-ui, sans-serif;
+		scroll-behavior: smooth;
 		
 	}
 	body{
@@ -47,6 +50,12 @@ const {description, title } = Astro.props;
 		justify-content: center;
 		align-items: center;
 		height: 100vh;
+		
 	}
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	)
 
 </style>

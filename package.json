@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/react": "^3.4.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/noto-emoji": "^5.0.19",
     "@fontsource-variable/work-sans": "^5.0.19",
     "@fontsource/karma": "^5.0.13",
     "@fontsource/twinkle-star": "^5.0.20",
