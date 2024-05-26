@@ -5,19 +5,19 @@ import '@fontsource/twinkle-star';
 import '@fontsource/karma';
 import '@fontsource-variable/work-sans';
 import Footer from '../components/Footer.astro';
-
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -25,7 +25,7 @@ const { title } = Astro.props;
   </head>
   <body class="bg-white  flex flex-col items-center min-h-screen">
     <!-- Fondo Modo Claro -->
-    <div class="fixed inset-0 -z-10 min-h-screen w-full bg-[#fafaf6] dark:bg-neutral-950  bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]">
+    <div class="transition-all duration-500 ease-in-out fixed inset-0 -z-10 min-h-screen w-full bg-[#fafaf6] dark:bg-neutral-950  bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]">
       <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px] "></div>
     </div>
     <!-- Contenedor principal para todo el sitio -->
