@@ -21,24 +21,24 @@ import Dropdown from "../components/Dropdown.astro";
 >
   <main>
     <SectionContainer id="about">
-      <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row gap-4"> 
+      <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row gap-4 dark:text-[#fafaf6]"> 
         Hey, I'm Camilo
         <a 
           href="https://www.linkedin.com/in/johan-caicedo/" 
           target="_blank" 
           rel="noopener"
-          class="flex justify-center items-center"
+          class="flex justify-center items-center dark:text-[#fafaf6]"
         >
           <Badge>Available for work</Badge>
         </a>
       </h1>
 
-      <h2 class="text-3xl md:text-2xl mb-4">
+      <h2 class="text-3xl md:text-2xl mb-4 dark:text-[#fafaf6]">
         Digital and multimedia designer with 3 years of professional experience.
         <br />
         <span class="text-2xl text-secondary">Design with <strong class="font-bold">soul</strong>, development with <strong class="font-bold">logic</strong>, animation with <strong class="font-bold">passion</strong>.
         <br />
-        <span class="text-sm">From Bogotá DC, Colombia. 🇨🇴 </span>
+        <span class="text-sm">From Bogotá DC, Colombia.</span>
       </h2>
 
       <nav class="flex gap-2 mt-4">
@@ -55,7 +55,7 @@ import Dropdown from "../components/Dropdown.astro";
         </SocialPills>
 
         <SocialPills href="tel:+573503482505" client:load>
-          <PhoneIcon class="size-6 mr-1" /> Phone CO
+          <PhoneIcon class="size-6 mr-1" /> Phone
         </SocialPills>
         
         <SocialPills href="https://www.behance.net/johanccaicedo" client:load>
@@ -65,7 +65,7 @@ import Dropdown from "../components/Dropdown.astro";
     </SectionContainer>
 
     <SectionContainer id="experience">
-      <h2 class="flex gap-2 items-center text-2xl md:text-3xl font-semibold text-primary mb-6 mt-6">
+      <h2 class="flex gap-2 items-center text-2xl md:text-3xl font-semibold text-primary mb-6 mt-6 dark:text-[#fafaf6]">
         <Arrow class="size-6" /> Profesional Experience
       </h2>
       <Experience />
