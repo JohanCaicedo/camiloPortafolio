@@ -1,0 +1,25 @@
+---
+import ProyectCardItem from "./ProyectCardItem.astro"
+
+const PROYECTS =[
+    {
+        title:"Titulo de tarjeta",
+        description:"Esto es una descripción",
+        image: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/PaperFoxStudio-Logo.webp?alt=media&token=b927a951-fec6-4c1d-9293-18c2ffa5594c",
+    },
+    {
+        title:"Titulo de tarjeta 2",
+        description:"Esto es una descripción 2",
+        image: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/PaperFoxStudio-Logo.webp?alt=media&token=b927a951-fec6-4c1d-9293-18c2ffa5594c",
+    },
+]
+---
+
+<div class="grid auto-rows-[192px] grid-cols-3 gap-4">  
+    {
+      PROYECTS.map((proyects)=>(
+        <ProyectCardItem {...proyects}/>
+      ))
+    }
+  </div>
+  

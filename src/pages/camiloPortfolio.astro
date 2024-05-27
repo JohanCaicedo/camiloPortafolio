@@ -11,6 +11,7 @@ import BehanceIcon from "../icons/Behance.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Arrow from "../icons/Arrow.astro";
+import ProyectsCard from "../components/ProyectsCard.astro";
 
 ---
 
@@ -69,6 +70,13 @@ import Arrow from "../icons/Arrow.astro";
         <Arrow class="size-6" /> Profesional Experience
       </h2>
       <Experience />
+      <section class="bg-white"
+      <div class="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+      <ProyectsCard/>
+      </div>
+      </div>
+    </section>
     </SectionContainer>
   </main>
 </Layout>
