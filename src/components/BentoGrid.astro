@@ -1,0 +1,24 @@
+
+---
+// src/components/BentoGrid.astro
+const projects = [
+  { id: 1, title: 'Proyecto 1', description: 'Descripción del Proyecto 1', bgColor: 'bg-indigo-600', textColor: 'text-white' },
+  { id: 2, title: 'Proyecto 2', description: 'Descripción del Proyecto 2', bgColor: 'bg-purple-500', textColor: 'text-gray-900' },
+  { id: 3, title: 'Proyecto 3', description: 'Descripción del Proyecto 3', bgColor: 'bg-blue-500', textColor: 'text-yellow-300' },
+  { id: 4, title: 'Proyecto 4', description: 'Descripción del Proyecto 4', bgColor: 'bg-green-500', textColor: 'text-white' },
+  // Añade más proyectos según sea necesario
+];
+---
+
+<div class="grid grid-cols-3 gap-4">
+  {projects.map(project => (
+    <div
+      class={`p-4 rounded-lg shadow-md flex flex-col items-center justify-start ${project.bgColor} ${project.textColor} text-left`}
+      key?={project.id}
+    >
+      <h2 class="text-xl font-bold mb-2">{project.title}</h2>
+      <p>{project.description}</p>
+      <img src="https://via.placeholder.com/200" alt={project.title} class="mt-4" />
+    </div>
+  ))}
+</div>
