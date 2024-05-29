@@ -7,12 +7,11 @@ import SocialPills from "../components/SocialPills.jsx";
 import MailIcon from "../icons/Mail.astro";
 import GithubIcon from "../icons/Github.astro";
 import PhoneIcon from "../icons/Phone.astro";
-import BehanceIcon from "../icons/Behance.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Arrow from "../icons/Arrow.astro";
-import ProyectsCard from "../components/ProyectsCard.astro";
 import BentoGrid from "../components/BentoGrid.astro";
+import Bifcase from "../icons/Bifcase.astro";
 
 ---
 
@@ -60,22 +59,28 @@ import BentoGrid from "../components/BentoGrid.astro";
           <PhoneIcon class="size-6 mr-1" /> Phone
         </SocialPills>
         
-        <SocialPills href="https://www.behance.net/johanccaicedo" client:load>
+        <!-- <SocialPills href="https://www.behance.net/johanccaicedo" client:load>
           <BehanceIcon class="size-6 mr-1" /> Behance
-        </SocialPills>
+        </SocialPills> -->
       </nav>
     </SectionContainer>
 
     <SectionContainer id="experience">
-      <h2 class="flex gap-2 items-center text-2xl md:text-3xl font-semibold text-primary mb-6 mt-6 dark:text-[#fafaf6]">
+      <h3 class="flex gap-2 items-center text-2xl md:text-3xl font-semibold text-primary mb-6 mt-6 dark:text-[#fafaf6]">
         <Arrow class="size-6" /> Profesional Experience
-      </h2>
+      </h3>
       <Experience />
-      <section class="p-8">
-        <h1 class="text-3xl font-bold mb-8">Mis Proyectos</h1>
+
+      
+    </SectionContainer>
+    <SectionContainer  id="proyect">
+      <section>
+        <h3 class="flex gap-2 items-center text-2xl md:text-3xl font-semibold text-primary mb-6 mt-6 dark:text-[#fafaf6]">
+          <Bifcase class="size-6" /> My projects
+        </h3>
         
         <BentoGrid/></section>
-      
+        
     </SectionContainer>
   </main>
 </Layout>
