@@ -7,7 +7,7 @@
     color-scheme: light dark;
   } */
   html {
-    font-family: 'Work Sans Variable', system-ui, sans-serif;
+    font-family: 'Work Sans Variable', 'Noto Serif',system-ui, sans-serif;
   }
   body {
     color: #1D1735;

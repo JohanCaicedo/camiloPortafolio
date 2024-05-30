@@ -4,6 +4,9 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			fontFamily: {
+				NotoSerif: ['Noto Serif Variable'],
+			},
 			colors: {
 				customPurple: '#6a5deb',
 			},

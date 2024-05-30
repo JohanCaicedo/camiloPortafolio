@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
 
@@ -16,12 +16,8 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button
-      type="button"
-      onClick={toggleTheme}
-      
-    >
-      {darkMode ? '☀️' : '🌙'}
+    <button type="button" onClick={toggleTheme}>
+      {darkMode ? "☀️" : "🌙"}
     </button>
   );
 };

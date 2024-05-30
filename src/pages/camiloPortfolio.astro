@@ -12,6 +12,10 @@ import SectionContainer from "../components/SectionContainer.astro";
 import Arrow from "../icons/Arrow.astro";
 import BentoGrid from "../components/BentoGrid.astro";
 import Bifcase from "../icons/Bifcase.astro";
+import Certificate from "../icons/Certificate.astro";
+import Card from "../components/Card.astro";
+import PaperFoxStudioLogo from "../icons/PaperFoxStudioLogo.astro";
+
 
 ---
 
@@ -59,9 +63,6 @@ import Bifcase from "../icons/Bifcase.astro";
           <PhoneIcon class="size-6 mr-1" /> Phone
         </SocialPills>
         
-        <!-- <SocialPills href="https://www.behance.net/johanccaicedo" client:load>
-          <BehanceIcon class="size-6 mr-1" /> Behance
-        </SocialPills> -->
       </nav>
     </SectionContainer>
 
@@ -80,6 +81,15 @@ import Bifcase from "../icons/Bifcase.astro";
         </h3>
         
         <BentoGrid/></section>
+        
+    </SectionContainer>
+    <SectionContainer  id="Education">
+      <section>
+        <h3 class="flex gap-2 items-center text-2xl md:text-3xl font-semibold text-primary mb-6 mt-6 dark:text-[#fafaf6]">
+          <Certificate class="size-6 box-decoration-clone" /> Education 
+        </h3>
+        <Card/>
+       </section>
         
     </SectionContainer>
   </main>
