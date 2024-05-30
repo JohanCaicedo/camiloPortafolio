@@ -8,10 +8,10 @@ const projects = [
     title: "Web Design",
     colS: "col-span-2",
     rowS: "row-span-1",
-    bgColor: "bg-[#e7e2e8]",
-    textColor: "text-[#1e1e1e]",
-    darkBgColor: "dark:bg-[#040916]",
-    darkTextColor: "dark:text-[#e7e2e8]",
+    bgColor: "bg-[#c5b6d2]",
+    textColor: "text-[#343037]",
+    darkBgColor: "dark:bg-[#343037]",
+    darkTextColor: "dark:text-[#c5b6d2]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1oWeb.webp?alt=media&token=7df9723e-ef97-4bac-823d-e3ccd377f45b",
     link: "#",
     classImg: "mx-auto",
@@ -21,10 +21,10 @@ const projects = [
     title: "Graphic Design",
     colS: "col-span-2",
     rowS: "row-span-1",
-    bgColor: "bg-gradient-to-r from-[#2c3e35] to-[#485c5c]",
-    textColor: "text-[#feecdd]",
-    darkBgColor: "dark:bg-[#040916]",
-    darkTextColor: "dark:text-[#feecdd]",
+    bgColor: "bg-[#f2d057]",
+    textColor: "text-[#574b24]",
+    darkBgColor: "dark:bg-[#574b24]",
+    darkTextColor: "dark:text-[#f2d057]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico%20(2).webp?alt=media&token=4526b817-ecb5-4fb2-8317-f4ffda77d235",
     classImg: "mx-auto",
     link: "#",
@@ -34,10 +34,10 @@ const projects = [
     title: "Editorial Design",
     colS: "col-span-3",
     rowS: "row-span-1",
-    bgColor: "bg-[#F5DEC9]",
-    textColor: "text-[#241f1d]",
-    darkBgColor: "dark:bg-[#1f1b19]",
-    darkTextColor: "dark:text-[#feecdd]",
+    bgColor: "bg-[#95acca]",
+    textColor: "text-[#22282e]",
+    darkBgColor: "dark:bg-[#22282e]",
+    darkTextColor: "dark:text-[#95acca]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o-Editorial-Pj.webp?alt=media&token=4f812bd9-06bb-4532-9881-a62679e8ae3c",
     classImg: "mx-auto",
     link: "#",
@@ -47,11 +47,11 @@ const projects = [
     title: "Personal projects",
     colS: "col-span-1",
     rowS: "row-span-2",
-    bgColor: "bg-[#ffecd3]",
-    textColor: "text-[#1e1e1e]",
-    darkBgColor: "dark:bg-[#110704]",
-    darkTextColor: "dark:text-[#e7e2e8]",
-    img:"https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/PaperFoxStudio-Logo-PJ.webp?alt=media&token=47f3a0ef-753f-4a81-9138-94ed8c273966",
+    bgColor: "bg-[#fed4bd]",
+    textColor: "text-[#220902]",
+    darkBgColor: "dark:bg-[#220902]",
+    darkTextColor: "dark:text-[#fed4bd]",
+    img:"https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Foxy-Blink.gif?alt=media&token=6fdef4b7-2f2f-4fbd-94a0-65a59868bfee",
     classImg: "mx-auto",
     link: "https://paperfoxstudio.site",
   },
@@ -60,10 +60,10 @@ const projects = [
     title: "Photography and Video",
     colS: "col-span-4",
     rowS: "row-span-2",
-    bgColor: "bg-[#f1efeb]",
-    textColor: "text-[#12171d]",
-    darkBgColor: "dark:bg-stone-800",
-    darkTextColor: "dark:text-[#e7e2e8]",
+    bgColor: "bg-[#a3cd9c]",
+    textColor: "text-[#293327]",
+    darkBgColor: "dark:bg-[#293327]",
+    darkTextColor: "dark:text-[#a3cd9c]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Fotograf%C3%ADa.webp?alt=media&token=3a0a1443-7e07-451e-854a-635337d8c639",
     classImg: "mx-auto",
     link: "#",
@@ -75,7 +75,22 @@ const projects = [
   {projects.map((project) => (
     <a href={project.link} key?={project.id} class={`${project.colS} ${project.rowS}`}>
       <div
-        class={`p-5 rounded-lg shadow-md border border-[#fafaf6] dark:border-[#fafaf6] flex flex-col items-start hover:scale-105 duration-300 transition-transform ease-in-out ${project.bgColor} ${project.textColor} ${project.darkBgColor} ${project.darkTextColor}`}
+        class={`
+          p-6
+          rounded-lg 
+          shadow-md 
+          dark:border-[#fafaf6] 
+          flex
+          flex-col
+          items-start 
+          hover:scale-105 
+          duration-300 
+          transition-transform 
+          ease-in-out 
+          ${project.bgColor} 
+          ${project.textColor} 
+          ${project.darkBgColor} 
+          ${project.darkTextColor}`}
       >
         <h2 class="text-xl font-extrabold mb-2 text-left">{project.title}</h2>
         <img

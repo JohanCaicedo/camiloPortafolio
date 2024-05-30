@@ -3,63 +3,72 @@ const education = [
   {
     id: "1",
     title: "Digital and Multimedia Designer",
-    type: "Degree",
+    collage:"Universidad Colegio Mayor de Cundinamarca",
+    type: "Bachelor's degree",
     state: "Graduate",
     date: "2016 - 2020",
     rowSpam: "col-span-1",
     colSpam: "col-span-2",
-    bgColor: "bg-indigo-50",
-    textColor: "text-[#1d1734]",
-    darkBgColor: "dark:bg-[#040915] dark:border-gray-700",
-    darkTextColor: "dark:text-white",
+    bgColor: "bg-[#e56f45]",
+    textColor: "text-[#4a2419]",
+    darkBgColor: "dark:bg-[#4a2419]",
+    darkTextColor: "dark:text-[#e56f45]",
   },
   {
     id: "2",
-    title: "Master's Degree in 3D Animation for the Entertainment Industries",
+    title: "3D Animation for the Entertainment Industries",
+    collage:"UNIR",
+    type: "Master's Degree",
     state: "Student",
     date: "2024 - 2025",
     rowSpam: "col-span-1",
     colSpam: "col-span-1",
-    bgColor: "bg-[#211D40]",
-    textColor: "text-white",
-    darkBgColor: "dark:bg-blue-600",
-    darkTextColor: "dark:text-white",
+    bgColor: "bg-[#95acca]",
+    textColor: "text-[#22282e]",
+    darkBgColor: "dark:bg-[#22282e]",
+    darkTextColor: "dark:text-[#95acca]",
   },
   {
     id: "3",
-    title: "Course to Video Game Programming: Unity and Unreal",
+    title: "Video Game Programming: Unity and Unreal",
+    collage:"UNIR",
+    type: "Course",
     state: "Student",
     date: "2024 - 2025",
     rowSpam: "col-span-1",
     colSpam: "col-span-1",
-    bgColor: "bg-blue-500",
-    textColor: "text-white",
-    darkBgColor: "dark:bg-blue-600",
-    darkTextColor: "dark:text-white",
+    bgColor: "bg-[#f3cf59]",
+    textColor: "text-[#584b25]",
+    darkBgColor: "dark:bg-[#584b25]",
+    darkTextColor: "dark:text-[#f3cf59]",
   },
   {
     id: "4",
-    title: "Course LabDesign",
+    title: "LabDesign",
+    collage:"UNIR",
+    type: "Course",
     state: "Student",
     date: "2024 - 2025",
     rowSpam: "col-span-1",
     colSpam: "col-span-1",
-    bgColor: "bg-blue-500",
-    textColor: "text-white",
-    darkBgColor: "dark:bg-blue-600",
-    darkTextColor: "dark:text-white",
+    bgColor: "bg-[#a3cd9c]",
+    textColor: "text-[#293327]",
+    darkBgColor: "dark:bg-[#293327]",
+    darkTextColor: "dark:text-[#a3cd9c]",
   },
   {
     id: "5",
-    title: "Course in Leadership",
+    title: "Leadership",
+    collage:"MIU City University Miami",
+    type: "Course",
     state: "Student",
     date: "2024 - 2025",
     rowSpam: "col-span-1",
     colSpam: "col-span-1",
-    bgColor: "bg-blue-500",
-    textColor: "text-white",
-    darkBgColor: "dark:bg-blue-600",
-    darkTextColor: "dark:text-white",
+    bgColor: "bg-[#ebbbaa]",
+    textColor: "text-[#51403a]",
+    darkBgColor: "dark:bg-[#51403a]",
+    darkTextColor: "dark:text-[#ebbbaa]",
   },
 ];
 ---
@@ -67,32 +76,37 @@ const education = [
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
   {education.map((education) => (
     <div
-      key?={education.id} 
+      key?={education.id}
       class={`
         ${education.colSpam} 
-        h-25
-        flex flex-col 
+        h-30
+        flex flex-col
         justify-between
-        p-6 
-        rounded-lg 
-        shadow-md 
-        hover:scale-105 
-        duration-300 
-        transition-transform 
-        ease-in-out 
-        ${education.bgColor} 
-        ${education.textColor} 
-        ${education.darkBgColor} 
+        p-6
+        rounded-lg
+        shadow-md
+        hover:scale-105
+        duration-300
+        transition-transform
+        ease-in-out
+        ${education.bgColor}
+        ${education.textColor}
+        ${education.darkBgColor}
         ${education.darkTextColor}
       `}
     >
-      <h2 class="text-2xl font-extrabold mb-2 text-left">{education.title}</h2>
-      <p class="text-gray-600 text-left">{education.type}</p>
+      <div class="mb-2">
+        <h3 class="text-2xl font-extrabold text-left">{education.title}</h3>
+        <h4 class="text-base font-bold tracking-wide text-left">{education.collage}</h4> 
+        <h5 class="text-sm text-left mb-4">{education.type}</h5>
+      </div>
+       
       <div class="flex justify-between items-end">
-        <p class="text-gray-600 text-left">{education.state}</p>
-        <p class="text-gray-600 text-left">{education.date}</p>
+        <p class="text-sm text-left">{education.state}</p> 
+        <p class="text-sm text-left">{education.date}</p> 
       </div>
     </div>
   ))}
 </div>
+
 
