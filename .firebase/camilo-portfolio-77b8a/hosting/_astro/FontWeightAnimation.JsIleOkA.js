@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime.7faW4zRM.js";import"./index.DhYZZe0J.js";import{m as n}from"./motion.smKzL3uF.js";const a={initial:{transition:{staggerChildren:.1}},animate:{transition:{staggerChildren:.1}}},e=({children:i})=>t.jsx(n.div,{variants:a,initial:"initial",animate:"animate",children:i});export{e as default};

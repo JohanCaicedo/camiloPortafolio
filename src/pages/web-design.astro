@@ -6,20 +6,20 @@ import Badge from "../components/Badge.astro";
 import DTMap from "../icons/DTMap.astro";
 ---
 
-<Layout title="Web Design - Portfolio" , description="Web Design projets ">
+<Layout title="Web Design - Portfolio" description="Web Design projects">
   <main>
     <SectionContainer>
       <h1
-        class="text-right text-sm md:text-sm font- text-[#343037] mb-4 dark:text-[#fafaf6]"
+        class="text-right text-sm md:text-sm font-medium text-[#343037] mb-4 dark:text-[#fafaf6]"
       >
         portfolio/web-design
       </h1>
-      <ProjectSection /> 
+      <ProjectSection />
       <nav class="flex gap-2 mt-4 justify-center mb-4">
         <Badge
           content="Web Design"
           bgColor="bg-[#e46f4d]"
-          textColor="text-[#4a241b]"
+          textColor="text-[#49231a]"
           darkBgColor="dark:bg-blue-800"
           darkTextColor="dark:text-gray-200"
         />
@@ -48,8 +48,8 @@ import DTMap from "../icons/DTMap.astro";
     </SectionContainer>
 
     <SectionContainer>
-      <div class="grid grid-cols-4 gap-4 mt-8">
-        <di class="col-span-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div>
           <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6">
             Project Details
           </h3>
@@ -61,8 +61,8 @@ import DTMap from "../icons/DTMap.astro";
             was rewarding, as it allowed me to apply my knowledge as a designer,
             utilizing Design Thinking as the primary methodology.
           </p>
-        </di>
-        <di class="col-span-2">
+        </div>
+        <div>
           <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6">
             About the company
           </h3>
@@ -72,11 +72,10 @@ import DTMap from "../icons/DTMap.astro";
             and disadvantaged sectors. Initially operating in various Latin
             American countries, it has focused on Colombia since 1988.
           </p>
-        </di>
-        <div class="col-span-4">
+        </div>
+        <div class="col-span-1 md:col-span-2">
           <p>
             <strong>My role:</strong> Web Designer, UI/UX
-
             <strong>Team:</strong>
             <a
               class="font-semibold text-[#343037]"
@@ -85,25 +84,27 @@ import DTMap from "../icons/DTMap.astro";
             >
               Viviana Tovar
             </a> – Illustration Support
-
             <strong>Duration:</strong> 4 months
           </p>
         </div>
       </div>
     </SectionContainer>
+
     <SectionContainer>
-      <div class="grid grid-cols-4 mt-10 gap-6">
-        <div class="col-span-2">
-          <img  class="rounded-lg"
-            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup-1.jpg?alt=media&token=e95f85da-a5b4-477d-b4a2-c4c72b54f083"
+      <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
+        <div>
+          <img
+            width="572"
+            height="572"
+            alt="ILSA-Web-mockup-1"
+            class="rounded-lg w-full"
+            src="../../public/ILSA-Web-mockup-1.jpg"
           />
         </div>
-        <div class="col-span-2 gap-6">
-          <h4
-            class="text-2xl md:text-3xl font-bold text-primary mb-6"
-          >
+        <div class="space-y-6">
+          <h4 class="text-2xl md:text-3xl font-bold text-primary mb-6">
             Context
-          </h3>
+          </h4>
           <p>
             As a starting point, I established an overall goal for the project,
             derived from an interview with ILSA's board of directors. During
@@ -115,8 +116,10 @@ import DTMap from "../icons/DTMap.astro";
             aesthetic aspect of the page.
           </p>
         </div>
-        <div class="col-span-2">
-          <h4 class="text-lg md:text-3xl font-bold text-primary mb-6">Overall Objective</h4>
+        <div>
+          <h4 class="text-lg md:text-3xl font-bold text-primary mb-6">
+            Overall Objective
+          </h4>
           <p>
             Provide an accurate, coherent, and aesthetically pleasing
             communication tool. Through a design process, establish a creative
@@ -124,8 +127,10 @@ import DTMap from "../icons/DTMap.astro";
             organization's growth.
           </p>
         </div>
-        <div class="col-span-2">
-          <h4 class="text-lg md:text-3xl font-bold text-primary mb-6">Challenges</h4>
+        <div>
+          <h4 class="text-lg md:text-3xl font-bold text-primary mb-6">
+            Challenges
+          </h4>
           <p>
             ILSA lacked an online presence commensurate with its relevance in
             the sector. Additionally, it did not have a defined visual identity
@@ -133,21 +138,28 @@ import DTMap from "../icons/DTMap.astro";
             optimized for SEO search engines.
           </p>
         </div>
+      </div>
     </SectionContainer>
 
-        <div class="grid grid-cols-4 gap-4 mt-10">   
-            
-            <p class="col-span-1 font-medium text-lg text-center font-semibold">Map</p>
-            <p class="col-span-1 font-medium text-lg text-center font-semibold">Explore</p>
-            <p class="col-span-1 font-medium text-lg text-center font-semibold">Build</p>
-            <p class="col-span-1 font-medium text-lg text-center font-semibold">Test</p>
-            
-            <div class="col-span-4 gap-6">
-                <DTMap>
-               </div>
-        
-
-      </div>
-    
+    <SectionContainer>
+      <section class="grid grid-cols-4 mt-5 justify-items-center">
+        <span class="col-span-1">
+          <p class="text-center text-lg font-semibold">Map</p>
+          <div class="bg-[#a09fbf] w-[110px] h-[110px] rounded-lg mt-4"></div>
+        </span>
+        <samp class="col-span-1">
+          <p class="text-center text-lg font-semibold" >Explore</p>
+          <div class="bg-[#7544a6] w-[120px] h-[120px] rounded-lg mt-4"></div>
+        </samp>
+        <span class="col-span-1">
+          <p class="text-center text-lg font-semibold">Build</p>
+          <div class="bg-[#4453a6] w-[130px] h-[130px] rounded-lg mt-4"></div>
+        </span>
+        <span>
+          <p class="text-center text-lg font-semibold">Test</p>
+          <div class="bg-[#f2e6d8] w-[100px] h-[100px] rounded-lg mt-4 border border-[#1d1734]"></div>
+        </span>
+      </section>
+    </SectionContainer>
   </main>
 </Layout>
