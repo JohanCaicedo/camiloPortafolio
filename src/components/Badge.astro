@@ -1,5 +1,12 @@
+---
+const { id, content, bgColor, textColor, darkBgColor, darkTextColor } = Astro.props;
+---
+
 <span
-   class="bg-[#c5b5d3] text-[#353038] text-sm font-semibold px-2 py-1 rounded-full dark:bg-[#fafaf6] dark:text-[#685af0] border-#685af0"
+  class={`text-sm font-semibold px-2 py-1 rounded-full 
+         ${bgColor} ${textColor} 
+         dark:${darkBgColor} dark:${darkTextColor} 
+         border-#685af0`}
 >
-   <slot />
+  {content}
 </span>

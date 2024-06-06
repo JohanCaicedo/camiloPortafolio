@@ -1,0 +1,153 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import Badge from "../components/Badge.astro";
+import DTMap from "../icons/DTMap.astro";
+---
+
+<Layout title="Web Design - Portfolio" , description="Web Design projets ">
+  <main>
+    <SectionContainer>
+      <h1
+        class="text-right text-sm md:text-sm font- text-[#343037] mb-4 dark:text-[#fafaf6]"
+      >
+        portfolio/web-design
+      </h1>
+      <ProjectSection /> 
+      <nav class="flex gap-2 mt-4 justify-center mb-4">
+        <Badge
+          content="Web Design"
+          bgColor="bg-[#e46f4d]"
+          textColor="text-[#4a241b]"
+          darkBgColor="dark:bg-blue-800"
+          darkTextColor="dark:text-gray-200"
+        />
+        <Badge
+          content="Photo / Image Editing"
+          bgColor="bg-[#96acc8]"
+          textColor="text-[#22282e]"
+          darkBgColor="dark:bg-blue-800"
+          darkTextColor="dark:text-gray-200"
+        />
+        <Badge
+          content="Illustration"
+          bgColor="bg-[#f2ce66]"
+          textColor="text-[#584b29]"
+          darkBgColor="dark:bg-blue-800"
+          darkTextColor="dark:text-gray-200"
+        />
+        <Badge
+          content="WordPress"
+          bgColor="bg-[#a3cd9f]"
+          textColor="text-[#293328]"
+          darkBgColor="dark:bg-blue-800"
+          darkTextColor="dark:text-gray-200"
+        />
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer>
+      <div class="grid grid-cols-4 gap-4 mt-8">
+        <di class="col-span-2">
+          <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6">
+            Project Details
+          </h3>
+          <p>
+            I served as the lead designer in creating the new website for ILSA,
+            a non-governmental organization with over 40 years of experience
+            focusing its efforts on supporting social movements, grassroots
+            organizations, and disadvantaged sectors of society. This experience
+            was rewarding, as it allowed me to apply my knowledge as a designer,
+            utilizing Design Thinking as the primary methodology.
+          </p>
+        </di>
+        <di class="col-span-2">
+          <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6">
+            About the company
+          </h3>
+          <p>
+            ILSA, founded in 1978 as an NGO, focuses on alternative legal
+            services and supporting social movements, grassroots organizations,
+            and disadvantaged sectors. Initially operating in various Latin
+            American countries, it has focused on Colombia since 1988.
+          </p>
+        </di>
+        <div class="col-span-4">
+          <p>
+            <strong>My role:</strong> Web Designer, UI/UX
+
+            <strong>Team:</strong>
+            <a
+              class="font-semibold text-[#343037]"
+              href="https://www.instagram.com/quas.art/"
+              target="_blank"
+            >
+              Viviana Tovar
+            </a> – Illustration Support
+
+            <strong>Duration:</strong> 4 months
+          </p>
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer>
+      <div class="grid grid-cols-4 mt-10 gap-6">
+        <div class="col-span-2">
+          <img  class="rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup-1.jpg?alt=media&token=e95f85da-a5b4-477d-b4a2-c4c72b54f083"
+          />
+        </div>
+        <div class="col-span-2 gap-6">
+          <h4
+            class="text-2xl md:text-3xl font-bold text-primary mb-6"
+          >
+            Context
+          </h3>
+          <p>
+            As a starting point, I established an overall goal for the project,
+            derived from an interview with ILSA's board of directors. During
+            this conversation, the need to improve the visual representation of
+            the website and ensure proper readability for visitors was
+            identified. To address this issue, we chose to work with a
+            simplified version of Design Thinking, with a special focus on the
+            construction phase. This was due to the client's emphasis on the
+            aesthetic aspect of the page.
+          </p>
+        </div>
+        <div class="col-span-2">
+          <h4 class="text-lg md:text-3xl font-bold text-primary mb-6">Overall Objective</h4>
+          <p>
+            Provide an accurate, coherent, and aesthetically pleasing
+            communication tool. Through a design process, establish a creative
+            foundation to continue evolving the identity, hand in hand with the
+            organization's growth.
+          </p>
+        </div>
+        <div class="col-span-2">
+          <h4 class="text-lg md:text-3xl font-bold text-primary mb-6">Challenges</h4>
+          <p>
+            ILSA lacked an online presence commensurate with its relevance in
+            the sector. Additionally, it did not have a defined visual identity
+            or communication language. Furthermore, the website was not
+            optimized for SEO search engines.
+          </p>
+        </div>
+    </SectionContainer>
+
+        <div class="grid grid-cols-4 gap-4 mt-10">   
+            
+            <p class="col-span-1 font-medium text-lg text-center font-semibold">Map</p>
+            <p class="col-span-1 font-medium text-lg text-center font-semibold">Explore</p>
+            <p class="col-span-1 font-medium text-lg text-center font-semibold">Build</p>
+            <p class="col-span-1 font-medium text-lg text-center font-semibold">Test</p>
+            
+            <div class="col-span-4 gap-6">
+                <DTMap>
+               </div>
+        
+
+      </div>
+    
+  </main>
+</Layout>
