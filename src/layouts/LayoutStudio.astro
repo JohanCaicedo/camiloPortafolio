@@ -3,6 +3,7 @@ import '@fontsource/twinkle-star';
 import '@fontsource/karma';
 // Supports weights 100-900
 import '@fontsource-variable/work-sans';
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 interface Props {
 	title: string;
@@ -15,6 +16,7 @@ const {description, title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
+		<SpeedInsights/>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description}/>
 		<meta name="viewport" content="width=device-width" />
