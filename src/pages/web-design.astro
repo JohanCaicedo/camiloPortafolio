@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import ProjectSection from "../components/ProjectSection.astro";
 import Badge from "../components/Badge.astro";
-import DTMap from "../icons/DTMap.astro";
+import Palette from "../icons/Palette.astro";
 ---
 
 <Layout title="Web Design - Portfolio" description="Web Design projects">
@@ -45,15 +45,13 @@ import DTMap from "../icons/DTMap.astro";
           darkTextColor="dark:text-gray-200"
         />
       </nav>
-    </SectionContainer>
 
-    <SectionContainer>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
         <div>
           <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6">
             Project Details
           </h3>
-          <p>
+          <p class="dark:text-[#fafaf6]">
             I served as the lead designer in creating the new website for ILSA,
             a non-governmental organization with over 40 years of experience
             focusing its efforts on supporting social movements, grassroots
@@ -66,7 +64,7 @@ import DTMap from "../icons/DTMap.astro";
           <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6">
             About the company
           </h3>
-          <p>
+          <p class="dark:text-[#fafaf6]">
             ILSA, founded in 1978 as an NGO, focuses on alternative legal
             services and supporting social movements, grassroots organizations,
             and disadvantaged sectors. Initially operating in various Latin
@@ -74,7 +72,7 @@ import DTMap from "../icons/DTMap.astro";
           </p>
         </div>
         <div class="col-span-1 md:col-span-2">
-          <p>
+          <p class="dark:text-[#fafaf6]">
             <strong>My role:</strong> Web Designer, UI/UX
             <strong>Team:</strong>
             <a
@@ -88,9 +86,7 @@ import DTMap from "../icons/DTMap.astro";
           </p>
         </div>
       </div>
-    </SectionContainer>
 
-    <SectionContainer>
       <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
         <div>
           <img
@@ -98,7 +94,7 @@ import DTMap from "../icons/DTMap.astro";
             height="572"
             alt="ILSA-Web-mockup-1"
             class="rounded-lg w-full"
-            src="../../public/ILSA-Web-mockup-1.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup-1.jpg?alt=media&token=48da8e04-a1c3-4fc0-9ac7-6bf135017fc5"
           />
         </div>
         <div class="space-y-6">
@@ -139,26 +135,108 @@ import DTMap from "../icons/DTMap.astro";
           </p>
         </div>
       </div>
-    </SectionContainer>
 
-    <SectionContainer>
       <section class="grid grid-cols-4 mt-5 justify-items-center">
         <span class="col-span-1">
           <p class="text-center text-lg font-semibold">Map</p>
+          <p class="text-center text-sm font-normal">Delimit</p>
+
           <div class="bg-[#a09fbf] w-[110px] h-[110px] rounded-lg mt-4"></div>
         </span>
         <samp class="col-span-1">
-          <p class="text-center text-lg font-semibold" >Explore</p>
+          <p class="text-center text-lg font-semibold">Explore</p>
+          <p class="text-center text-sm font-normal">Understanding</p>
           <div class="bg-[#7544a6] w-[120px] h-[120px] rounded-lg mt-4"></div>
         </samp>
         <span class="col-span-1">
           <p class="text-center text-lg font-semibold">Build</p>
+          <p class="text-center text-sm font-normal">Develop</p>
           <div class="bg-[#4453a6] w-[130px] h-[130px] rounded-lg mt-4"></div>
         </span>
         <span>
           <p class="text-center text-lg font-semibold">Test</p>
-          <div class="bg-[#f2e6d8] w-[100px] h-[100px] rounded-lg mt-4 border border-[#1d1734]"></div>
+          <p class="text-center text-sm font-normal">Feedback</p>
+          <div
+            class="bg-[#f2e6d8] w-[100px] h-[100px] rounded-lg mt-4 border border-[#1d1734]"
+          >
+          </div>
         </span>
+      </section>
+
+      <section>
+        <h3
+          class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+        >
+          <Palette class="size-6" /> Visual Identity
+        </h3>
+        <div class="grid grid-cols-6 gap-4 mt-6">
+          <h4 class="text-xl font-bold text-primary col-span-1">
+            Color Palette
+          </h4>
+          <p class="col-span-3">
+            The construction of the visual identity was created through market
+            research aimed at identifying common points and thereby
+            understanding the visual language used by entities participating in
+            this niche.
+          </p>
+          <p class="col-span-2">
+            With that information, a distinctive color palette was created,
+            aligned with the themes the client addresses and their fields of
+            action.
+          </p>
+        </div>
+        <section
+          class="grid grid-cols-5 justify-items-center bg-[#fafaf6] shadow-sm mt-6 py-6"
+        >
+          <span class="col-span-1">
+            <div class="bg-[#454C73] w-[100px] h-[100px] rounded-lg mt-4"></div>
+            <p class="text-center text-lg font-semibold mt-4">Primary</p>
+            <p class="text-center text-sm font-normal">Hex #454C73</p>
+          </span>
+          <samp class="col-span-1">
+            <div class="bg-[#3F6ABF] w-[100px] h-[100px] rounded-lg mt-4"></div>
+            <p class="text-center text-lg font-semibold mt-4">Secondary</p>
+            <p class="text-center text-sm font-normal">Hex #3F6ABF</p>
+          </samp>
+          <span class="col-span-1">
+            <div class="bg-[#A68F65] w-[100px] h-[100px] rounded-lg mt-4"></div>
+            <p class="text-center text-lg font-semibold mt-4">Tertiary</p>
+            <p class="text-center text-sm font-normal">Hex #A68F65</p>
+          </span>
+          <span>
+            <div class="bg-[#454C73] w-[100px] h-[100px] rounded-lg mt-4"></div>
+            <p class="text-center text-lg font-semibold mt-4">Tertiary 2</p>
+            <p class="text-center text-sm font-normal">Hex #454C73</p>
+          </span>
+          <span>
+            <div class="bg-[#BFAD75] w-[100px] h-[100px] rounded-lg mt-4"></div>
+            <p class="text-center text-lg font-semibold mt-4">Accent</p>
+            <p class="text-center text-sm font-normal">Hex #BFAD75</p>
+          </span>
+        </section>
+        <section class="grid grid-cols-6 mt-6">
+          <h4 class="text-xl font-bold text-primary col-span-1">Typography</h4>
+          <p class="col-span-5">
+            Chosen based on readability and uniformity criteria.
+          </p>
+        </section>
+        <section class="grid grid-cols-2 mt-6 gap-6">
+          <div>
+          <h5 class="col-span-1 text-lg font-medium">Merriweather Sans</h5>
+          <p class="col-span-1 mt-3 font-Merriweather">
+            Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Ññ Oo Pp Qq Rr Ss Tt Uu Vv
+            Ww Xx Yy Zz 0 1 2 3 4 5 6 7 8 9 ¡ ! ¿ ? , . : ; - _ ' "
+          </p>
+        </div>
+        <div>          
+          <h5 class="col-span-1 text-lg font-medium ">Source Sans Pro</h5>
+          <p class="col-span-1 mt-3 font-SourceSans">
+            Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Ññ Oo Pp Qq Rr Ss Tt Uu Vv
+            Ww Xx Yy Zz 0 1 2 3 4 5 6 7 8 9 ¡ ! ¿ ? , . : ; - _ ' "
+          </p>
+        </div>
+        </section>
+        
       </section>
     </SectionContainer>
   </main>
