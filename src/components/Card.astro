@@ -3,21 +3,21 @@ const education = [
   {
     id: "1",
     title: "Digital and Multimedia Designer",
-    collage:"University Colegio Mayor de Cundinamarca",
+    collage: "University Colegio Mayor de Cundinamarca",
     type: "Bachelor's degree",
     state: "Graduate",
     date: "2016 - 2020",
     rowSpam: "col-span-1",
-    colSpam: "col-span-2",
+    colSpam: "col-span-1 sm:col-span-2 md:col-span-2",
     bgColor: "bg-[#e56f45]",
-    textColor: "text-[#4a2419]",
-    darkBgColor: "dark:bg-[#4a2419]",
+    textColor: "text-[#170a08]",
+    darkBgColor: "dark:bg-[#170a08]",
     darkTextColor: "dark:text-[#e56f45]",
   },
   {
     id: "2",
     title: "3D Animation for the Entertainment Industries",
-    collage:"UNIR",
+    collage: "UNIR",
     type: "Master's Degree",
     state: "Student",
     date: "2024 - 2025",
@@ -31,7 +31,7 @@ const education = [
   {
     id: "3",
     title: "Video Game Programming: Unity and Unreal",
-    collage:"UNIR",
+    collage: "UNIR",
     type: "Course",
     state: "Student",
     date: "2024 - 2025",
@@ -45,7 +45,7 @@ const education = [
   {
     id: "4",
     title: "LabDesign",
-    collage:"UNIR",
+    collage: "UNIR",
     type: "Course",
     state: "Student",
     date: "2024",
@@ -59,7 +59,7 @@ const education = [
   {
     id: "5",
     title: "Leadership",
-    collage:"MIU City University Miami",
+    collage: "MIU City University Miami",
     type: "Course",
     state: "Student",
     date: "2024",
@@ -74,11 +74,11 @@ const education = [
 ---
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-  {education.map((education) => (
+  {education.map((edu) => (
     <div
-      key?={education.id}
+      key?={edu.id}
       class={`
-        ${education.colSpam} 
+        ${edu.colSpam} 
         h-30
         flex flex-col
         justify-between
@@ -89,24 +89,21 @@ const education = [
         duration-300
         transition-transform
         ease-in-out
-        ${education.bgColor}
-        ${education.textColor}
-        ${education.darkBgColor}
-        ${education.darkTextColor}
+        ${edu.bgColor}
+        ${edu.textColor}
+        ${edu.darkBgColor}
+        ${edu.darkTextColor}
       `}
     >
       <div class="mb-2">
-        <h3 class="text-2xl font-extrabold text-left">{education.title}</h3>
-        <h4 class="text-base font-bold tracking-wide text-left">{education.collage}</h4> 
-        <h5 class="text-sm text-left mb-4">{education.type}</h5>
+        <h3 class="text-2xl font-extrabold text-left">{edu.title}</h3>
+        <h4 class="text-base font-bold tracking-wide text-left">{edu.collage}</h4>
+        <h5 class="text-sm text-left mb-4">{edu.type}</h5>
       </div>
-       
       <div class="flex justify-between items-end">
-        <p class="text-sm text-left">{education.state}</p> 
-        <p class="text-sm text-left">{education.date}</p> 
+        <p class="text-sm text-left">{edu.state}</p>
+        <p class="text-sm text-left">{edu.date}</p>
       </div>
     </div>
   ))}
 </div>
-
-

@@ -20,7 +20,6 @@ import FontWeightAnimation from "../components/FontWeightAnimation";
 
 <Layout
   title="Johan Caicedo - Portfolio"
-  ,
   description="Johan Caicedo - Portfolio"
 >
   <main>
@@ -37,10 +36,10 @@ import FontWeightAnimation from "../components/FontWeightAnimation";
         >
           <Badge
             content="Available for work"
-            bgColor="bg-[#96acc8]"
-            textColor="text-[#22282e]"
-            darkBgColor="dark:bg-blue-800"
-            darkTextColor="dark:text-gray-200"
+            bgColor="bg-[#e46f4d]"
+            textColor="text-[#170a08]"
+            darkBgColor="dark:bg-[#170a08]"
+            darkTextColor="dark:text-[#e46f4d]"
           />
         </a>
       </h1>
@@ -60,7 +59,7 @@ import FontWeightAnimation from "../components/FontWeightAnimation";
         </h2>
       </FontWeightAnimation>
 
-      <nav class="flex gap-2 mt-4">
+      <nav class="flex flex-wrap gap-2 mt-4">
         <SocialPills
           href="https://www.linkedin.com/in/johan-caicedo/"
           client:load
@@ -76,9 +75,10 @@ import FontWeightAnimation from "../components/FontWeightAnimation";
           <GithubIcon class="size-6 mr-1" /> Github
         </SocialPills>
 
-        <SocialPills href="tel:+573503482505" client:load>
+        <SocialPills href="tel:+573114853833" client:load>
           <PhoneIcon class="size-6 mr-1" /> Phone
         </SocialPills>
+        
       </nav>
     </SectionContainer>
 
@@ -86,29 +86,29 @@ import FontWeightAnimation from "../components/FontWeightAnimation";
       <h3
         class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
       >
-        <Arrow class="size-6" /> Profesional Experience
+        <Arrow class="size-6" /> Professional Experience
       </h3>
       <Experience />
     </SectionContainer>
-    <SectionContainer id="proyect">
+
+    <SectionContainer id="projects">
       <section>
         <h3
           class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
         >
-          <Bifcase class="size-6" /> My projects
+          <Bifcase class="size-6" /> My Projects
         </h3>
-
         <BentoGrid />
       </section>
     </SectionContainer>
+
     <SectionContainer id="education">
       <section>
         <h3
           class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
         >
-          <Certificate class="size-6 box-decoration-clone" /> Education
+          <Certificate class="size-6" /> Education
         </h3>
-
         <Card />
       </section>
     </SectionContainer>
