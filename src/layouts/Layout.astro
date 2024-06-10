@@ -11,10 +11,12 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 interface Props {
   title: string;
-  description: string;
+  description: string; 
+  url: string;
+  image: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description,url,image } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,6 +25,10 @@ const { title, description } = Astro.props;
     <SpeedInsights/>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image" content={url} />
+    <meta property="og:title" content={title} />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />

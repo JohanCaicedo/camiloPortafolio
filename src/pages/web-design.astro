@@ -1,20 +1,28 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import ProjectSection from "../components/ProjectSection.astro";
 import Badge from "../components/Badge.astro";
 import Palette from "../icons/Palette.astro";
 import '@fontsource/source-sans-pro';
 import '@fontsource-variable/merriweather-sans';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Web Design - Portfolio" description="Web Design projects">
+<Layout 
+  title="Web Design - Portfolio"
+  description="Web Design projects"
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup-1.jpg?alt=media&token=48da8e04-a1c3-4fc0-9ac7-6bf135017fc5"
+  url="https://paperfoxstudio.site/web-design"
+>
   <main>
     <SectionContainer>
       <h1 class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4">
         portfolio/web-design
       </h1>
-      <ProjectSection />
+      <ProjectSection 
+      title="ILSA's Web"
+      image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup.jpg?alt=media&token=55e6edaf-40ac-4838-8773-d601adf03577"
+      />
       <nav class="flex gap-2 mt-4 justify-center mb-4">
         <Badge
           content="Web Design"

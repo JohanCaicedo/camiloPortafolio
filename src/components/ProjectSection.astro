@@ -1,16 +1,20 @@
+---
+const { title, image, link,  } = Astro.props;
+---
+
 <section class="relative">
+    <a href={link} target="_blank">
     <img
-        class="rounded-lg w-full"
-        src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup.jpg?alt=media&token=55e6edaf-40ac-4838-8773-d601adf03577"
-        alt="ILSA Web Redesign"
-        width="950" 
+        class="rounded-lg w-full transition-opacity duration-300 hover:opacity-80"
+        src={image}
+        alt={title}
+        width="950"
         height="475"
-    />
+        loading="lazy"
+    /></a>
     <div
-        class="absolute top-2 left-2 p-4 text-white rounded-lg"
+        class="absolute top-2 left-2 p-4 text-white"
     >
-        <h1 class="text-xl font-bold mb-2 text-right">Web Redesign - ILSA</h1>
-        
+        <h1 class="text-xl font-bold mb-2 text-right">{title}</h1>
     </div>
-    
 </section>

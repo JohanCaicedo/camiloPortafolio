@@ -1,0 +1,52 @@
+---
+import Badge from "../components/Badge.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Graphic design - Portfolio"
+    description="Graphic design portfolio"
+    image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico.webp?alt=media&token=0c436fb0-d5cf-4618-ad1d-79f6952b01b2"
+    url="https://paperfoxstudio.site/grapic-design"
+>
+<main>
+    <SectionContainer>
+        <h1 class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4">
+            portfolio/graphic-design
+          </h1>
+          <ProjectSection />
+          <nav class="flex gap-2 mt-4 justify-center mb-4">
+            <Badge
+              content="Graphic Design"
+              bgColor="bg-[#e46f4d]"
+              textColor="text-[#4a241b]"
+              darkBgColor="dark:bg-[#4a241b]"
+              darkTextColor="dark:text-[#e46f4d]"
+            />
+            <Badge
+              content="Vectorial illustration"
+              bgColor="bg-[#97acc6]"
+              textColor="text-[#22282e]"
+              darkBgColor="dark:bg-[#22282e]"
+              darkTextColor="dark:text-[#97acc6]"
+            />
+            <Badge
+              content="Branding"
+              bgColor="bg-[#f1cd71]"
+              textColor="text-[#584b2c]"
+              darkBgColor="dark:bg-[#584b2c]"
+              darkTextColor="dark:text-[#f1cd71]"
+            />
+            <Badge
+              content="Adobe Illustrator"
+              bgColor="bg-[#a3cda1]"
+              textColor="text-[#293329]"
+              darkBgColor="dark:bg-[#293329]"
+              darkTextColor="dark:text-[#a3cda1]"
+            />
+          </nav>
+    </SectionContainer>
+</main>
+</Layout>
