@@ -1,1 +1,0 @@
-import{j as r}from"./jsx-runtime.7faW4zRM.js";import{r as t}from"./index.DhYZZe0J.js";const m=()=>{const[e,o]=t.useState(!1);t.useEffect(()=>{e?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")},[e]);const s=()=>{o(!e)};return r.jsx("button",{type:"button",onClick:s,children:e?"☀️":"🌙"})};export{m as default};

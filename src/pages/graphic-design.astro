@@ -1,52 +1,169 @@
 ---
-import Badge from "../components/Badge.astro";
-import ProjectSection from "../components/ProjectSection.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Layout from "../layouts/Layout.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout
-    title="Graphic design - Portfolio"
-    description="Graphic design portfolio"
-    image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico.webp?alt=media&token=0c436fb0-d5cf-4618-ad1d-79f6952b01b2"
-    url="https://paperfoxstudio.site/grapic-design"
+  title="Graphic design - Portfolio"
+  description="Graphic design portfolio"
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico.webp?alt=media&token=0c436fb0-d5cf-4618-ad1d-79f6952b01b2"
+  url="https://paperfoxstudio.site/grapic-design"
 >
-<main>
+  <main>
     <SectionContainer>
-        <h1 class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4">
-            portfolio/graphic-design
-          </h1>
-          <ProjectSection />
-          <nav class="flex gap-2 mt-4 justify-center mb-4">
-            <Badge
-              content="Graphic Design"
-              bgColor="bg-[#e46f4d]"
-              textColor="text-[#4a241b]"
-              darkBgColor="dark:bg-[#4a241b]"
-              darkTextColor="dark:text-[#e46f4d]"
-            />
-            <Badge
-              content="Vectorial illustration"
-              bgColor="bg-[#97acc6]"
-              textColor="text-[#22282e]"
-              darkBgColor="dark:bg-[#22282e]"
-              darkTextColor="dark:text-[#97acc6]"
-            />
-            <Badge
-              content="Branding"
-              bgColor="bg-[#f1cd71]"
-              textColor="text-[#584b2c]"
-              darkBgColor="dark:bg-[#584b2c]"
-              darkTextColor="dark:text-[#f1cd71]"
-            />
-            <Badge
-              content="Adobe Illustrator"
-              bgColor="bg-[#a3cda1]"
-              textColor="text-[#293329]"
-              darkBgColor="dark:bg-[#293329]"
-              darkTextColor="dark:text-[#a3cda1]"
-            />
-          </nav>
+      <h1
+        class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
+      >
+        portfolio/graphic-design
+      </h1>
+      <ProjectSection
+        title="ILSA - Branding 2024"
+        image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Banner-2024.webp?alt=media&token=e2597250-4690-400d-89b7-f44bb61b53fb"
+        link="https://paperfoxstudio.site/grapic-design"
+      />
+      <nav class="flex gap-2 mt-4 justify-center mb-4">
+        <Badge
+          content="Grapic Design"
+          bgColor="bg-[#4e7cce]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#f9f9f9]"
+          darkTextColor="dark:text-[#4e7cce]"
+        />
+        <Badge
+          content="Creative Direction"
+          bgColor="bg-[#4e5e37]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#0c1007]"
+          darkTextColor="dark:text-[#81ab43]"
+        />
+        <Badge
+          content="Visual Identity"
+          bgColor="bg-[#5e332c]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#ffbd79]"
+          darkTextColor="dark:text-[#5e332c]"
+        />
+        
+        <Badge
+          content="Theory of color"
+          bgColor="bg-[#584b29]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#e46f4d]"
+        />
+        <Badge
+          content="Typography"
+          bgColor="bg-[#22282e]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#e46f4d]"
+        />
+        <Badge
+          content="Brand manual"
+          bgColor="bg-[#53345c]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#53345c]"
+        />
+        <Badge
+          content="Adobe Illustraor"
+          bgColor="bg-[#e46f4d]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#a3cd9f]"
+        />
+      </nav>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            Project Details
+          </h3>
+          <p class="dark:text-gray-200">
+            This ILSA logo redesign project sought to capture their essence as a
+            catalyst for change and growth in Latin America. The new design
+            merges an expanding map of Latin America with a sprouting plant,
+            symbolizing vitality, connection to the land, and the aspiration for
+            a better future.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            About the company
+          </h3>
+          <p class="dark:text-gray-200">
+            ILSA, founded in 1978 as an NGO, focuses on alternative legal
+            services and supporting social movements, grassroots organizations,
+            and disadvantaged sectors. Initially operating in various Latin
+            American countries, it has focused on Colombia since 1988.
+          </p>
+        </div>
+
+        <p class="dark:text-gray-200 col-span-1 md:col-span-2">
+          <strong>My role:</strong> Graphic Designer, art director 🎨
+          <strong>Duration:</strong> 4 months
+        </p>
+      </section>
+      <section class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
+        <div class="col-span-1 md:col-span-1"> 
+          <img
+            width="572"
+            height="572"
+            alt="ILSA-Web-mockup-1"
+            class="rounded-lg w-full"
+            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-2024-Imagotipo.webp?alt=media&token=a7a94b92-64e4-4c67-80bb-adc6aa4b21c8"
+          />
+        </div>
+        <div class="col-span-1 md:col-span-1"> 
+          <h4 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6">
+            Context
+          </h4>
+          <p class="dark:text-gray-200">
+            ILSA, a well-established NGO in Latin America, sought to refresh its
+            visual identity to better reflect its mission and values. The
+            organization has experienced significant growth in its reach and
+            impact, and needed an image that would communicate its dynamism and
+            commitment to social and legal development in the region.
+          </p>
+        </div>
+        
+        
+        <div> 
+          <h4
+            class="text-lg md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            Main Objective
+          </h4>
+          <p class="dark:text-gray-200">
+            To create a new logo that captures the essence of ILSA as an agent
+            of change and constant growth in Latin America. This logo should be
+            memorable, versatile, and adaptable to various contexts, conveying
+            the values of empowerment, knowledge, and social progress that
+            define the organization.
+          </p>
+        </div>
+      
+        <div>
+          <h4
+            class="text-lg md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            Challenges
+          </h4>
+          <p class="dark:text-[#fafaf6]">
+            Representing the organization's diverse activities in a single
+            symbol, conveying the concept of growth and evolution, creating a
+            memorable and versatile design, maintaining consistency with the
+            previous identity, and developing a comprehensive brand manual to
+            ensure the correct application of the new image were the main
+            challenges I faced in this project.
+          </p>
+        </div>
+      </section>
     </SectionContainer>
-</main>
+  </main>
 </Layout>

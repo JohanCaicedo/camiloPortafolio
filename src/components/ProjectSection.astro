@@ -1,11 +1,11 @@
 ---
-const { title, image, link,  } = Astro.props;
+const { title, image, link  } = Astro.props;
 ---
 
 <section class="relative">
     <a href={link} target="_blank">
     <img
-        class="rounded-lg w-full transition-opacity duration-300 hover:opacity-80"
+        class="rounded-lg w-full duration-300 hover:scale-103 transition-transform mt-6"
         src={image}
         alt={title}
         width="950"
