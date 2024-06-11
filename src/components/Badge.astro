@@ -1,6 +1,5 @@
 ---
-const { id, content, bgColor, textColor, darkBgColor, darkTextColor } =
-  Astro.props;
+const { id, content, bgColor, textColor, darkBgColor, darkTextColor } = Astro.props;
 ---
 
 <span
@@ -11,10 +10,10 @@ const { id, content, bgColor, textColor, darkBgColor, darkTextColor } =
     rounded-full 
     ${bgColor}
     ${textColor} 
-    ${darkBgColor} 
-    ${darkTextColor} 
-    border-#685af0
-`}
+    dark:${darkBgColor} 
+    dark:${darkTextColor} 
+  `}
 >
   {content}
 </span>
+

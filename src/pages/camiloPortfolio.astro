@@ -1,7 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Fragment } from "react";
-import React from "react";
 import Badge from "../components/Badge.astro";
 import LinkedIn from "../icons/LinkedInTabler.astro";
 import SocialPills from "../components/SocialPills.jsx";
@@ -11,11 +9,73 @@ import PhoneIcon from "../icons/Phone.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Arrow from "../icons/Arrow.astro";
-import BentoGrid from "../components/BentoGrid.astro";
 import Bifcase from "../icons/Bifcase.astro";
 import Certificate from "../icons/Certificate.astro";
 import Card from "../components/Card.astro";
 import FontWeightAnimation from "../components/FontWeightAnimation";
+import Areas from '../components/BentoGridImg.jsx';
+
+
+const areas = [
+  {
+    id: "1",
+    title: "Web Design",
+    colItem: "lg:col-span-2  md:col-span-2 sm:col-span-1",
+    bgColor: "bg-[#c5b6d1] dark:bg-[#343037]",
+    textColor: "text-[#343037] dark:text-[#c5b6d2]",
+    img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1oWeb.webp?alt=media&token=7df9723e-ef97-4bac-823d-e3ccd377f45b",
+    link: "",
+    classImg:"rounded-lg",
+    
+  },
+  {
+    id: "2",
+    title: "Graphic Design",
+    colItem: "lg:col-span-2 md:col-span-2 sm:col-span-1",
+    bgColor: "bg-[#2f413a] dark:bg-[#21302b]",
+    textColor: "text-[#feebde] dark:text-[#feebde]",
+    img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico%20(2).webp?alt=media&token=4526b817-ecb5-4fb2-8317-f4ffda77d235",
+    link: "",
+    classImg:"rounded-lg",
+    
+  },
+  {
+    id: "3",
+    title: "Editorial Design",
+    colItem: "lg:col-span-3 md:col-span-3 sm:col-span-1",
+    bgColor: "bg-[#95acca] dark:bg-[#22282e]",
+    textColor: "text-[#22282e] dark:text-[#95acca]",
+    img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o-Editorial-Pj.webp?alt=media&token=4f812bd9-06bb-4532-9881-a62679e8ae3c",
+    link: "",
+    classImg:"rounded-lg",
+    
+  },
+  {
+    id: "4",
+    title: "Personal",
+    colItem: "lg:col-span-1 md:col-span-1 sm:col-span-1",
+    bgColor: "bg-[#fed4bd] dark:bg-[#220902]",
+    textColor: "text-[#220902] dark:text-[#fed4bd]",
+    img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Foxy-Blink.gif?alt=media&token=6fdef4b7-2f2f-4fbd-94a0-65a59868bfee",
+    link: "",
+    classImg:"rounded-lg",
+    
+  },
+  {
+    id: "5",
+    title: "Photography and Video",
+    colItem: "lg:col-span-4 md:col-span-4 sm:col-span-1",
+    bgColor: "bg-[#a3cd9c] dark:bg-[#293327]",
+    textColor: "text-[#293327] dark:text-[#a3cd9c]",
+    img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Fotograf%C3%ADa.webp?alt=media&token=3a0a1443-7e07-451e-854a-635337d8c639",
+    link: "",
+    classImg:"rounded-lg",
+    
+  },
+
+
+];
+
 ---
 
 <Layout
@@ -101,7 +161,7 @@ import FontWeightAnimation from "../components/FontWeightAnimation";
         >
           <Bifcase class="size-6" /> My Projects
         </h3>
-        <BentoGrid />
+        <Areas client:load areas={areas}/>
       </section>
     </SectionContainer>
 
