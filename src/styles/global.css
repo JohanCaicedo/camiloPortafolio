@@ -1,21 +1,50 @@
+/* src/styles/global.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: 'Work Sans Variable', 'Noto Serif', 'Source Sans Pro', system-ui, sans-serif;
+  font-display: swap;
+  scroll-behavior: smooth;
+}
 
-/* :root {
-    color-scheme: light dark;
-  } */
+body {
+  color: #1D1735;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #e36f53; /* Cambia el color de hover al que prefieras */
+}
+
+@media (prefers-reduced-motion: reduce) {
   html {
-    font-family: 'Work Sans Variable', 'Noto Serif', 'Source Sans Pro',system-ui, sans-serif;
-    font-display: swap;
+    scroll-behavior: auto;
   }
-  body {
-    color: #1D1735;
-    margin: 0;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  .container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 1rem;
+  to {
+    opacity: 1;
   }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}

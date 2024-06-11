@@ -7,7 +7,6 @@ import '@fontsource-variable/work-sans';
 import '@fontsource/source-sans-pro';
 import '@fontsource-variable/merriweather-sans';
 import Footer from '../components/Footer.astro';
-import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 interface Props {
   title: string;
@@ -22,7 +21,6 @@ const { title, description,url,image } = Astro.props;
 <!doctype html>
 <html lang="en" class="light">
   <head>
-    <SpeedInsights/>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta property="og:image" content={image} />
@@ -30,7 +28,7 @@ const { title, description,url,image } = Astro.props;
     <meta property="og:title" content={title} />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -42,7 +40,7 @@ const { title, description,url,image } = Astro.props;
     <!-- Contenedor principal para todo el sitio -->
 
 
-    <div class="container mx-auto p-4 flex flex-col justify-center items-center">
+    <div class="container mx-auto p-4 flex flex-col justify-center items-center fade-in">
       <Header />
       <main class="mt-8 w-full flex flex-col justify-center items-center">
         <slot />
