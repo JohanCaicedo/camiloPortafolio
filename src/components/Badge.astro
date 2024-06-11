@@ -5,13 +5,16 @@ const { id, content, bgColor, textColor, darkBgColor, darkTextColor } = Astro.pr
 <span
   class={`
     text-sm 
+    text-center
     font-semibold 
-    px-2 py-1 
+    p-2 
     rounded-full 
     ${bgColor}
     ${textColor} 
     dark:${darkBgColor} 
     dark:${darkTextColor} 
+    items-center
+    m-auto	
   `}
 >
   {content}

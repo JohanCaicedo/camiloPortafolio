@@ -6,7 +6,7 @@ import SocialPills from "../components/SocialPills.jsx";
 import MailIcon from "../icons/Mail.astro";
 import GithubIcon from "../icons/Github.astro";
 import PhoneIcon from "../icons/Phone.astro";
-import Experience from "../components/Experience.astro";
+import Experience from "../components/Experience.jsx";
 import SectionContainer from "../components/SectionContainer.astro";
 import Arrow from "../icons/Arrow.astro";
 import Bifcase from "../icons/Bifcase.astro";
@@ -24,7 +24,7 @@ const areas = [
     bgColor: "bg-[#c5b6d1] dark:bg-[#343037]",
     textColor: "text-[#343037] dark:text-[#c5b6d2]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1oWeb.webp?alt=media&token=7df9723e-ef97-4bac-823d-e3ccd377f45b",
-    link: "",
+    link: "/web-design",
     classImg:"rounded-lg",
     
   },
@@ -35,7 +35,7 @@ const areas = [
     bgColor: "bg-[#2f413a] dark:bg-[#21302b]",
     textColor: "text-[#feebde] dark:text-[#feebde]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico%20(2).webp?alt=media&token=4526b817-ecb5-4fb2-8317-f4ffda77d235",
-    link: "",
+    link: "/graphic-design",
     classImg:"rounded-lg",
     
   },
@@ -76,12 +76,55 @@ const areas = [
 
 ];
 
+const EXPERIENCE_DATA = [
+  {
+    date: "Aug. 2020 – Present · 3 years 10 months",
+    title: "Generalist Designer",
+    company: "Instituto Latinoamericano para una Sociedad y un Derecho Alternativos - ILSA",
+    description: "As ILSA's generalist designer, I specialize in web design, editorial design, illustration, branding, photography, and audiovisual production. I have successfully created and maintained a cohesive, harmonious, and distinctive visual identity for the institute, significantly enhancing its market presence. Additionally, I have led key projects that have contributed to the organization's growth and success.",
+    link: "#",
+  },
+  {
+    date: "May 2023 – Jul. 2023 · 3 months",
+    title: "Web Developer and Design",
+    company: "Freelance",
+    description:
+      "Designed and developed individual WordPress websites, focusing on customized design strategies that highlight clients' professional strengths and create a distinctive brand image within their niche.",
+    link: "#",
+  },
+  {
+    date: "Jul. 2022 – Oct. 2022 · 4 months",
+    title: "Web Developer and Design",
+    company: "Instituto Latinoamericano para una Sociedad y un Derecho Alternativos - ILSA",
+    description:
+      "I spearheaded the complete redesign of the institute's main website, establishing a robust and strategic corporate visual identity. We implemented effective communication channels with users, consolidated the institutional archive, and defined the aesthetics of the digital platform. This transformative project elevated the company's industry relevance, transitioning from a limited online presence to a platform with 15,000 unique visitors per month. Furthermore, we significantly improved SEO and site performance, ensuring an optimal user experience.",
+    link: "#",
+  },
+  {
+    date: "Jul. 2022 – Oct. 2022 · 4 months",
+    title: "Photographer and Videographer",
+    company:"Renta Fácil",
+    description:
+      "Provided audiovisual production services, including social media videos, corporate videos, and corporate photography sessions.",
+    link: "#",
+  },
+  {date: "Jul. 2019 – Nov. 2019 · 5 months",
+    title: "Digital designer and photographer",
+    company:"Aire libre y aventura",
+    description:
+      "I was part of the Kuerfit team, serving as a video editor, graphic designer, and photographer. I spearheaded the production of the video course 'Strength Training', created promotional videos and flyers for social media and the website, and provided photographic coverage of the 'Corre Chicaque event.'",
+    link: "#",
+  },
+ 
+];
+
+
 ---
 
 <Layout
   title="Johan Caicedo - Portfolio"
   description="Johan Caicedo - Portfolio"
-  image="#"
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Zorrito.png?alt=media&token=35a1b571-7ed0-45be-852d-542823d05bbb"
   url="https://paperfoxstudio.site/"
 
 >
@@ -101,26 +144,26 @@ const areas = [
             content="Available for work"
             bgColor="bg-[#e46f4d]"
             textColor="text-[#170a08]"
-            darkBgColor="dark:bg-[#170a08]"
-            darkTextColor="dark:text-[#e46f4d]"
+            darkBgColor="bg-[#170a08]"
+            darkTextColor="text-[#e46f4d]"
           />
         </a>
       </h1>
-      <FontWeightAnimation client:load>
+      
         <h2 class="text-3xl md:text-2xl mb-4 dark:text-[#fafaf6]">
           Digital and multimedia designer with 3 years of professional
           experience.
           <br />
           <span class="text-2xl text-secondary"
-            >Design with <strong class="font-bold">soul</strong>, development
-            with <strong class="font-bold">logic</strong>, animation with <strong
-              class="font-bold">passion</strong
+            >Design with <strong class="font-semibold hover:font-black hover:text-[#5c6a7b] transition-all duration-300">soul</strong>, development
+            with <strong class="font-semibold hover:font-mono hover:font-black hover:text-[#2f413a] transition-all duration-300">logic</strong>, animation with <strong
+              class="font-semibold hover:font-bold hover:text-[#8C1E14] hover:tracking-widest transition-all duration-300">passion</strong
             >.</span
           >
           <br />
           <span class="text-sm">From Bogotá DC, Colombia.</span>
         </h2>
-      </FontWeightAnimation>
+    
 
       <nav class="flex flex-wrap gap-2 mt-4">
         <SocialPills
@@ -151,8 +194,9 @@ const areas = [
       >
         <Arrow class="size-6" /> Professional Experience
       </h3>
-      <Experience />
+      <Experience  client:load experience={EXPERIENCE_DATA} />
     </SectionContainer>
+    
 
     <SectionContainer id="projects">
       <section>

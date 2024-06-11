@@ -25,7 +25,7 @@ a {
   transition: color 0.3s ease-in-out;
 }
 
-a:hover {
+NavBar:hover {
   color: #e36f53; /* Cambia el color de hover al que prefieras */
 }
 
