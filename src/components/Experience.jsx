@@ -49,7 +49,7 @@ const ExperienceList = ({ experience }) => {
       </ol>
       <button
         onClick={toggleItems}
-        className="mt-4 text-[#452119] dark:text-[#e36f53] font-semibold"
+        className="mt-2 text-blue-600 dark:text-blue-100 font-semibold underline"
       >
         {showAll ? 'Show Less' : 'Show More'}
       </button>

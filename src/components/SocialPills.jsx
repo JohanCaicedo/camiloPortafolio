@@ -9,7 +9,7 @@ const buttonVariants = {
 function SocialPills({ href, children, ...props }) { // Agrega ...props para pasar cualquier otra propiedad
   const handleClick = (event) => {
     if (href.startsWith("tel:")) {
-      event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      event.preventDefault(); 
       sendWhatsAppMessage();
     }
   };
@@ -30,12 +30,12 @@ function SocialPills({ href, children, ...props }) { // Agrega ...props para pas
       variants={buttonVariants}
       whileHover="hover"
       whileTap="tap"
-      onClick={handleClick} // Agrega el manejador de clic
-      {...props} // Pasa cualquier otra propiedad a motion.a
+      onClick={handleClick} 
+      {...props} 
     >
       <button
         type="button"
-        className="text-white bg-[#22282e] dark:bg-[#96acc8] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-3 text-center me-2 mb-2 flex items-center gap-x-2 mt-4"
+        className="text-white bg-gradient-to-l from-blue-600 to-purple-500 dark:bg-bg-gradient-to-l dark:from-blue-900 dark:to-purple-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-3 text-center me-2 mb-2 flex items-center gap-x-2 mt-4"
       >
         {children}
       </button>

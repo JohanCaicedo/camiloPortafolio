@@ -5,7 +5,7 @@ import LinkedIn from "../icons/LinkedInTabler.astro";
 import SocialPills from "../components/SocialPills.jsx";
 import MailIcon from "../icons/Mail.astro";
 import GithubIcon from "../icons/Github.astro";
-import PhoneIcon from "../icons/Phone.astro";
+import WhatsappIcon from "../icons/Whatsapp.astro";
 import Experience from "../components/Experience.jsx";
 import SectionContainer from "../components/SectionContainer.astro";
 import Arrow from "../icons/Arrow.astro";
@@ -142,10 +142,10 @@ const EXPERIENCE_DATA = [
         >
           <Badge
             content="Available for work"
-            bgColor="bg-[#e46f4d]"
-            textColor="text-[#170a08]"
-            darkBgColor="bg-[#170a08]"
-            darkTextColor="text-[#e46f4d]"
+            bgColor="bg-gradient-to-l from-blue-600 to-purple-500"
+            textColor="text-[#fafaf6]"
+            darkBgColor="dark:bg-bg-gradient-to-l dark:from-blue-900 dark:to-purple-900"
+            darkTextColor="text-[#fafaf6]"
           />
         </a>
       </h1>
@@ -155,9 +155,9 @@ const EXPERIENCE_DATA = [
           experience.
           <br />
           <span class="text-2xl text-secondary"
-            >Design with <strong class="font-semibold hover:font-black hover:text-[#5c6a7b] transition-all duration-300">soul</strong>, development
-            with <strong class="font-semibold hover:font-mono hover:font-black hover:text-[#2f413a] transition-all duration-300">logic</strong>, animation with <strong
-              class="font-semibold hover:font-bold hover:text-[#8C1E14] hover:tracking-widest transition-all duration-300">passion</strong
+            >Design with <strong class="font-semibold text-sky-500 hover:font-black hover:text-sky-800 dark:hover:text-sky-100 transition-all duration-300">soul</strong>, development
+            with <strong class="font-semibold text-emerald-600 dark:text-emerald-200 hover:font-mono hover:font-black hover:text-emerald-800 transition-all duration-3000">logic</strong>, animation with <strong
+              class="font-semibold text-red-500 hover:font-bold hover:text-red-800 dark:hover:text-red-100 hover:tracking-widest transition-all duration-300">passion</strong
             >.</span
           >
           <br />
@@ -182,7 +182,7 @@ const EXPERIENCE_DATA = [
         </SocialPills>
 
         <SocialPills href="tel:+573114853833" client:load>
-          <PhoneIcon class="size-6 mr-1" /> Phone
+          <WhatsappIcon class="size-6 mr-1" /> Phone
         </SocialPills>
         
       </nav>
