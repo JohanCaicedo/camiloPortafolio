@@ -30,7 +30,8 @@ function SocialPills({ href, children, ...props }) { // Agrega ...props para pas
       variants={buttonVariants}
       whileHover="hover"
       whileTap="tap"
-      onClick={handleClick} 
+      onClick={handleClick}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }} 
       {...props} 
     >
       <button

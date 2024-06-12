@@ -1,0 +1,73 @@
+* {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    --black: #111111;
+    --white: #fdfdfd;
+    --green: #22cc88;
+    --blue: #0455fd;
+    --purple: #8855ff;
+    --red: #ff0055;
+    --orange: #ee4444;
+    --yellow: #ffcc00;
+    --mustard: #ffaa00;
+    --grey: #808080;
+  
+    --background: var(--black);
+    --accent: var(--white);
+  
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--accent);
+    padding-bottom: 100px;
+  }
+  
+  .App {
+    text-align: left;
+    height: 200vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%; */
+  }
+  
+  .navbar {
+    width: 100%;
+    background: var(--background);
+    border-bottom: 1px solid var(--accent);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    /* font-family: inter, sans-serif; */
+    font-size: 2rem;
+    margin-top: 14rem;
+    margin-left: 40px;
+  }
+  
+  ::-webkit-scrollbar {
+    height: 12px;
+    width: 5px;
+    background: var(--background);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--grey);
+    border-radius: 1ex;
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: var(--background);
+  }
+  
