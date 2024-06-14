@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 import '../styles/global.css';
+import { Image } from 'astro:assets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

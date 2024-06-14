@@ -1,10 +1,11 @@
 ---
 const { title, image, link  } = Astro.props;
+import { Image } from 'astro:assets';
 ---
 
 <section class="relative">
     <a href={link} target="_blank">
-    <img
+    <Image
         class="rounded-lg w-full duration-300 hover:scale-103 transition-transform mt-6"
         src={image}
         alt={title}
