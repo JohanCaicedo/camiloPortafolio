@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ThemeToggle from './ThemeToggle';
+import ThemeToggle from './ThemeToggle.jsx';
 import '../styles/global.css';
 import { Image } from 'astro:assets';
 
@@ -43,7 +43,7 @@ const Header = () => {
         <a href="../camiloPortfolio/#experience" className="text-center md:text-left block p-4 mb:bg-white hover:text-[#e36f53] hover:font-semibold">Experience</a>
         <a href="../camiloPortfolio/#education" className="text-center md:text-left block p-4 mb:bg-white hover:text-[#e36f53] hover:font-semibold">Education</a>
       </nav>
-      <ThemeToggle />
+      <ThemeToggle client:load />
     </header>
   );
 };
