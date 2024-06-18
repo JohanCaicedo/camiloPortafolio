@@ -5,6 +5,7 @@ import Palette from "../../../icons/Palette.astro";
 import { Image } from "astro:assets";
 import ProjectSpecs from "../../../components/ProjectSpecs.astro";
 import Wand from "../../../icons/Wand.astro";
+import FigmaEmbed from "../../../components/FigmaEmbed.astro";
 ---
 
 <ProjectSection
@@ -147,60 +148,17 @@ import Wand from "../../../icons/Wand.astro";
         width="940"
         height="350"
         alt="ILSA's moodboard"
-        class="w-full rounded-lg col-span-1"
+        class="w-full rounded-lg col-span-1 shadow-md"
         src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Artboard%201.webp?alt=media&token=3f717565-0d68-4b7a-bb5c-e60ece2ebbbc"
       />
-      </a>
+    </a>
   </div>
-  <section
-  class="grid grid-cols-2 sm:grid-cols-4 mt-5 gap-4 justify-items-center">
-  <span class="flex flex-col items-center">
-    <p
-      class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
-    >
-      Map
-    </p>
-    <p class="text-center text-sm font-normal dark:text-gray-200">Delimit</p>
-    <div class="bg-[#9695b5] w-28 h-28 rounded-lg mt-4"></div>
-  </span>
-  <span class="flex flex-col items-center">
-    <p
-      class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
-    >
-      Explore
-    </p>
-    <p class="text-center text-sm font-normal dark:text-gray-200">
-      Understanding
-    </p>
-    <div class="bg-[#7544a6] w-28 h-28 rounded-lg mt-4"></div>
-  </span>
 
-  <span class="flex flex-col items-center">
-    <p
-      class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
-    >
-      Build
-    </p>
-    <p class="text-center text-sm font-normal dark:text-gray-200">Develop</p>
-    <div class="bg-[#3d4a98] w-32 h-32 rounded-lg mt-4"></div>
-  </span>
-  <span class="flex flex-col items-center">
-    <p
-      class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
-    >
-      Test
-    </p>
-    <p class="text-center text-sm font-normal dark:text-gray-200">Feedback</p>
-    <div
-      class="bg-[#f0e2d4] w-24 h-24 rounded-lg mt-4 border border-gray-800 dark:border-gray-200"
-    >
-    </div>
-  </span>
-</section>
-
-  <section class="grid grid-cols-2 gap-4 mt-10  mb-10 ">
+  <section class="grid grid-cols-2 gap-4 mt-10 mb-10">
     <div>
-      <h4 class="col-span-1 text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6">
+      <h4
+        class="col-span-1 text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+      >
         Problem Definition
       </h4>
       <p>
@@ -209,20 +167,103 @@ import Wand from "../../../icons/Wand.astro";
         impact of their work. We identified the following key challenges
       </p>
     </div>
-    <div class="col-span-1 m-auto ">
+    <div class="col-span-1 m-auto">
       <ol>
-        <li class="pt-4"> <strong>Lack of visual appeal: </strong> The existing website was not visually appealing nor did it effectively communicate ILSA's mission.</li>
-        <li class="pt-4"><strong>Difficult navigation:</strong> The dense content and lack of hierarchy made it difficult to navigate and access information.</li>
-        <li class="pt-4"><strong>Low online visibility:</strong> The site was not optimized for search engines, limiting its reach.</li>
-        
+        <li class="pt-4">
+          <strong>Lack of visual appeal: </strong> The existing website was not visually
+          appealing nor did it effectively communicate ILSA's mission.
+        </li>
+        <li class="pt-4">
+          <strong>Difficult navigation:</strong> The dense content and lack of hierarchy
+          made it difficult to navigate and access information.
+        </li>
+        <li class="pt-4">
+          <strong>Low online visibility:</strong> The site was not optimized for
+          search engines, limiting its reach.
+        </li>
       </ol>
     </div>
     <div class="col-span-2">
-      <p> With these challenges in mind, we established the goal of creating a website that was visually appealing, easy to use, readable, and optimized for SEO.</p>
+      <p>
+        With these challenges in mind, we established the goal of creating a
+        website that was visually appealing, easy to use, readable, and
+        optimized for SEO.
+      </p>
     </div>
   </section>
 </section>
 
+<section>
+  <h4
+    class="col-span-1 text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+  >
+    Conceptualization and Design
+  </h4>
+  <FigmaEmbed
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2Fy8YZXMIIogI6XgTZNQXQmb%2FUntitled%3Fnode-id%3D0-1%26t%3Dbkn2jdLYoVMPi8gU-1"
+    width="940"
+    height="350"
+  />
+  <div class="grid grid-cols-3 gap-4 mt-10 mb-10">
+    <p class="text-m-auto col-span-2">
+      To address these challenges, we adopted a simplified Design Thinking
+      approach, focusing on the construction phase due to the client's
+      prioritization of aesthetics. I started with hand investigation to explore
+      different structures and content hierarchies.
+    </p>
+
+    <p class="text-m-auto">
+      Then, I created a flowchart to visualize the site navigation and
+      wireframes in Figma to define the layout of elements on each page.
+    </p>
+  </div>
+  <section
+    class="grid grid-cols-2 sm:grid-cols-4 mt-5 gap-4 justify-items-center"
+  >
+    <span class="flex flex-col items-center">
+      <p
+        class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
+      >
+        Map
+      </p>
+      <p class="text-center text-sm font-normal dark:text-gray-200">Delimit</p>
+      <div class="bg-[#9695b5] w-28 h-28 rounded-lg mt-4"></div>
+    </span>
+    <span class="flex flex-col items-center">
+      <p
+        class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
+      >
+        Explore
+      </p>
+      <p class="text-center text-sm font-normal dark:text-gray-200">
+        Understanding
+      </p>
+      <div class="bg-[#7544a6] w-28 h-28 rounded-lg mt-4"></div>
+    </span>
+
+    <span class="flex flex-col items-center">
+      <p
+        class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
+      >
+        Build
+      </p>
+      <p class="text-center text-sm font-normal dark:text-gray-200">Develop</p>
+      <div class="bg-[#3d4a98] w-32 h-32 rounded-lg mt-4"></div>
+    </span>
+    <span class="flex flex-col items-center">
+      <p
+        class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
+      >
+        Test
+      </p>
+      <p class="text-center text-sm font-normal dark:text-gray-200">Feedback</p>
+      <div
+        class="bg-[#f0e2d4] w-24 h-24 rounded-lg mt-4 border border-gray-800 dark:border-gray-200"
+      >
+      </div>
+    </span>
+  </section>
+</section>
 
 <section>
   <h3
@@ -334,5 +375,92 @@ import Wand from "../../../icons/Wand.astro";
         Xx Yy Zz 0 1 2 3 4 5 6 7 8 9 ¡ ! ¿ ? , . : ; - _ ' "
       </p>
     </div>
+  </section>
+
+  <section>
+    <div>
+      <h4
+        class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
+      >
+        Interface Design and User Experience (UI/UX)
+      </h4>
+      <div class="grid grid-cols-2">
+        <span class="col-span-1">
+          <p>
+            We prioritized visual hierarchy and information synthesis, using
+            high-quality images to complement the textual content and make it
+            more engaging.
+          </p>
+        </span>
+        <span class="col-span-1">
+          <p>
+            We implemented clear and intuitive navigation to guide users through
+            the site and facilitate access to relevant information.
+          </p>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h4
+        class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
+      >
+        Implementation and Optimization
+      </h4>
+      <div class="2">
+        <span class="col-start-4 col-span-2">
+          <p>
+            WordPress was selected as the platform due to its ease of use and
+            <strong>flexibility.</strong> Elementor builder and Bridge template were
+            leveraged to streamline development and enable design customization.
+            Yoast SEO was implemented to optimize metadata, links, and images, ultimately
+            improving the site's search engine visibility.
+          </p>
+          <Image
+            class="pt-6 rounderd-mb"
+            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20Wordpress%20backend.webp?alt=media&token=77aa0c98-e10a-4c38-ac8d-1832c57d5cdb"
+            width="940"
+            height="350"
+            alt="Backend Wordpress"
+          />
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    
+      <h4
+        class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
+      >
+        Testing and Feedback
+      </h4>
+      <div>
+          <p>
+            I conducted ongoing user testing to gather feedback and improve the
+            browsing experience. Their input allowed us to optimize the
+            navigation diagram and ensure that users easily find the information
+            they are looking for.
+          </p>
+      </div>
+      <div class="grid grid-cols-2 p-4 rounderd-mb">
+        <Image
+            class="m-auto  "
+            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-%20Clodflare%20stadistics%20(1).webp?alt=media&token=e30afec0-0a9e-467a-a4d8-01a1d3fcc116"
+            width="350"
+            height="350"
+            alt="Backend Wordpress"
+          />
+          <Image
+            class=" rounderd-mb m-auto "
+            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-%20Clodflare%20stadistics%20(2).webp?alt=media&token=726e9429-d215-4577-8108-4ffc6763426b"
+            width="350"
+            height="350"
+            alt="Backend Wordpress"
+          />
+      </div>
+    
   </section>
 </section>
