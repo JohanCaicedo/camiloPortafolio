@@ -2,11 +2,13 @@
 import Badge from "../../../components/Badge.astro";
 import ProjectSection from "../../../components/ProjectSection.astro";
 import Palette from "../../../icons/Palette.astro";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
+import ProjectSpecs from "../../../components/ProjectSpecs.astro";
+import Wand from "../../../icons/Wand.astro";
 ---
 
 <ProjectSection
-  title="ILSA's Web"
+  title="Reimagining ILSA's Digital Presence"
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup.webp?alt=media&token=780054d4-1628-4e29-8652-29148ff403e5"
 />
 <nav class="flex gap-2 mt-4 justify-center mb-4">
@@ -18,7 +20,7 @@ import { Image } from 'astro:assets';
     darkTextColor="dark:text-[#e46f4d]"
   />
   <Badge
-    content="Photo / Image Editing"
+    content="Image Editing"
     bgColor="bg-[#97acc6]"
     textColor="text-[#22282e]"
     darkBgColor="dark:bg-[#22282e]"
@@ -69,19 +71,15 @@ import { Image } from 'astro:assets';
       focused on Colombia since 1988.
     </p>
   </div>
-  <div class="col-span-1 md:col-span-2">
-    <p class="dark:text-gray-200">
-      <strong>My role:</strong> Web Designer, UI/UX <strong>Team:</strong>
-      <a
-        class="font-semibold text-[#343037] dark:text-[#fafaf6]"
-        href="https://www.instagram.com/quas.art/"
-        target="_blank"
-      >
-        Viviana Tovar
-      </a> – Illustration Support <strong>Duration:</strong> 4 months
-    </p>
-  </div>
 </div>
+<section>
+  <ProjectSpecs
+    rol="Web Designer, UI/UX"
+    team="Viviana Tovar"
+    duration="4 months"
+    tools="Figma, Illustrator, Photoshop, WordPress"
+  />
+</section>
 
 <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
   <div>
@@ -89,7 +87,7 @@ import { Image } from 'astro:assets';
       width="572"
       height="572"
       alt="ILSA-Web-mockup-1"
-      class="rounded-lg w-full"
+      class="w-full"
       src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup-1.webp?alt=media&token=20977961-0397-4c6e-b91f-efd038073d62"
     />
   </div>
@@ -113,7 +111,7 @@ import { Image } from 'astro:assets';
     <h4
       class="text-lg md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
     >
-    Main Objective
+      Main Objective
     </h4>
     <p class="dark:text-gray-200">
       Provide an accurate, coherent, and aesthetically pleasing communication
@@ -136,10 +134,26 @@ import { Image } from 'astro:assets';
     </p>
   </div>
 </div>
-
-<section
-  class="grid grid-cols-2 sm:grid-cols-4 mt-5 gap-4 justify-items-center"
->
+<section>
+  <h3
+    class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+  >
+    <Wand class="size-6" />Design Process
+  </h3>
+  <h4></h4>
+  <div>
+    <a href="https://ilsa.org.co/voces-en-movimiento/">
+      <Image
+        width="940"
+        height="350"
+        alt="ILSA's moodboard"
+        class="w-full rounded-lg col-span-1"
+        src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Artboard%201.webp?alt=media&token=3f717565-0d68-4b7a-bb5c-e60ece2ebbbc"
+      />
+      </a>
+  </div>
+  <section
+  class="grid grid-cols-2 sm:grid-cols-4 mt-5 gap-4 justify-items-center">
   <span class="flex flex-col items-center">
     <p
       class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fafaf6]"
@@ -184,9 +198,35 @@ import { Image } from 'astro:assets';
   </span>
 </section>
 
+  <section class="grid grid-cols-2 gap-4 mt-10  mb-10 ">
+    <div>
+      <h4 class="col-span-1 text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6">
+        Problem Definition
+      </h4>
+      <p>
+        The project began with an in-depth interview with the client, where they
+        expressed the need for a website that reflected the importance and
+        impact of their work. We identified the following key challenges
+      </p>
+    </div>
+    <div class="col-span-1 m-auto ">
+      <ol>
+        <li class="pt-4"> <strong>Lack of visual appeal: </strong> The existing website was not visually appealing nor did it effectively communicate ILSA's mission.</li>
+        <li class="pt-4"><strong>Difficult navigation:</strong> The dense content and lack of hierarchy made it difficult to navigate and access information.</li>
+        <li class="pt-4"><strong>Low online visibility:</strong> The site was not optimized for search engines, limiting its reach.</li>
+        
+      </ol>
+    </div>
+    <div class="col-span-2">
+      <p> With these challenges in mind, we established the goal of creating a website that was visually appealing, easy to use, readable, and optimized for SEO.</p>
+    </div>
+  </section>
+</section>
+
+
 <section>
   <h3
-    class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
+    class="flex gap-4 items-center text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
   >
     <Palette class="size-6" /> Visual Identity
   </h3>

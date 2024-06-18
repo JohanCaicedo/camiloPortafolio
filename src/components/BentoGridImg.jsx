@@ -4,7 +4,8 @@ function BentoGrid({ areas }) {
   return (
     <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ">
       {areas.map((area) => (
-        <a
+       
+       <a
           key={area.id}
           href={area.link}
           className={`
@@ -36,6 +37,8 @@ function BentoGrid({ areas }) {
             )}
           </div>
         </a>
+
+        
       ))}
     </div>
   );
