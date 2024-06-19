@@ -7,8 +7,7 @@ const education = [
     type: "Bachelor's degree",
     state: "Graduate",
     date: "2016 - 2020",
-    rowSpam: "col-span-1",
-    colSpam: "col-span-1 sm:col-span-2 md:col-span-2",
+    colSpam: "md:col-span-3 md:row-span-2 sm:col-span-2",
     bgColor: "bg-[#e56f45]",
     textColor: "text-[#170a08]",
     darkBgColor: "dark:bg-[#170a08]",
@@ -21,10 +20,9 @@ const education = [
     type: "Master's Degree",
     state: "Student",
     date: "2024 - 2025",
-    rowSpam: "col-span-1",
-    colSpam: "col-span-1",
+    colSpam: "md:col-span-3 md:row-span-2 md:col-start-4 sm:col-start-3",
     bgColor: "bg-[#95acca]",
-    textColor: "text-[#22282e]",
+    textColor: "text-[#111316]",
     darkBgColor: "dark:bg-[#22282e]",
     darkTextColor: "dark:text-[#95acca]",
   },
@@ -35,10 +33,9 @@ const education = [
     type: "Course",
     state: "Student",
     date: "2024 - 2025",
-    rowSpam: "col-span-1",
-    colSpam: "col-span-1",
+    colSpam: "md:col-span-2 md:row-span-2 md:row-start-3 sm:row-start-2",
     bgColor: "bg-[#f3cf59]",
-    textColor: "text-[#584b25]",
+    textColor: "text-[#161208]",
     darkBgColor: "dark:bg-[#584b25]",
     darkTextColor: "dark:text-[#f3cf59]",
   },
@@ -46,13 +43,12 @@ const education = [
     id: "4",
     title: "LabDesign",
     collage: "UNIR",
-    type: "Graduate",
-    state: "Student",
+    type: "Course",
+    state: "Graduate",
     date: "2024",
-    rowSpam: "col-span-1",
-    colSpam: "col-span-1",
+    colSpam: "md:col-span-2 row-span-2 md:col-start-3 md:row-start-3 sm:row-start-2",
     bgColor: "bg-[#a3cd9c]",
-    textColor: "text-[#293327]",
+    textColor: "text-[#121611]",
     darkBgColor: "dark:bg-[#293327]",
     darkTextColor: "dark:text-[#a3cd9c]",
   },
@@ -63,21 +59,21 @@ const education = [
     type: "Course",
     state: "Graduate",
     date: "2024",
-    rowSpam: "col-span-1",
-    colSpam: "col-span-1",
+    colSpam: "md:col-span-2 row-span-2 md:col-start-5 md:row-start-3 sm:row-start-2",
     bgColor: "bg-[#ebbbaa]",
-    textColor: "text-[#51403a]",
+    textColor: "text-[#161210]",
     darkBgColor: "dark:bg-[#51403a]",
     darkTextColor: "dark:text-[#ebbbaa]",
   },
 ];
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-  {education.map((edu) => (
-    <div
-      key?={edu.id}
-      class={`
+<div class="grid md:grid-cols-6 md:grid-rows-4 sm:grid-cols-3 sm:grid-rows-2 gap-4">
+  {
+    education.map((edu) => (
+      <div
+        key?={edu.id}
+        class={`
         ${edu.colSpam} 
         h-30
         flex flex-col
@@ -94,16 +90,19 @@ const education = [
         ${edu.darkBgColor}
         ${edu.darkTextColor}
       `}
-    >
-      <div class="mb-2">
-        <h3 class="text-2xl font-extrabold text-left">{edu.title}</h3>
-        <h4 class="text-base font-bold tracking-wide text-left">{edu.collage}</h4>
-        <h5 class="text-sm text-left mb-4">{edu.type}</h5>
+      >
+        <div class="mb-2">
+          <h3 class="text-2xl font-extrabold text-left">{edu.title}</h3>
+          <h4 class="text-base font-bold tracking-wide text-left">
+            {edu.collage}
+          </h4>
+          <h5 class="text-sm text-left mb-4">{edu.type}</h5>
+        </div>
+        <div class="flex justify-between items-end">
+          <p class="text-sm text-left">{edu.state}</p>
+          <p class="text-sm text-left">{edu.date}</p>
+        </div>
       </div>
-      <div class="flex justify-between items-end">
-        <p class="text-sm text-left">{edu.state}</p>
-        <p class="text-sm text-left">{edu.date}</p>
-      </div>
-    </div>
-  ))}
+    ))
+  }
 </div>

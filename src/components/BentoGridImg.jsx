@@ -1,11 +1,15 @@
 import React from "react";
+import {motion} from "framer-motion"
 
 function BentoGrid({ areas }) {
   return (
-    <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ">
+    <div className="grid md:grid-cols-6 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-5 gap-4">
       {areas.map((area) => (
        
-       <a
+       <motion.a
+          whileHover={{ scale:1.02 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           key={area.id}
           href={area.link}
           className={`
@@ -13,10 +17,8 @@ function BentoGrid({ areas }) {
             ${area.textColor}
             ${area.colItem}
             rounded-lg
-            hover:scale-105 
-            duration-300 
-            transition-transform 
-            ease-in-out  
+            
+
 
             
           `}
@@ -30,13 +32,15 @@ function BentoGrid({ areas }) {
             {area.img && (
               
               <img
-                className= "m-auto rounded-lg p-2"           
-                src={area.img}
+                className="p-4 w-full max-h-full object-contain rounded-lg"        
+                src={area.img} 
                 alt={area.title}
+                width={area.width}
+                height={area.height}
               />
             )}
           </div>
-        </a>
+        </motion.a>
 
         
       ))}

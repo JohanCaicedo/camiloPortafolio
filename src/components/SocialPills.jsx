@@ -36,7 +36,7 @@ function SocialPills({ href, children, ...props }) { // Agrega ...props para pas
     >
       <button
         type="button"
-        className="text-white bg-gradient-to-l from-blue-600 to-purple-500 dark:bg-bg-gradient-to-l dark:from-blue-900 dark:to-purple-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-3 text-center me-2 mb-2 flex items-center gap-x-2 mt-4"
+        className="text-white bg-gradient-to-l from-blue-600 to-purple-500 dark:bg-bg-gradient-to-l dark:from-blue-900 dark:to-purple-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-semibold rounded-lg text-sm px-5 py-3 text-center me-2 mb-2 flex items-center gap-x-2 mt-4"
       >
         {children}
       </button>
