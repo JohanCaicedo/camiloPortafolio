@@ -1,14 +1,18 @@
 ---
-import Badge from "../../../components/Badge.astro";
-import ProjectSection from "../../../components/ProjectSection.astro";
-import Palette from "../../../icons/Palette.astro";
+import Badge from "../components/Badge.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import Palette from "../icons/Palette.astro";
 import { Image } from "astro:assets";
-import ProjectSpecs from "../../../components/ProjectSpecs.astro";
-import Wand from "../../../icons/Wand.astro";
-import FigmaEmbed from "../../../components/FigmaEmbed.astro";
+import ProjectSpecs from "../components/ProjectSpecs.astro";
+import Wand from "../icons/Wand.astro";
+import Hammer from "../icons/Hammer.astro";
+import FigmaEmbed from "../components/FigmaEmbed.astro";
+import UserIcon from "../icons/User.astro";
+
 ---
 
 <ProjectSection
+  link="https://ilsa.org.co/"
   title="Reimagining ILSA's Digital Presence"
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup.webp?alt=media&token=780054d4-1628-4e29-8652-29148ff403e5"
 />
@@ -135,13 +139,14 @@ import FigmaEmbed from "../../../components/FigmaEmbed.astro";
     </p>
   </div>
 </div>
+<hr class="my-12 h-0.5 border-t-0 bg-[#1e1e1e] dark:bg-neutral-100" />
 <section>
   <h3
     class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
   >
     <Wand class="size-6" />Design Process
   </h3>
-  <h4></h4>
+  
   <div>
     <a href="https://ilsa.org.co/voces-en-movimiento/">
       <Image
@@ -379,26 +384,42 @@ import FigmaEmbed from "../../../components/FigmaEmbed.astro";
 
   <section>
     <div>
-      <h4
-        class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
-      >
-        Interface Design and User Experience (UI/UX)
-      </h4>
-      <div class="grid grid-cols-2">
+      <h3
+      class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+    >
+      <UserIcon class="size-6" /> Interface Design and User Experience (UI/UX)
+    </h3>
+
+
+
+      <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-6">
+
         <span class="col-span-1">
-          <p>
-            We prioritized visual hierarchy and information synthesis, using
-            high-quality images to complement the textual content and make it
-            more engaging.
-          </p>
-        </span>
-        <span class="col-span-1">
-          <p>
-            We implemented clear and intuitive navigation to guide users through
-            the site and facilitate access to relevant information.
-          </p>
-        </span>
-      </div>
+        <Image 
+        width="616"
+        height="1000"
+        alt="ILSA Wireframe"
+        class="h-auto max-w-full rounded-lg hover:shadow-md" 
+        src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-Wireframe%20-Home.webp?alt=media&token=9942a7aa-1739-46b0-a690-dfa4d8a04033" />
+        <p class="text-sm mt-2">Wireframe for the home page of the ILSA website.</p>
+      </span>
+      <span class="col-span-1">
+        <p class=" bg-[#fafaf6] dark:bg-[#1e1e1e]  rounded-lg mb-4 p-4 shadow-md">
+          I prioritized visual hierarchy and information synthesis, using
+          high-quality images to complement the textual content and make it
+          more engaging.
+        </p>
+
+        <Image 
+        width="616"
+        height="1000"
+        alt="ILSA Wireframe"
+        class="h-auto max-w-full rounded-lg hover:shadow-md" 
+        src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-Wireframe%20-Multimedia.webp?alt=media&token=fd066bba-fb7c-4788-983d-080570bcf825" />
+        <p class="text-sm mt-2">Wireframe for the mulltimedia page of the ILSA website.</p>
+      </span>
+    
+    </div>
     </div>
   </section>
 
@@ -407,8 +428,16 @@ import FigmaEmbed from "../../../components/FigmaEmbed.astro";
       <h4
         class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
       >
-        Implementation and Optimization
+        
       </h4>
+
+      <h3
+      class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+    >
+      <Hammer class="size-6" /> Implementation and Optimization
+    </h3>
+
+      
       <div class="2">
         <span class="col-start-4 col-span-2">
           <p>

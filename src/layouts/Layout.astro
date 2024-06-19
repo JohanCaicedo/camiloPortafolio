@@ -13,9 +13,10 @@ interface Props {
   description: string; 
   url: string;
   image: string;
+  canonicalURL: string;
 }
 
-const { title, description,url,image } = Astro.props;
+const { title, description,url,image, canonicalURL} = Astro.props;
 ---
 
 <!doctype html>
@@ -26,7 +27,7 @@ const { title, description,url,image } = Astro.props;
     <meta property="og:image" content={image} />
     <meta property="og:image" content={url} />
     <meta property="og:title" content={title} />
-    
+    <link rel="canonical" href={canonicalURL} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="generator" content={Astro.generator} />

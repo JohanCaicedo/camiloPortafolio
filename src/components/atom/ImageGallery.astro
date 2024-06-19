@@ -1,0 +1,14 @@
+---
+import {Image} from "astro:assets";
+
+const {image, wid, hei,alt} =Astro.props;
+---
+
+<div>
+    <Image 
+    width={wid}
+    height={hei}
+    alt={alt}
+    class="h-auto max-w-full rounded-lg" 
+    src={image} />
+</div>

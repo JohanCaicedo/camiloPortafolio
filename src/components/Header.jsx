@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ThemeToggle from './ThemeToggle.jsx';
 import '../styles/global.css';
-import { Image } from 'astro:assets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +16,7 @@ const Header = () => {
           <img
             width="200"
             height="200"
+            loading="lazy"
             className="rounded-full w-full h-full object-cover opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:scale-110"
             src="https://media.licdn.com/dms/image/D4E03AQFmXTu7s8BSog/profile-displayphoto-shrink_200_200/0/1715217947266?e=1721865600&v=beta&t=ecBallBXH7v9OHUYNq_2Ds0jdHGtvhPvZSIhftsE3ps"
             alt="Logo de Camilo Caicedo"
@@ -24,6 +24,7 @@ const Header = () => {
           <img
             width="200"
             height="200"
+            loading="lazy"
             className="rounded-full w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110"
             src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Foxy-Blink-NBG.gif?alt=media&token=49a368b2-c0d9-424e-9d45-955a8e905b5e"
             alt="Logo alternativo de Camilo Caicedo"

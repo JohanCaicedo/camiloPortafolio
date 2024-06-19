@@ -1,23 +1,24 @@
 ---
 import SectionContainer from "../components/SectionContainer.astro";
-import '@fontsource/source-sans-pro';
-import '@fontsource-variable/merriweather-sans';
+import "@fontsource/source-sans-pro";
+import "@fontsource-variable/merriweather-sans";
 import Layout from "../layouts/Layout.astro";
-import IlsaRedesign from "./projects/web-design/Ilsa-redesign.astro";
-import ReactBeforeSliderComponent from 'react-before-after-slider-component';
-import 'react-before-after-slider-component/dist/build.css';
+import IlsaRedesign from "./Ilsa-redesign.astro";
+import ReactBeforeSliderComponent from "react-before-after-slider-component";
+import "react-before-after-slider-component/dist/build.css";
 
 const FIRST_IMAGE = {
-  imageUrl: 'https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Web-Ilsa-After.webp?alt=media&token=1634c029-6279-4851-a6a2-e6ae661c1347'
+  imageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Before.webp?alt=media&token=93376329-7e5d-47c2-8bfa-0f6b1a20847a",
 };
 const SECOND_IMAGE = {
-  imageUrl: 'https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Web-Ilsa-Before.webp?alt=media&token=38494af1-ee29-489c-9dae-cac01e430f55'
+  imageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20After.webp?alt=media&token=938eeb1f-52df-4cc4-8b0d-2fd44e6b9b9c",
 };
-
-
 ---
 
-<Layout 
+<Layout
+  canonicalURL="https://paperfoxstudio.site/web-design"
   title="Web Design - Portfolio"
   description="Web Design projects"
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup-1.jpg?alt=media&token=48da8e04-a1c3-4fc0-9ac7-6bf135017fc5"
@@ -25,25 +26,25 @@ const SECOND_IMAGE = {
 >
   <main>
     <SectionContainer>
-      <h1 class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4">
+      <h1
+        class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
+      >
         portfolio/web-design
       </h1>
-      <IlsaRedesign/>
-      <section class="flex flex-col gap-4 mt-12">
-        <div class="grid grid-cols-2">
-          <h5 class="text-xl font-semibold grid-col-start-1 "> Before</h5>
-          <h5 class="text-xl font-semibold text-right">After</h5>
-        </div>
-        
-      <ReactBeforeSliderComponent client:load
-    firstImage={FIRST_IMAGE}
-    secondImage={SECOND_IMAGE}
-/>
-</div>
-</section>
-<section>
-  
-</section>
+      <IlsaRedesign />
+      <h3
+      class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mt-6 mb-6"
+    >
+      ILSA's Website comparation
+    </h3>
+
+        <ReactBeforeSliderComponent
+          client:visible
+          firstImage={FIRST_IMAGE}
+          secondImage={SECOND_IMAGE}
+        />
+      </section>
     </SectionContainer>
+    <section></section>
   </main>
 </Layout>
