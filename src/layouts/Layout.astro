@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header.jsx';
+import Navbar from '../components/Navbar.astro';
 import '../styles/global.css';
 import '@fontsource/twinkle-star';
 import '@fontsource/karma';
@@ -33,22 +33,17 @@ const { title, description,url,image, canonicalURL} = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-white  flex flex-col items-center min-h-screen">
-    <!-- Fondo Modo Claro -->
-    <div class="transition-all duration-500 ease-in-out fixed inset-0 -z-10 min-h-screen w-full bg-[#fafaf6] dark:bg-neutral-950  bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]">
-      <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px] "></div>
+  <body class="bg-white flex flex-col items-center min-h-screen">
+    <div class="transition-all duration-500 ease-in-out fixed inset-0 -z-10 min-h-screen w-full bg-[#fafaf6] dark:bg-neutral-950 bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]">
+      <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
     </div>
-    <!-- Contenedor principal para todo el sitio -->
-
-
-    <div class="container mx-auto p-4 flex flex-col justify-center items-center fade-in">
-      <Header client:load />
+    <div class="container mx-auto p-4 flex flex-col justify-center items-center fade-in relative">
+      <Navbar />
+      
       <main class="mt-8 w-full flex flex-col justify-center items-center">
         <slot />
       </main>
       <Footer />
     </div>
-
   </body>
 </html>
-

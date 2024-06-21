@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html, body {
+
+  
   font-family: 'Work Sans Variable', 'Noto Serif', 'Source Sans Pro', system-ui, sans-serif;
   font-display: swap;
   scroll-behavior: smooth;
@@ -12,22 +14,12 @@ html {
 
 body {
   color: #1D1735;
-  margin: 0;
+  display: flex; /* Use flexbox to center the content */
+  flex-direction: column;
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 1rem;
-}
 
-a {
-  transition: color 0.3s ease-in-out;
-}
 
-NavBar:hover {
-  color: #e36f53; /* Cambia el color de hover al que prefieras */
-}
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -48,3 +40,9 @@ NavBar:hover {
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
+
+.splineContainer{
+  	border-radius:  0.5rem;
+    margin-top: -20px;
+    
+  }

@@ -13,6 +13,9 @@ import Bifcase from "../icons/Bifcase.astro";
 import Certificate from "../icons/Certificate.astro";
 import Card from "../components/Card.astro";
 import Areas from '../components/BentoGridImg.jsx';
+import Spline from "../components/Spline.jsx";
+import  '../styles/global.css'
+
 
 
 const areas = [
@@ -126,6 +129,7 @@ const EXPERIENCE_DATA = [
 
 ---
 
+
 <Layout
   title="Johan Caicedo - Portfolio"
   description="Johan Caicedo - Portfolio"
@@ -134,10 +138,17 @@ const EXPERIENCE_DATA = [
   canonicalURL="https://paperfoxstudio.site/"
 
 >
+
   <main>
-    <SectionContainer id="about">
+    <SectionContainer class="splineContainer">
+      <Spline client:load />    
+    </SectionContainer>
+  
+    
+      
+
       <h1
-        class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row gap-4 dark:text-[#fafaf6]"
+        class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row gap-4 dark:text-[#fafaf6] mt-10"
       >
         Hey, I'm Camilo
         <a
@@ -192,6 +203,7 @@ const EXPERIENCE_DATA = [
         </SocialPills>
         
       </nav>
+    </div>
     </SectionContainer>
 
     <SectionContainer id="experience">
@@ -228,3 +240,4 @@ const EXPERIENCE_DATA = [
     </SectionContainer>
   </main>
 </Layout>
+
