@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import Badge from "../components/Badge.astro";
+import { Image } from "astro:assets";
+
+---
+
+<Layout
+  title="Editorial Design - Portfolio"
+  description="Editorial design portfolio"
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Editorial%20Design%20Image.webp?alt=media&token=aabfa3b4-9eb3-452b-b0d2-bb66de2456ea"
+  url="https://paperfoxstudio.site/editorial-design"
+>
+  <mai>
+    <SectionContainer>
+      <h1
+        class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
+      >
+        portfolio/editorial-design
+      </h1>
+      <ProjectSection
+        link="https://ilsa.org.co/"
+        title=""
+        image="/Editorial-Design ID.webp"
+      />
+      <nav class="flex flex-wrap gap-2 mt-4 justify-center mb-4">
+        <Badge
+          content="Editorial Design"
+          bgColor="bg-[#e46f4d]"
+          textColor="text-[#4a241b]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#e46f4d]"
+        />
+        <Badge
+          content="Photoshop"
+          bgColor="bg-[#97acc6]"
+          textColor="text-[#22282e]"
+          darkBgColor="dark:bg-[#22282e]"
+          darkTextColor="dark:text-[#97acc6]"
+        />
+        <Badge
+          content="Illustration"
+          bgColor="bg-[#f1cd71]"
+          textColor="text-[#584b2c]"
+          darkBgColor="dark:bg-[#584b2c]"
+          darkTextColor="dark:text-[#f1cd71]"
+        />
+        <Badge
+          content="InDesign"
+          bgColor="bg-[#a3cda1]"
+          textColor="text-[#293329]"
+          darkBgColor="dark:bg-[#293329]"
+          darkTextColor="dark:text-[#a3cda1]"
+        />
+        <Badge
+          content="Typography"
+          bgColor="bg-[#e4d6f2]"
+          textColor="text-[#343037]"
+          darkBgColor="dark:bg-[#343037]"
+          darkTextColor="dark:text-[#e4d6f2]"
+        />
+        <Badge
+          content="Composition"
+          bgColor="bg-[#ebbbaa]"
+          textColor="text-[#161210]"
+          darkBgColor="dark:bg-[#161210]"
+          darkTextColor="dark:text-[#ebbbaa]"
+        />
+      </nav>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            General description
+          </h3>
+          <p class="dark:text-gray-200">
+            <strong> Experienced editorial designer since 2016.</strong> I began my career at ILSA
+            with the publication "El Otro Derecho 52". Since then, I have led
+            the organization's editorial design, creating original covers,
+            adapting illustrations and layouts for various publications,
+            including collections like "El Otro Derecho" and "Textos de Aquí y
+            Ahora". My experience also includes collaborations with the JEP and
+            other human rights NGOs.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            About the company
+          </h3>
+          <p class="dark:text-gray-200">
+            ILSA, founded in 1978 as an NGO, focuses on alternative legal
+            services and supporting social movements, grassroots organizations,
+            and disadvantaged sectors. Initially operating in various Latin
+            American countries, it has focused on Colombia since 1988.
+          </p>
+        </div>
+
+      </div>
+    </SectionContainer>
+
+  </mai>
+</Layout>
