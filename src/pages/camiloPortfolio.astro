@@ -14,8 +14,19 @@ import Certificate from "../icons/Certificate.astro";
 import Card from "../components/Card.astro";
 import Areas from '../components/BentoGridImg.jsx';
 import Spline from "../components/Spline.jsx";
-import  '../styles/global.css'
+import  '../styles/global.css';
 
+interface ExperienceItem {
+  date: string;
+  title: string;
+  company: string;
+  description: string;
+  link: string;
+};
+
+interface ExperienceProps {
+  experience: ExperienceItem[];
+};
 
 
 const areas = [
@@ -52,7 +63,7 @@ const areas = [
     textColor: "text-[#ebbbaa] dark:text-[#ebbbaa]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Foxy-Blink.gif?alt=media&token=6fdef4b7-2f2f-4fbd-94a0-65a59868bfee",
     link: "",
-    classImg:"rounded-lg",
+    classImg:"rounded-lg grayscale",
     width:"270",
     height:"270"
   },
@@ -64,7 +75,7 @@ const areas = [
     textColor: "text-[#22282e] dark:text-[#95acca]",
     img: "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Editorial%20Design%20Image.webp?alt=media&token=aabfa3b4-9eb3-452b-b0d2-bb66de2456ea",
     link: "",
-    classImg:"rounded-lg",
+    classImg:"rounded-lg grayscale	",
     width:"435",
     height:"270"
   },
@@ -127,6 +138,7 @@ const EXPERIENCE_DATA = [
 ];
 
 
+
 ---
 
 
@@ -136,75 +148,66 @@ const EXPERIENCE_DATA = [
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Zorrito.png?alt=media&token=35a1b571-7ed0-45be-852d-542823d05bbb"
   url="https://paperfoxstudio.site/"
   canonicalURL="https://paperfoxstudio.site/"
-
 >
-
   <main>
-    <SectionContainer class="splineContainer">
-      <Spline client:load />    
+    <SectionContainer class="splineContainer hidden sm:block">
+      <Spline client:load />
     </SectionContainer>
-  
-    
-      
 
-      <h1
-        class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row gap-4 dark:text-[#fafaf6] mt-10"
+    <h1
+      class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row gap-4 dark:text-[#fafaf6] mt-10"
+    >
+      Hey, I'm Camilo
+      <a
+        href="https://www.linkedin.com/in/johan-caicedo/"
+        target="_blank"
+        rel="noopener"
+        class="flex justify-center items-center dark:text-[#fafaf6]"
       >
-        Hey, I'm Camilo
-        <a
-          href="https://www.linkedin.com/in/johan-caicedo/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center dark:text-[#fafaf6]"
-        >
-          <Badge
-            content="Available for work"
-            bgColor="bg-gradient-to-l from-blue-600 to-purple-500"
-            textColor="text-[#fafaf6]"
-            darkBgColor="dark:bg-bg-gradient-to-l dark:from-blue-900 dark:to-purple-900"
-            darkTextColor="text-[#fafaf6]"
-          />
-        </a>
-      </h1>
-      
-        <h2 class="text-3xl md:text-2xl sm:text-base mb-4 dark:text-[#fafaf6]">
-          Digital and multimedia designer with 3 years of professional
-          experience.
-          <br />
-          <span class="text-2xl text-secondary"
-            >Design with <strong class="font-semibold text-sky-500 hover:font-black hover:text-sky-800 dark:hover:text-sky-100 transition-all duration-300">soul</strong>, development
-            with <strong class="font-semibold text-emerald-600 dark:text-emerald-200 hover:font-mono hover:font-black hover:text-emerald-800 transition-all duration-3000">logic</strong>, animation with <strong
-              class="font-semibold text-red-500 hover:font-bold hover:text-red-800 dark:hover:text-red-100 hover:tracking-widest transition-all duration-300">passion</strong
-            >.</span
-          >
-          <br />
-          <span class="text-sm">From Bogotá DC, Colombia.</span>
-        </h2>
-    
+        <Badge
+          content="Available for work"
+          bgColor="bg-gradient-to-l from-blue-600 to-purple-500"
+          textColor="text-[#fafaf6]"
+          darkBgColor="dark:bg-bg-gradient-to-l dark:from-blue-900 dark:to-purple-900"
+          darkTextColor="text-[#fafaf6]"
+        />
+      </a>
+    </h1>
 
-      <nav class="flex flex-wrap gap-2 mt-4">
-        <SocialPills
-          href="https://www.linkedin.com/in/johan-caicedo/"
-          client:load
-        >
-          <LinkedIn class="size-6 mr-1" /> LinkedIn
-        </SocialPills>
+    <h2 class="text-3xl md:text-2xl sm:text-base mb-4 dark:text-[#fafaf6]">
+      Digital and multimedia designer with 3 years of professional
+      experience.
+      <br />
+      <span class="text-2xl text-secondary">
+        Design with <strong class="font-semibold text-sky-500 hover:font-black hover:text-sky-800 dark:hover:text-sky-100 transition-all duration-300">soul</strong>, development
+        with <strong class="font-semibold text-emerald-600 dark:text-emerald-200 hover:font-mono hover:font-black hover:text-emerald-800 transition-all duration-3000">logic</strong>, animation with <strong
+          class="font-semibold text-red-500 hover:font-bold hover:text-red-800 dark:hover:text-red-100 hover:tracking-widest transition-all duration-300">passion</strong
+        >.
+      </span>
+      <br />
+      <span class="text-sm">From Bogotá DC, Colombia.</span>
+    </h2>
 
-        <SocialPills href="mailto:camilo.design07@gmail.com" client:load>
-          <MailIcon class="size-6 mr-1" /> Mail
-        </SocialPills>
+    <nav class="flex flex-wrap gap-2 mt-4">
+      <SocialPills
+        href="https://www.linkedin.com/in/johan-caicedo/"
+        client:load
+      >
+        <LinkedIn class="size-6 mr-1" /> LinkedIn
+      </SocialPills>
 
-        <SocialPills href="https://github.com/JohanCaicedo" client:load>
-          <GithubIcon class="size-6 mr-1" /> Github
-        </SocialPills>
+      <SocialPills href="mailto:camilo.design07@gmail.com" client:load>
+        <MailIcon class="size-6 mr-1" /> Mail
+      </SocialPills>
 
-        <SocialPills href="tel:+573114853833" client:load>
-          <WhatsappIcon class="size-6 mr-1" /> Phone
-        </SocialPills>
-        
-      </nav>
-    </div>
-    </SectionContainer>
+      <SocialPills href="https://github.com/JohanCaicedo" client:load>
+        <GithubIcon class="size-6 mr-1" /> Github
+      </SocialPills>
+
+      <SocialPills href="tel:+573114853833" client:load>
+        <WhatsappIcon class="size-6 mr-1" /> Phone
+      </SocialPills>
+    </nav>
 
     <SectionContainer id="experience">
       <h3
@@ -212,18 +215,17 @@ const EXPERIENCE_DATA = [
       >
         <Arrow class="size-6" /> Professional Experience
       </h3>
-      <Experience  client:load experience={EXPERIENCE_DATA} />
+      <Experience client:load experience={EXPERIENCE_DATA} />
     </SectionContainer>
-    
 
     <SectionContainer id="projects">
       <section>
         <h3
           class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
         >
-          <Bifcase class="size-6" />Seleccted Projects
+          <Bifcase class="size-6" /> Selected Projects
         </h3>
-        <Areas client:load areas={areas}/>
+        <Areas client:load areas={areas} />
       </section>
     </SectionContainer>
 
@@ -235,9 +237,7 @@ const EXPERIENCE_DATA = [
           <Certificate class="size-6" /> Education
         </h3>
         <Card />
-        
       </section>
     </SectionContainer>
   </main>
 </Layout>
-

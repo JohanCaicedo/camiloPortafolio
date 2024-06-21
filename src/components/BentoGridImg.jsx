@@ -49,4 +49,3 @@ function BentoGrid({ areas }) {
 }
 
 export default BentoGrid;
-
