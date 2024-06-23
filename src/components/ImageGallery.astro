@@ -1,0 +1,52 @@
+---
+import { Image } from 'astro:assets';
+
+interface ImageInfo {
+  src: ImageMetadata | string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+interface Props {
+  images: ImageInfo[] | ImageInfo[][];
+  columns?: number;
+}
+
+const { images: rawImages, columns = 4 } = Astro.props;
+
+// Asegurarse de que images sea siempre un array de arrays
+const images = Array.isArray(rawImages[0]) ? rawImages as ImageInfo[][] : [rawImages as ImageInfo[]];
+
+const gridClass = {
+  1: "grid-cols-1",
+  2: "grid-cols-1 sm:grid-cols-2",
+  3: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
+  4: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
+}[columns] || "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4";
+---
+
+<div class={`grid gap-4 ${gridClass}`}>
+  {images.flat().map((image) => (
+    <div class="relative overflow-hidden hover:scale-105 duration-300 transition-transform ease-in-out" style={`padding-top: ${(image.height && image.width) ? (image.height / image.width * 100) : 100}%`}>
+      {typeof image.src === 'string' ? (
+        <img 
+          src={image.src} 
+          alt={image.alt} 
+          width={image.width} 
+          height={image.height}
+          class="absolute top-0 left-0 w-full h-full object-contain rounded-lg "
+        />
+      ) : (
+        <Image 
+          src={image.src} 
+          alt={image.alt} 
+          width={image.width} 
+          height={image.height}
+          class="absolute top-0 left-0 w-full h-full object-contain rounded-lg"
+        />
+      )}
+    </div>
+  ))}
+</div>
+
