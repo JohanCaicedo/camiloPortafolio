@@ -16,17 +16,6 @@ import Areas from '../components/BentoGridImg.jsx';
 import Spline from "../components/Spline.jsx";
 import  '../styles/global.css';
 
-interface ExperienceItem {
-  date: string;
-  title: string;
-  company: string;
-  description: string;
-  link: string;
-};
-
-interface ExperienceProps {
-  experience: ExperienceItem[];
-};
 
 
 const areas = [
@@ -215,7 +204,7 @@ const EXPERIENCE_DATA = [
       >
         <Arrow class="size-6" /> Professional Experience
       </h3>
-      <Experience client:load experience={EXPERIENCE_DATA} />
+      <Experience experience={EXPERIENCE_DATA} />
     </SectionContainer>
 
     <SectionContainer id="projects">

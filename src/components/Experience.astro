@@ -18,20 +18,20 @@ const initialItemsToShow = 2;
 <ViewTransitions />
 
 <div class="relative">
-  <ol class="relative border-s border-[1d1735] dark:border-[1d1735]">
+  <ol class="relative border-s border-[#1d1735] dark:border-[#fafaf6]">
     {experience.map((exp, index) => (
       <li class={`mb-10 ms-4 ${index >= initialItemsToShow ? 'hidden' : ''}`}>
         <div class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border bg-white border-[#7d7385] dark:border-[#fafaf6] dark:bg-[#a3cd9c]"></div>
-        <time class="mb-1 text-sm font-light leading-none text-[1d1735] dark:text-[#fafaf6]">{exp.date}</time>
-        <h3 class="text-lg font-semibold text-[#1d1735] dark:text-[#fafaf6] text-warp-base">{exp.title}</h3>
-        <p class="mb-4 opacity-80 text-base font-normal text-[##fafaf6] dark:text-[#fafaf6] text-pretty">{exp.description}</p>
+        <time class="mb-1 text-sm font-light leading-none text-[#1d1735] dark:text-[#fafaf6]">{exp.date}</time>
+        <h3 class="text-lg font-semibold text-[#1d1735] dark:text-[#fafaf6]">{exp.title}</h3>
+        <p class="mb-4 text-base font-normal text-[#1d1735] dark:text-[#fafaf6] opacity-80">{exp.description}</p>
       </li>
     ))}
   </ol>
   {experience.length > initialItemsToShow && (
     <button
       id="toggleButton"
-      class="mt-2 text-[#232930] dark:text-blue-100 font-semibold underline"
+      class="mt-2 text-[#232930] dark:text-[#fafaf6] font-semibold underline"
       transition:name="toggle-button"
     >
       Show More
@@ -39,7 +39,8 @@ const initialItemsToShow = 2;
   )}
 </div>
 
-<script define:vars={{initialItemsToShow}}>
+<script>
+  const initialItemsToShow = 2;
   let showAll = false;
   const toggleButton = document.getElementById('toggleButton');
   const experienceItems = document.querySelectorAll('ol li');
