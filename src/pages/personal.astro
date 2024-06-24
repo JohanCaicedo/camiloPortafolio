@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Badge from "../components/Badge.astro";
+import ProjectSpecs from "../components/ProjectSpecs.astro";
+import FigmaEmbed from "../components/FigmaEmbed.astro";
+import "../styles/global.css";
+import ChartDots from "../icons/ChartDots.astro";
+---
+
+<Layout
+  title="Personal projects"
+  description="Johan's personal projects."
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Foxy-Blink.gif?alt=media&token=6fdef4b7-2f2f-4fbd-94a0-65a59868bfee"
+  url="https://paperfoxstudio.site/personal"
+  canonicalURL="https://paperfoxstudio.site/personal"
+>
+  <main class="dark:text-gray-200">
+    <SectionContainer>
+      <h1
+        class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
+      >
+        portfolio/personal
+      </h1>
+      <ProjectSection
+        link=""
+        title="Paper Fox Studio"
+        image="/ID-Personal.webp"
+      />
+      <nav class="flex flex-wrap gap-2 mt-4 justify-center mb-4">
+        <Badge
+          content="Illustration"
+          bgColor="bg-[#e46f4d]"
+          textColor="text-[#4a241b]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#e46f4d]"
+        />
+        <Badge
+          content="Branding"
+          bgColor="bg-[#97acc6]"
+          textColor="text-[#22282e]"
+          darkBgColor="dark:bg-[#22282e]"
+          darkTextColor="dark:text-[#97acc6]"
+        />
+        <Badge
+          content="Storytelling"
+          bgColor="bg-[#ffe5b6]"
+          textColor="text-[#584b2c]"
+          darkBgColor="dark:bg-[#584b2c]"
+          darkTextColor="dark:text-[#ffe5b6]"
+        />
+        <Badge
+          content="Animation ✨"
+          bgColor="bg-[#a3cda1]"
+          textColor="text-[#293329]"
+          darkBgColor="dark:bg-[#293329]"
+          darkTextColor="dark:text-[#a3cda1]"
+        />
+      </nav>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            Project Details
+          </h3>
+          <p class="dark:text-gray-200">
+            Paperfox Studio is my personal project, an animation and editorial
+            illustration studio. It is born from my passion for animation and
+            visual storytelling, with the goal of inspiring through unique
+            stories and aesthetics.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            Mission, Vision, and Values
+          </h3>
+          <ul>
+            <li>
+              <strong>🌟 Mission:</strong> To inspire through creativity, captivating
+              stories, and visually stunning illustrations.
+            </li>
+            <li class="mt-2">
+              <strong>🔭 Vision:</strong> To become a world-leading studio in the
+              creation of creative experiences that excite and connect with people
+              of all ages and cultures.
+            </li>
+            <li class="mt-2">
+              <strong>💡 Values:</strong> Creativity, quality, and passion for art
+              in all its forms.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <section>
+        <ProjectSpecs
+        rol="Project Lead"
+        team="Viviana Tovar"
+        duration="Working on it"
+        tools="Figma, Photoshop, WordPress"
+        time="Duration"
+        link="https://www.instagram.com/quas.art/"
+      />
+       
+    
+    </section>  
+    <section class="mt-6">
+        <h3
+        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+      >
+        <ChartDots class="size-6" /> Flowchart of the Paper Fox Studio creation process
+      </h3>
+
+      <p class="mb-6">The flowchart illustrates my plan to create and grow Paperfox Studio. I am currently in the business planning phase, researching the market and defining the studio's mission and objectives. This detailed plan will guide the next stages, from brand creation to studio expansion.</p>
+      <FigmaEmbed
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2Fp7w4TjLESvQfPmxLsfrv84%2FMindmap-(Community)%3Fnode-id%3D0-1%26t%3DiFmcAKuGvymkMgI5-1"
+      width="940"
+      height="350"
+    />
+    </section>
+    </SectionContainer>
+  </main>
+</Layout>
