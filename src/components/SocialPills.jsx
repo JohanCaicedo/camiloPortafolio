@@ -16,7 +16,7 @@ function SocialPills({ href, children, ...props }) { // Agrega ...props para pas
 
   function sendWhatsAppMessage() {
     const phoneNumber = href.replace("tel:", ""); // Extrae el número de teléfono
-    const message = "Buen día Camilo !Tengo una idea increíble! ¿Quieres colaborar?";
+    const message = "Good morning/afternoon Camilo! I have an incredible idea. Do you want to collaborate?";
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 

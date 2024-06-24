@@ -1,5 +1,5 @@
 ---
-const { rol, team, duration, tools } = Astro.props;
+const { rol, team, duration, tools,time,link } = Astro.props;
 ---
 
 <div
@@ -7,19 +7,19 @@ const { rol, team, duration, tools } = Astro.props;
 >
   <div>
     <h5 class="md:col-span-1 font-semibold text-sm text-zinc-600">My role</h5>
-    <p>{rol}</p>
+    <p class="dark:text-[#1e1e1e]">{rol}</p>
   </div>
   <div>
     <h5 class="md:col-span-1 font-semibold text-sm text-zinc-600">Team</h5>
-    <p>{team}</p>
+    <a href={link} target="_blank"> <p class="font-semibold dark:text-[#1e1e1e] ">{team}</p> </a>
   </div>
   <div>
-    <h5 class="md:col-span-1 font-semibold text-sm text-zinc-600">Duration</h5>
-    <p>{duration}</p>
+    <h5 class="md:col-span-1 font-semibold text-sm text-zinc-600">{time}</h5>
+    <p class="dark:text-[#1e1e1e]">{duration}</p>
   </div>
   <div>
     <h5 class="col-span-2 font-semibold text-sm text-zinc-600">Tools</h5>
-    <p>{tools}</p>
+    <p class="dark:text-[#1e1e1e]" >{tools}</p>
   </div>
 </div>
 
