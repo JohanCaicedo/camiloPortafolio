@@ -8,6 +8,10 @@ import FigmaEmbed from "../components/FigmaEmbed.astro";
 import "../styles/global.css";
 import ChartDots from "../icons/ChartDots.astro";
 import Fox from "../icons/Fox.astro";
+import { Image } from "astro:assets";
+
+const src = "/PaperFoxStudio-Build.webm";
+const poster = "/poster.webp";
 ---
 
 <Layout
@@ -75,7 +79,6 @@ import Fox from "../icons/Fox.astro";
           </p>
         </div>
         <div>
-
           <ul>
             <li>
               <strong>🌟 Mission:</strong> To inspire through creativity, captivating
@@ -94,110 +97,219 @@ import Fox from "../icons/Fox.astro";
         </div>
       </div>
 
-    <section>
+      <section>
         <ProjectSpecs
-        rol="Project Lead"
-        team="Viviana Tovar"
-        duration="Working on it"
-        tools="Figma, Photoshop, WordPress"
-        time="Duration"
-        link="https://www.instagram.com/quas.art/"
-      />
-       
-    
-    </section>  
-    <section class="mt-6">
+          rol="Project Lead"
+          team="Viviana Tovar"
+          duration="Working on it"
+          tools="Figma, Photoshop, WordPress"
+          time="Duration"
+          link="https://www.instagram.com/quas.art/"
+        />
+      </section>
+      <section class="mt-4">
         <h3
-        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
-      >
-        <ChartDots class="size-6" /> Flowchart of the Paper Fox Studio creation process
-      </h3>
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+        >
+          <ChartDots class="size-6" /> Flowchart of the Paper Fox Studio creation
+          process
+        </h3>
 
-      <p class="mb-6">The flowchart illustrates my plan to create and grow Paperfox Studio. I am currently in the business planning phase, researching the market and defining the studio's mission and objectives. This detailed plan will guide the next stages, from brand creation to studio expansion.</p>
-      <FigmaEmbed
-      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2Fp7w4TjLESvQfPmxLsfrv84%2FMindmap-(Community)%3Fnode-id%3D0-1%26t%3DiFmcAKuGvymkMgI5-1"
-      width="940"
-      height="350"
-    />
-    </section>
-<section>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-        <div>
-          <h3
-            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
-          >
-          Workflow (Pre-production)
-          </h3>
-          <p class="dark:text-gray-200">
-            I am currently in the pre-production phase, working on a comprehensive business plan that includes
-          </p>
+        <p class="mb-6">
+          The flowchart illustrates my plan to create and grow Paper Fox Studio.
+          I am currently in the business planning phase, researching the market
+          and defining the studio's mission and objectives. This detailed plan
+          will guide the next stages, from brand creation to studio expansion.
+        </p>
+        <FigmaEmbed
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2Fp7w4TjLESvQfPmxLsfrv84%2FMindmap-(Community)%3Fnode-id%3D0-1%26t%3DiFmcAKuGvymkMgI5-1"
+          width="940"
+          height="350"
+        />
+      </section>
+      <section>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          <div>
+            <h3
+              class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+            >
+              Workflow (Pre-production)
+            </h3>
+            <p class="dark:text-gray-200">
+              I am currently in the pre-production phase, working on a
+              comprehensive business plan that includes
+            </p>
+          </div>
+          <div class="font-semibold">
+            <ul>
+              <li>🦊 Market research</li>
+
+              <li class="mt-2">🪄 Brand creation</li>
+              <li class="mt-2">📝 Legal structure and financing</li>
+              <li class="mt-2">💸 Marketing and sales</li>
+              <li class="mt-2">👨‍💻 Operations and administration</li>
+              <li class="mt-2">🪴 Growth and expansion</li>
+            </ul>
+          </div>
         </div>
-        <div class="font-semibold">
+      </section>
 
-          <ul>
-            <li>
-                🦊 Market research
-            </li>
+      <section>
+        <h3
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+        >
+          <Fox class="size-6" /> Branding and Visual Identity
+        </h3>
+        <section class="grid grid-cols-2 gap-6">
+          <div class="col-span-1">
+            <h4
+              class="text-2xg md:text-lg font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+            >
+              Logo Design
+            </h4>
+            <p>
+              The logo, the central symbol of the brand, was designed following
+              rigorous design canons:
+            </p>
+            <ul class="text-sm mt-3">
+              <li class="text-sm mt-3">
+                <strong>💛 Golden Ratio:</strong> The golden ratio was used to create
+                the modules that make up the logo, ensuring visual harmony and aesthetic
+                balance.
+              </li>
+              <li class="text-sm mt-3">
+                <strong>⭕ Circular Shapes:</strong> The inclusion of circular elements
+                in the design aims to convey a sense of closeness, friendliness,
+                and accessibility to the audience.
+              </li>
+              <li class="text-sm mt-3">
+                <strong>✏️ Fennec Fox Representation:</strong> The Fennec fox, with
+                its distinctive silhouette and expressive features, is subtly yet
+                recognizably integrated into the logo, reinforcing the brand's identity.
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-1 m-auto">
+            <p class="bg-[#fafaf6] p-8 rounded-lg shadow-md">
+              The brand-building process for Paper Fox Studio was based on
+              creating a strong and cohesive visual identity, centered around
+              the main character, Nile the Fennec fox. His illustration style,
+              evoking warmth and curiosity, became the aesthetic foundation of
+              the studio.
+            </p>
+          </div>
+        </section>
+        <div class="grid grid-cols-6">
+          <span class="col-start-2 col-span-4 mt-8">
+            <Image
+              src="/Personal-MoodBoard.webp"
+              alt="Logo MoodBoard"
+              width="1080"
+              height="540"
+              class="shadow-md rounded-lg"
+            />
+            <p class="text-sm text-right text-slate-600 mt-4">
+              Visual identity and character MoodBoard
+            </p>
+          </span>
 
-            <li class="mt-2">
-                🪄 Brand creation
-            </li>
-            <li class="mt-2">
-                📝 Legal structure and financing
-            </li>
-            <li class="mt-2">
-                💸 Marketing and sales
-            </li>
-            <li class="mt-2">
-                👨‍💻 Operations and administration
-            </li>
-            <li class="mt-2">
-                🪴  Growth and expansion
-            </li>
-          </ul>
         </div>
-      </div>
-
-
-</section>
-
-<section>
-
-     <h3
-        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
-      >
-        <Fox class="size-6" /> Branding and Visual Identity
 
         
-</h3>
-<div>
-<div></div>    
-</div>     
-</section>
+        <div>
+          <h4
+          class="text-2xg md:text-lg font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 "
+        >
+        Logo construction
+        </h4>
+        <div class="grid grid-cols-2  ">
+        <div class="col-span-1">
+          <Image
+          width="500"
+          height="500"
+          alt="Paper Fox Studio V1"
+          src="/PaperFoxStudioV1.webp"
+          class="rounded-lg shadow-md"
+          />
+          <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+            Paper Fox Studio Logo V1
+          </p>
+        </div >
+        <div class="col-span-1">
+        <video controls width=500 height="500"poster={poster} autoplay class="rounded-lg shadow-md ">
+          <source src={src} type="video/webm" />
+          Tu navegador no soporta la reproducción de video.
+        </video>
+        <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+          Paper Fox Studio Logo V1 Build
+        </p>
 
+        </div>
+        </div>
 
-    <section>
+        <div class="grid grid-cols-6">
+          <span class="col-start-2 col-span-4 mt-8">
+
+          </span>
+
+      </div>
+        <section class="grid grid-cols-2 gap-6 mt-8">
+          <h4
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            Logo Determinants
+          </h4>
+
+          <div class="col-span-1"></div>
+          <div class="col-span-1 m-auto">
+            <p class="bg-[#fafaf6] p-8 rounded-lg shadow-md">
+              The result is a logo that is not only visually appealing but also
+              effectively communicates the values and personality of Paper Fox
+              Studio. It is a symbol that invites the audience to explore the
+              world of animation and illustration through the eyes of Nile, the
+              Fennec fox.
+            </p>
+          </div>
+          <ul class="text-sm">
+            <li class="text-sm mt-3">
+              <strong>📝 Illustrated: </strong> The golden ratio was used to create
+              the modules that make up the logo, ensuring visual harmony and aesthetic
+              balance.
+            </li>
+            <li class="text-sm mt-3">
+              <strong>🙂 Brand Identity:</strong> The inclusion of circular elements
+              in the design aims to convey a sense of closeness, friendliness, and
+              accessibility to the audience.
+            </li>
+            <li class="text-sm mt-3">
+              <strong>👁️ Recognizable Silhouette: </strong> The Fennec fox, with
+              its distinctive silhouette and expressive features, is subtly yet recognizably
+              integrated into the logo, reinforcing the brand's identity.
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
         <h3
-        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
-      >
-        <ChartDots class="size-6" /> Launch strategy
-      </h3>
-      <div class="grid grid-cols-2 gap-5">
-
-      <p class="col-span-1 sm:col-span-1 dark:text-gray-200 ">
-        The construction of the visual identity was created through market
-        research aimed at identifying common points and thereby
-        understanding the visual language used by entities participating in
-        this niche.
-      </p>
-      <p class="col-span-1 dark:text-gray-200">
-        With that information, a distinctive color palette was created,
-        aligned with the themes the client addresses and their fields of
-        action.
-      </p>
-    </div>
-    </section>
-
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+        >
+          <ChartDots class="size-6" /> Launch strategy
+        </h3>
+        <div class="grid grid-cols-2 gap-5">
+          <p class="col-span-1 sm:col-span-1 dark:text-gray-200">
+            The construction of the visual identity was created through market
+            research aimed at identifying common points and thereby
+            understanding the visual language used by entities participating in
+            this niche.
+          </p>
+          <p class="col-span-1 dark:text-gray-200">
+            With that information, a distinctive color palette was created,
+            aligned with the themes the client addresses and their fields of
+            action.
+          </p>
+        </div>
+      </section>
     </SectionContainer>
   </main>
 </Layout>
