@@ -7,6 +7,7 @@ import ProjectSpecs from "../components/ProjectSpecs.astro";
 import FigmaEmbed from "../components/FigmaEmbed.astro";
 import "../styles/global.css";
 import ChartDots from "../icons/ChartDots.astro";
+import Fox from "../icons/Fox.astro";
 ---
 
 <Layout
@@ -67,18 +68,14 @@ import ChartDots from "../icons/ChartDots.astro";
             Project Details
           </h3>
           <p class="dark:text-gray-200">
-            Paperfox Studio is my personal project, an animation and editorial
+            Paper Fox Studio is my personal project, an animation and editorial
             illustration studio. It is born from my passion for animation and
             visual storytelling, with the goal of inspiring through unique
             stories and aesthetics.
           </p>
         </div>
         <div>
-          <h3
-            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
-          >
-            Mission, Vision, and Values
-          </h3>
+
           <ul>
             <li>
               <strong>🌟 Mission:</strong> To inspire through creativity, captivating
@@ -123,6 +120,84 @@ import ChartDots from "../icons/ChartDots.astro";
       height="350"
     />
     </section>
+<section>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+          Workflow (Pre-production)
+          </h3>
+          <p class="dark:text-gray-200">
+            I am currently in the pre-production phase, working on a comprehensive business plan that includes
+          </p>
+        </div>
+        <div class="font-semibold">
+
+          <ul>
+            <li>
+                🦊 Market research
+            </li>
+
+            <li class="mt-2">
+                🪄 Brand creation
+            </li>
+            <li class="mt-2">
+                📝 Legal structure and financing
+            </li>
+            <li class="mt-2">
+                💸 Marketing and sales
+            </li>
+            <li class="mt-2">
+                👨‍💻 Operations and administration
+            </li>
+            <li class="mt-2">
+                🪴  Growth and expansion
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+</section>
+
+<section>
+
+     <h3
+        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+      >
+        <Fox class="size-6" /> Branding and Visual Identity
+
+        
+</h3>
+<div>
+<div></div>    
+</div>     
+</section>
+
+
+    <section>
+        <h3
+        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+      >
+        <ChartDots class="size-6" /> Launch strategy
+      </h3>
+      <div class="grid grid-cols-2 gap-5">
+
+      <p class="col-span-1 sm:col-span-1 dark:text-gray-200 ">
+        The construction of the visual identity was created through market
+        research aimed at identifying common points and thereby
+        understanding the visual language used by entities participating in
+        this niche.
+      </p>
+      <p class="col-span-1 dark:text-gray-200">
+        With that information, a distinctive color palette was created,
+        aligned with the themes the client addresses and their fields of
+        action.
+      </p>
+    </div>
+    </section>
+
     </SectionContainer>
   </main>
 </Layout>
