@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  videoSrc: string; // URL del video
+  link?: string;
+}
+
+const { title, videoSrc, link } = Astro.props as Props;
+---
+
+<section class="relative">
+  <a href={link} target="_blank">
+    <video
+      class="rounded-lg w-full duration-300 hover:scale-103 transition-transform mt-6"
+      src={videoSrc}
+      controls
+      muted
+      autoplay
+      loop
+      playsinline
+    ></video>
+  </a>
+  <div class="absolute top-2 left-2 p-4 text-white">
+    <h3 class="text-xl font-bold mb-2 text-right">{title}</h3>
+  </div>
+</section>

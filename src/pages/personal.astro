@@ -137,14 +137,11 @@ const poster2 = "/Nile-Style.webp";
         />
       </section>
       <section class="mt-8">
-        <h3
-        class="text-base	 font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
-      >
-        Workflow (Pre-production)
-      </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <h3 class="text-base font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6">
+          Workflow (Pre-production)
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-
             <p class="dark:text-gray-200">
               I am currently in the pre-production phase, working on a
               comprehensive business plan that includes
@@ -173,10 +170,10 @@ const poster2 = "/Nile-Style.webp";
         <section class="grid grid-cols-2 gap-6">
           <div class="col-span-1">
             <h3
-            class="flex gap-4 items-center  md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-4"
-          >
-            <Palette class="size-6" /> Logo design
-          </h3>
+              class="flex gap-4 items-center md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-4"
+            >
+              <Palette class="size-6" /> Logo design
+            </h3>
             <p>
               The logo, the central symbol of the brand, was designed following
               rigorous design canons:
@@ -222,14 +219,13 @@ const poster2 = "/Nile-Style.webp";
               Visual identity and character MoodBoard
             </p>
           </span>
-
         </div>
         <section class="grid grid-cols-2 gap-6">
           <h3
-          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary  mt-6 dark:text-[#fafaf6]"
-        >
-          <Cube class="size-6" /> Logo determinants
-        </h3>
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mt-6 dark:text-[#fafaf6]"
+          >
+            <Cube class="size-6" /> Logo determinants
+          </h3>
 
           <div class="col-span-1"></div>
           <div class="col-span-1 m-auto">
@@ -259,137 +255,158 @@ const poster2 = "/Nile-Style.webp";
             </li>
           </ul>
         </section>
-        
+
         <div class="mt-6">
           <h3
-          class="flex gap-4 items-center text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
-        >
-          <Palette class="size-6" /> Logo construction
-        </h3>
-        <div class="grid grid-cols-2  ">
-        <div class="col-span-1">
-          <Image
-          width="500"
-          height="500"
-          alt="Paper Fox Studio V1"
-          src="/PaperFoxStudioV1.webp"
-          class="rounded-lg shadow-md"
-          />
-          <p class="text-sm text-right text-slate-600 mt-4 mr-7">
-            Paper Fox Studio Logo V1
+            class="flex gap-4 items-center text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
+          >
+            <Palette class="size-6" /> Logo construction
+          </h3>
+          <div class="grid grid-cols-2">
+            <div class="col-span-1">
+              <Image
+                width="500"
+                height="500"
+                alt="Paper Fox Studio V1"
+                src="/PaperFoxStudioV1.webp"
+                class="rounded-lg shadow-md"
+              />
+              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+                Paper Fox Studio Logo V1
+              </p>
+            </div>
+            <div class="col-span-1">
+              <video
+                controls
+                width="500"
+                height="500"
+                poster={poster}
+                autoplay
+                class="rounded-lg shadow-md"
+              >
+                <source src={src} type="video/webm" />
+                Tu navegador no soporta la reproducción de video.
+              </video>
+              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+                Paper Fox Studio Logo V1 Build
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 mt-6">
+            <div class="col-span-1">
+              <Image
+                width="500"
+                height="500"
+                alt="Paper Fox Studio V1"
+                src="/PaperFoxLogoV2.webp"
+                class="rounded-lg shadow-md"
+              />
+              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+                Paper Fox Studio Logo V2 retouched by <a
+                  href="https://www.instagram.com/quas.art/"
+                  target="_blank">Viviana Tovar</a
+                >
+              </p>
+            </div>
+            <div class="col-span-1">
+              <Image
+                width="500"
+                height="500"
+                alt="Paper Fox Studio V1"
+                src="/PFS-SafeAreas.webp"
+                class="rounded-lg shadow-md"
+              />
+
+              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+                Safe Areas
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <h3
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+          >
+            <Sparkles class="size-6" />
+            Style explore
+          </h3>
+          <p class="bg-[#fafaf6] p-8 font-medium rounded-lg shadow-md">
+            These videos showcase my skills in 2D animation and digital
+            illustration. I love bringing characters to life and telling visual
+            stories.
           </p>
-        </div >
-        <div class="col-span-1">
-        <video controls width=500 height="500"poster={poster} autoplay class="rounded-lg shadow-md ">
-          <source src={src} type="video/webm" />
-          Tu navegador no soporta la reproducción de video.
-        </video>
-        <p class="text-sm text-right text-slate-600 mt-4 mr-7">
-          Paper Fox Studio Logo V1 Build
-        </p>
 
-        </div>
-        </div>
+          <div class="grid grid-cols-2">
+            <span class="col-span-1 mt-6">
+              <video
+                controls
+                width="500"
+                height="500"
+                autoplay
+                class="rounded-lg shadow-md"
+              >
+                <source src={src1} type="video/webm" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+                2D Rigging in After Effects and Duik Angela
+              </p>
+            </span>
+            <span class="col-span-1 mt-6">
+              <video
+                controls
+                width="500"
+                height="500"
+                poster={poster2}
+                class="rounded-lg shadow-md"
+              >
+                <source src={src2} type="video/webm" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+                Illustration timelapse using Inifinite Painter
+              </p>
+            </span>
+          </div>
+        </section>
 
-        <div class="grid grid-cols-2 mt-6 ">
-          <div class="col-span-1">
-            <Image
-            width="500"
-            height="500"
-            alt="Paper Fox Studio V1"
-            src="/PaperFoxLogoV2.webp"
-            class="rounded-lg shadow-md"
-            />
-            <p class="text-sm text-right text-slate-600 mt-4 mr-7">
-              Paper Fox Studio Logo V2 retouched by <a href="https://www.instagram.com/quas.art/" target="_blank">Viviana Tovar</a>
+        <section>
+          <h3
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+          >
+            <ChartDots class="size-6" /> Launch strategy
+          </h3>
+          <div class="grid grid-cols-2 gap-5">
+            <p class="col-span-1 sm:col-span-1 dark:text-gray-200">
+              The construction of the visual identity was created through market
+              research aimed at identifying common points and thereby
+              understanding the visual language used by entities participating
+              in this niche.
             </p>
-          </div >
-          <div class="col-span-1">
-            <Image
-            width="500"
-            height="500"
-            alt="Paper Fox Studio V1"
-            src="/PFS-SafeAreas.webp"
-            class="rounded-lg shadow-md"
-            />
-
-          <p class="text-sm text-right text-slate-600 mt-4 mr-7">
-            Safe Areas 
-          </p>
-  
+            <p class="col-span-1 dark:text-gray-200">
+              With that information, a distinctive color palette was created,
+              aligned with the themes the client addresses and their fields of
+              action.
+            </p>
           </div>
+        </section>
+        <section class="mb-6">
+          <h3
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+          >
+            <ChartDots class="size-6" /> Next Steps
+          </h3>
+          <div class="grid grid-cols-5 gap-5">
+            <p
+              class="col-start-2 col-span-3 bg-[#fafaf6] p-8 font-medium rounded-lg shadow-md"
+            >
+              With the business plan underway, I will focus on creating engaging
+              content for Instagram and developing my website.
+            </p>
           </div>
-
-      </section>
-
-      <section>
-        <h3
-        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
-      >
-        <Sparkles class="size-6" /> 
-        Style explore 
-      </h3>
-      <p class="bg-[#fafaf6] p-8 font-medium rounded-lg shadow-md ">These videos showcase my skills in 2D animation and digital illustration. I love bringing characters to life and telling visual stories.</p>
-
-<div class="grid grid-cols-2">
-  <span class="col-span-1 mt-6">
-            <video controls width=500 height="500" autoplay class="rounded-lg shadow-md ">
-          <source src={src1} type="video/webm" />
-          Web browser don't suport video
-        </video>
-        <p class="text-sm text-right text-slate-600 mt-4 mr-7">
-            2D Rigging in After Effects and Duik Angela
-        </p>
-
-  </span>
-  <span class="col-span-1 mt-6">
-    <video controls width=500 height="500" poster={poster2} class="rounded-lg shadow-md ">
-      <source src={src2} type="video/webm" />
-      Web browser don't suport video
-    </video>
-    <p class="text-sm text-right text-slate-600 mt-4 mr-7">
-      Illustration timelapse using Inifinite Painter
-  </p>
-
-  </span>
-
-
-</div>
-
-
-      </section>
-
-      <section>
-        <h3
-          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
-        >
-          <ChartDots class="size-6" /> Launch strategy
-        </h3>
-        <div class="grid grid-cols-2 gap-5">
-          <p class="col-span-1 sm:col-span-1 dark:text-gray-200">
-            The construction of the visual identity was created through market
-            research aimed at identifying common points and thereby
-            understanding the visual language used by entities participating in
-            this niche.
-          </p>
-          <p class="col-span-1 dark:text-gray-200">
-            With that information, a distinctive color palette was created,
-            aligned with the themes the client addresses and their fields of
-            action.
-          </p>
-        </div>
-      </section>
-      <section class="mb-6">
-        <h3
-          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
-        >
-          <ChartDots class="size-6" /> Next Steps
-        </h3>
-        <div class="grid grid-cols-5 gap-5">
-          <p class="col-start-2 col-span-3 bg-[#fafaf6] p-8 font-medium rounded-lg shadow-md">
-            With the business plan underway, I will focus on creating engaging content for Instagram and developing my website.
-          </p>
-        </div>
+        </section>
       </section>
     </SectionContainer>
   </main>

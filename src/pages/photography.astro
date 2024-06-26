@@ -1,1 +1,59 @@
-<h1>Hi world</h1>
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import ProjectSection from "../components/ProjectSectionVideo.astro";
+import Badge from "../components/Badge.astro";
+---
+
+<Layout
+title="Johan Caicedo - Photography"
+description="Johan Caicedo - Photografy"
+image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Photography%20Image.webp?alt=media&token=2f3bcee6-0ff5-4a1c-8ec4-4944542b2c4b"
+url="https://paperfoxstudio.site/photography"
+canonicalURL="https://paperfoxstudio.site/photography"
+>
+
+<SectionContainer>
+    <h1
+    class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
+  >
+    portfolio/photography
+  </h1>
+  <ProjectSection
+    link=""
+    title="Communicating through images"
+    videoSrc="Timelapse 18 de julio 2022.webm"
+  />
+  <nav class="flex flex-wrap gap-2 mt-4 justify-center mb-4">
+    <Badge
+      content="Lightroom 💻"
+      bgColor="bg-[#e46f4d]"
+      textColor="text-[#4a241b]"
+      darkBgColor="dark:bg-[#4a241b]"
+      darkTextColor="dark:text-[#e46f4d]"
+    />
+    <Badge
+      content="Camera manage 📸"
+      bgColor="bg-[#97acc6]"
+      textColor="text-[#22282e]"
+      darkBgColor="dark:bg-[#22282e]"
+      darkTextColor="dark:text-[#97acc6]"
+    />
+    <Badge
+      content="Composition 🖼️"
+      bgColor="bg-[#ffe5b6]"
+      textColor="text-[#584b2c]"
+      darkBgColor="dark:bg-[#584b2c]"
+      darkTextColor="dark:text-[#ffe5b6]"
+    />
+    <Badge
+      content="Lightning 💡"
+      bgColor="bg-[#a3cda1]"
+      textColor="text-[#293329]"
+      darkBgColor="dark:bg-[#293329]"
+      darkTextColor="dark:text-[#a3cda1]"
+    />
+  </nav>
+</SectionContainer>
+
+</Layout>
