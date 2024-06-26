@@ -3,57 +3,108 @@ import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import ProjectSection from "../components/ProjectSectionVideo.astro";
 import Badge from "../components/Badge.astro";
+import TargetArrow from "../icons/TargetArrow.astro";
 ---
 
 <Layout
-title="Johan Caicedo - Photography"
-description="Johan Caicedo - Photografy"
-image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Photography%20Image.webp?alt=media&token=2f3bcee6-0ff5-4a1c-8ec4-4944542b2c4b"
-url="https://paperfoxstudio.site/photography"
-canonicalURL="https://paperfoxstudio.site/photography"
+  title="Johan Caicedo - Photography"
+  description="Johan Caicedo - Photografy"
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Photography%20Image.webp?alt=media&token=2f3bcee6-0ff5-4a1c-8ec4-4944542b2c4b"
+  url="https://paperfoxstudio.site/photography"
+  canonicalURL="https://paperfoxstudio.site/photography"
 >
-
-<SectionContainer>
+  <SectionContainer>
     <h1
-    class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
-  >
-    portfolio/photography
-  </h1>
-  <ProjectSection
-    link=""
-    title="Communicating through images"
-    videoSrc="Timelapse 18 de julio 2022.webm"
-  />
-  <nav class="flex flex-wrap gap-2 mt-4 justify-center mb-4">
-    <Badge
-      content="Lightroom 💻"
-      bgColor="bg-[#e46f4d]"
-      textColor="text-[#4a241b]"
-      darkBgColor="dark:bg-[#4a241b]"
-      darkTextColor="dark:text-[#e46f4d]"
+      class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
+    >
+      portfolio/photography
+    </h1>
+    <ProjectSection
+      link=""
+      title="Communicating through images"
+      videoSrc="/Timelapse 18 de julio 2022.webm"
     />
-    <Badge
-      content="Camera manage 📸"
-      bgColor="bg-[#97acc6]"
-      textColor="text-[#22282e]"
-      darkBgColor="dark:bg-[#22282e]"
-      darkTextColor="dark:text-[#97acc6]"
-    />
-    <Badge
-      content="Composition 🖼️"
-      bgColor="bg-[#ffe5b6]"
-      textColor="text-[#584b2c]"
-      darkBgColor="dark:bg-[#584b2c]"
-      darkTextColor="dark:text-[#ffe5b6]"
-    />
-    <Badge
-      content="Lightning 💡"
-      bgColor="bg-[#a3cda1]"
-      textColor="text-[#293329]"
-      darkBgColor="dark:bg-[#293329]"
-      darkTextColor="dark:text-[#a3cda1]"
-    />
-  </nav>
-</SectionContainer>
+    <nav class="flex flex-wrap gap-2 mt-4 justify-center mb-4">
+      <Badge
+        content="Lightroom 💻"
+        bgColor="bg-[#e46f4d]"
+        textColor="text-[#4a241b]"
+        darkBgColor="dark:bg-[#4a241b]"
+        darkTextColor="dark:text-[#e46f4d]"
+      />
+      <Badge
+        content="Camera manage 📸"
+        bgColor="bg-[#97acc6]"
+        textColor="text-[#22282e]"
+        darkBgColor="dark:bg-[#22282e]"
+        darkTextColor="dark:text-[#97acc6]"
+      />
+      <Badge
+        content="Composition 🖼️"
+        bgColor="bg-[#ffe5b6]"
+        textColor="text-[#584b2c]"
+        darkBgColor="dark:bg-[#584b2c]"
+        darkTextColor="dark:text-[#ffe5b6]"
+      />
+      <Badge
+        content="Lightning 💡"
+        bgColor="bg-[#a3cda1]"
+        textColor="text-[#293329]"
+        darkBgColor="dark:bg-[#293329]"
+        darkTextColor="dark:text-[#a3cda1]"
+      />
+    </nav>
+    <section class="grid grid-cols-6 mt-8">
+      <p
+        class="col-start-2 col-span-4 bg-[#fafaf6] rounded-lg p-6 shadow-md font-medium text-[#161208]"
+      >
+        Photography is an essential tool in my work as a designer. It allows me
+        to document projects, capture key moments, and communicate ideas
+        visually and effectively. Through my images, I strive to convey the
+        essence of each project and highlight its impact.
+      </p>
+    </section>
 
+    <section>
+      <h3
+        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+      >
+        <TargetArrow class="size-6" />
+        Focus and Applications
+      </h3>
+      <div class="grid grid-cols-2 gap-4 mt-4">
+        <span>
+          <p class="bg-[#f3cf59] text-[#161208] p-6 rounded-lg shadow-md" >My photographic approach focuses on recording projects and creating
+          images that complement my design work. I use photography to:</p>
+        </span>
+        <span>
+          <ul >
+            <li>
+              <strong>
+              Capture the creative process:</strong> Document the different stages of a
+              project.
+            </li>
+
+            <li class="mt-4">
+              <strong>
+              Immortalize key moments:</strong> Photograph events, meetings, and other
+              important moments to create a visual record.
+            </li>
+            <li class="mt-4">
+              <strong>
+              Communicate ideas and concepts:</strong> Use images to illustrate design
+              concepts, present proposals to clients, and share the final
+              result.
+            </li>
+            <li class="mt-4">
+              <strong>
+              Create visual content for marketing and social media:</strong> Produce
+              attractive, high-quality photographs to promote projects and
+              attract a wider audience.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </section>
+  </SectionContainer>
 </Layout>
