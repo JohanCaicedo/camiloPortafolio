@@ -15,6 +15,12 @@ import { Image } from "astro:assets";
 
 const src = "/PaperFoxStudio-Build.webm";
 const poster = "/poster.webp";
+
+const src1 = "/Nile Riggin.webm";
+const poster1 = "/PaperFoxLogoV2.webp";
+
+const src2 = "/Neil-Style.webm";
+const poster2 = "/Nile-Style.webp";
 ---
 
 <Layout
@@ -105,7 +111,7 @@ const poster = "/poster.webp";
           rol="Project Lead"
           team="Viviana Tovar"
           duration="Working on it"
-          tools="Figma, Photoshop, WordPress"
+          tools="Figma, Illustrator, Photoshop, After Effects"
           time="Duration"
           link="https://www.instagram.com/quas.art/"
         />
@@ -328,7 +334,7 @@ const poster = "/poster.webp";
 <div class="grid grid-cols-2">
   <span class="col-span-1 mt-6">
             <video controls width=500 height="500" autoplay class="rounded-lg shadow-md ">
-          <source src="Nile Riggin.webm" type="video/webm" />
+          <source src={src1} type="video/webm" />
           Web browser don't suport video
         </video>
         <p class="text-sm text-right text-slate-600 mt-4 mr-7">
@@ -337,8 +343,8 @@ const poster = "/poster.webp";
 
   </span>
   <span class="col-span-1 mt-6">
-    <video controls width=500 height="500" poster="Nile-Style.webp" class="rounded-lg shadow-md ">
-      <source src="Neil-Style.webm" type="video/webm" />
+    <video controls width=500 height="500" poster={poster2} class="rounded-lg shadow-md ">
+      <source src={src2} type="video/webm" />
       Web browser don't suport video
     </video>
     <p class="text-sm text-right text-slate-600 mt-4 mr-7">
