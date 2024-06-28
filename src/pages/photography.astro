@@ -8,62 +8,6 @@ import TargetArrow from "../icons/TargetArrow.astro";
 import Bifcase from "../icons/Bifcase.astro";
 
 
-const images = [
-  {
-    src: "/Web-Gallery6.webp",
-    alt: "Illustration 1",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery7.webp",
-    alt: "Illustration 2",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery8.webp",
-    alt: "Illustration 3",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery9.webp",
-    alt: "Illustration 4",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery10.webp",
-    alt: "Illustration 5",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery1.webp",
-    alt: "Illustration 6",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery11.webp",
-    alt: "Illustration 7",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery5.webp",
-    alt: "Illustration 8",
-    width: 400,
-    height: 400,
-  },
-  {
-    src: "/Web-Gallery12.webp",
-    alt: "Illustration 9",
-    width: 400,
-    height: 400,
-  },
-];
 ---
 
 <Layout
@@ -185,7 +129,87 @@ const images = [
       <Bifcase class="size-6" />
       Project Examples
     </h3>
-    <!-- <ImageGallery images={images} columns={3} /> -->
+    <div class="bg-[#fafaf6] p-4 mt-6 rounded-lg shadow-lg">
+    <h4 class="text-lg font-semibold">🌤️ Voices in Movement </h4>
+    <p class=" mt-4 mb-4 text-pretty ">Photographic coverage of the "Voces en Movimiento" (Voices in Movement) event in Necoclí, Antioquia (February 13, 2024). The objective was to document the meetings of this women's collective, which seeks to empower women in the region through education and dialogue on gender issues.</p>
+    <ImageGallery 
+images={[
+   {
+  src: "/Necoclí 2024 (1).webp",
+  alt: "Photo 1",
+  width: 400,
+  height: 400,
+},
+
+{
+  src: "/Necoclí 2024 (3).webp",
+  alt: "Photo 3",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (5).webp",
+  alt: "Photo 5",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (6).webp",
+  alt: "Photo 6",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (7).webp",
+  alt: "Photo 1",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (8).webp",
+  alt: "Photo 8",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (9).webp",
+  alt: "Photo 8",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (10).webp",
+  alt: "Photo 10",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (11).webp",
+  alt: "Photo 11",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (12).webp",
+  alt: "Photo 12",
+  width: 400,
+  height: 400,
+},
+{
+  src: "/Necoclí 2024 (13).webp",
+  alt: "Photo 13",
+  width: 400,
+  height: 400,
+},
+  
+]}
+columns={4}
+/>
+
+</div>
     </section>
   </SectionContainer>
 </Layout>
+
+
+
