@@ -83,7 +83,7 @@ export default function ResponsiveOptimizedSpline() {
       <div className="spline-wrapper">
         <div ref={splineContainerRef} className="spline-container">
           <Spline
-            scene="/Hero.splinecode"
+            scene="https://prod.spline.design/dN07KbnGhRl38txY/scene.splinecode"
             onLoad={handleSplineLoad}
           />
         </div>
