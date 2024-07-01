@@ -1,0 +1,14 @@
+---
+interface Props {
+  icon: any; 
+  text: string;
+}
+
+const { icon: IconComponent, text } = Astro.props as Props;
+---
+
+<h3
+  class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+>
+  <IconComponent class="size-6" /> {text}
+</h3>

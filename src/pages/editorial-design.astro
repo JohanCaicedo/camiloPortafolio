@@ -4,8 +4,8 @@ import SectionContainer from "../components/SectionContainer.astro";
 import ProjectSection from "../components/ProjectSection.astro";
 import Badge from "../components/Badge.astro";
 import ProjectSpecs from "../components/ProjectSpecs.astro";
-import { Image } from "astro:assets";
-
+import Title from "../components/Title.astro";
+import TargetArrow from "../icons/TargetArrow.astro";
 ---
 
 <Layout
@@ -14,19 +14,23 @@ import { Image } from "astro:assets";
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Editorial%20Design%20Image.webp?alt=media&token=aabfa3b4-9eb3-452b-b0d2-bb66de2456ea"
   url="https://paperfoxstudio.site/editorial-design"
 >
-  <mai>
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <SectionContainer>
-      <h1
-        class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fafaf6] mb-4"
-      >
-        portfolio/editorial-design
-      </h1>
+      <header class="mb-8">
+        <h1
+          class="text-sm md:text-base lg:text-lg font-medium text-right text-gray-800 dark:text-gray-200"
+        >
+          portfolio/editorial-design
+        </h1>
+      </header>
+
       <ProjectSection
         link="https://ilsa.org.co/"
-        title=""
+        title="ILSA Editorial Design"
         image="/Editorial-Design ID.webp"
       />
-      <nav class="flex flex-wrap gap-2 mt-4 justify-center mb-4">
+
+      <nav class="flex flex-wrap justify-center gap-2 my-6">
         <Badge
           content="Editorial Design"
           bgColor="bg-[#e46f4d]"
@@ -70,48 +74,97 @@ import { Image } from "astro:assets";
           darkTextColor="dark:text-[#ebbbaa]"
         />
       </nav>
-      <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-6 mt-8">
-        <div class="lg:col-span-1 md:col-span-2">
-          <h3
-            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <section>
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4"
           >
             General description
-          </h3>
-          <p class="dark:text-gray-200">
-            <strong> Experienced editorial designer since 2016.</strong> I began my career at ILSA
-            with the publication "El Otro Derecho 52". Since then, I have led
-            the organization's editorial design, creating original covers,
-            adapting illustrations and layouts for various publications,
-            including collections like "El Otro Derecho" and "Textos de Aquí y
-            Ahora". My experience also includes collaborations with the JEP and
-            other human rights NGOs.
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300">
+            <strong>Experienced editorial designer since 2016.</strong> I began my
+            career at ILSA with the publication "El Otro Derecho 52". Since then,
+            I have led the organization's editorial design, creating original covers,
+            adapting illustrations and layouts for various publications, including
+            collections like "El Otro Derecho" and "Textos de Aquí y Ahora". My experience
+            also includes collaborations with the JEP and other human rights NGOs.
           </p>
-        </div>
-        <div class="lg:col-span-1 md:col-span-2">
-          <h3
-            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+        </section>
+
+        <section>
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4"
           >
             About the company
-          </h3>
-          <p class="dark:text-gray-200">
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300">
             ILSA, founded in 1978 as an NGO, focuses on alternative legal
             services and supporting social movements, grassroots organizations,
             and disadvantaged sectors. Initially operating in various Latin
             American countries, it has focused on Colombia since 1988.
           </p>
+        </section>
+      </div>
+
+      <ProjectSpecs
+        rol="Lead Editorial Designer, Illustrator"
+        team="Freddy Ordoñez"
+        duration="8 years"
+        tools="Photoshop, Illustrator, InDesign"
+        time="Experience"
+      />
+
+      <section class="mt-12">
+        <Title icon={TargetArrow} text="Approach and experience" />
+        <div
+          class="bg-[#fafaf6] dark:bg-gray-800 p-6 rounded-lg shadow-md mt-4"
+        >
+          <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            My approach to editorial design is based on
+          </h3>
+          <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong class="text-gray-900 dark:text-gray-100"
+                >👁️ Clarity and readability:</strong
+              > I prioritize effective communication of ideas, ensuring content is
+              easy to read and understand.
+            </li>
+            <li>
+              <strong class="text-gray-900 dark:text-gray-100"
+                >🌟 Impactful aesthetics:</strong
+              > I create visually appealing designs that reflect the theme and tone
+              of each publication.
+            </li>
+            <li>
+              <strong class="text-gray-900 dark:text-gray-100"
+                >⭕ Consistency with brand identity:</strong
+              > I design covers and publications that align with the visual identity
+              of ILSA and other organizations I collaborate with.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="grid grid-cols-6 gap-4 ">
+        
+        <div class="bg-[#fafaf6] dark:bg-gray-800 p-6 rounded-lg shadow-sm mt-4 col-span-3">
+          <Title icon={TargetArrow} text="Skills" />
+          <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>Cover conceptualization and design:</strong> Creating original covers that capture the essence of the publication.</li>
+            <li><strong>Adaptation of illustrations and murals:</strong> Integrating pre-existing visual elements into the editorial design.</li>
+            <li><strong>Layout and typesetting:</strong> Organizing content in a clear and attractive way, optimizing readability and visual flow.</li>
+          </ul>
+        </div>
+        <div class="bg-[#fafaf6] dark:bg-gray-800 p-6 rounded-lg shadow-sm mt-4 col-span-3">
+          <Title icon={TargetArrow} text="Featured projects" />
+          <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>El Otro Derecho 62:</strong> Cover and interior design, maintaining consistency with the collection.</li>
+            <li><strong>Collection redesigns: </strong> Updating the visual identity of "El Otro Derecho" and "Textos de Aquí y Ahora."</li>
+            <li><strong>Collaborations:</strong> Design of booklets, academic journals, and other materials for the JEP and various NGOs.</li>
+          </ul>
         </div>
 
-      </div>
-      <section>
-        <ProjectSpecs
-          rol="Lead Editorial Designer, Illustrator "
-          team="Freddy Ordoñez"
-          duration="8 years"
-          tools="Photoshop, Illustrator, InDesign"
-          time="Experience"
-        />
       </section>
     </SectionContainer>
-
-  </mai>
+  </main>
 </Layout>
