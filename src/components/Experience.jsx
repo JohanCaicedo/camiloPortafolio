@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 
-const ExperienceItem = ({ title, description, date }) => (
-  <li className="mb-10 ms-4">
+const ExperienceItem = ({ title, description, date, company }) => (
+  <div className="mb-10 ms-4">
     <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border bg-white border-[#7d7385] dark:border-[#fafaf6] dark:bg-[#a3cd9c]" />
-    <time className="mb-1 text-sm font-light leading-none text-[1d1735] dark:text-[#fafaf6]">{date}</time>
+    <p className="mb-1 text-sm font-light leading-none text-[1d1735] dark:text-[#fafaf6]">{date}</p>
+    <p className="mb-1 text-sm font-light leading-none text-[1d1735] dark:text-[#fafaf6]">{company}</p>
+    
     <h3 className="text-lg font-semibold text-[#1d1735] dark:text-[#fafaf6] text-warp-base">{title}</h3>
     <p className="mb-4 opacity-80 text-base font-normal text-[##fafaf6] dark:text-[#fafaf6] text-pretty">{description}</p>
+    
 
-  </li>
+  </div>
 );
 
 const ExperienceList = ({ experience }) => {
