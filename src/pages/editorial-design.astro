@@ -8,6 +8,9 @@ import Title from "../components/Title.astro";
 import TargetArrow from "../icons/TargetArrow.astro";
 import Bifcase from "../icons/Bifcase.astro";
 import HandClick from "../icons/HandClick.astro";
+import Collage from "../icons/Collage.astro";
+import Start from "../icons/Start.astro";
+import Gallery from "../components/ImageGallery.astro";
 ---
 
 <Layout
@@ -153,10 +156,10 @@ import HandClick from "../icons/HandClick.astro";
           <h3
           class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 dark:text-[#fafaf6]"
         >
-          <HandClick class="size-6" /> Skills
+          <HandClick class="size-6 text-[#4a241b]" /> Skills
         </h3>
          
-          <ul class=" text-[#170a08] dark:text-gray-300">
+          <ul class=" text-[#4a241b] dark:text-gray-300">
             <li class="mt-3"><strong>🖌️ Cover conceptualization and design:</strong> Creating original covers that capture the essence of the publication.</li>
             <li class="mt-3"><strong>💻 Adaptation of illustrations and murals:</strong> Integrating pre-existing visual elements into the editorial design.</li>
             <li class="mt-3"><strong>📏 Layout and typesetting:</strong> Organizing content in a clear and attractive way, optimizing readability and visual flow.</li>
@@ -166,14 +169,107 @@ import HandClick from "../icons/HandClick.astro";
           <h3
           class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 dark:text-[#fafaf6]"
         >
-          <Bifcase class="size-6" />Featured projects
+          <Bifcase class="size-6 text-[#22282e]" />Featured projects
         </h3>
-          <ul class=" text-[#111316] dark:text-gray-300">
-            <li class="mt-3"><strong>El Otro Derecho 62:</strong> Cover and interior design, maintaining consistency with the collection.</li>
-            <li class="mt-3"><strong>Collection redesigns: </strong> Updating the visual identity of "El Otro Derecho" and "Textos de Aquí y Ahora."</li>
-            <li class="mt-3"><strong>Collaborations:</strong> Design of booklets, academic journals, and other materials for the JEP and various NGOs.</li>
+          <ul class=" text-[#22282e] dark:text-gray-300">
+            <li class="mt-3"><strong>📕 El Otro Derecho 62:</strong> Cover and interior design, maintaining consistency with the collection.</li>
+            <li class="mt-3"><strong>🪄 Collection redesigns: </strong> Updating the visual identity of "El Otro Derecho" and "Textos de Aquí y Ahora."</li>
+            <li class="mt-3"><strong>🤝 Collaborations:</strong> Design of booklets, academic journals, and other materials for the JEP and various NGOs.</li>
           </ul>
         </div>
+
+
+      </section>
+
+      <section class="grid grid-cols-6 mt-4">
+        <article class="bg-[#a3cda1] dark:bg-gray-800 p-6 rounded-lg shadow-sm col-start-2 col-span-4">
+          <h3
+          class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 text-[#293329] dark:text-[#fafaf6]"
+        >
+          <Collage class="size-6 " />Book cover design structure
+        </h3>
+          <ul class="text-[#293329] dark:text-gray-300">
+            <li>
+              📝 Text analysis, genre, audience, and client meeting.
+            </li>
+            <li class="mt-3">
+              ✏️ Create sketches and mood boards to explore visual concepts.
+            </li>
+            <li class="mt-3">
+             💬 Select typography and page format.
+            </li>
+            <li class="mt-3">
+              🎨 Experiment with compositions and color palettes.
+            </li>
+            <li class="mt-3">
+             💻 Present options to the client and make revisions.
+            </li>
+            <li class="mt-3">
+             🖨️ Prepare final files for printing.
+            </li>
+          </ul>
+        </article>
+       
+      </section>
+      <section>
+        <Title icon={Start} text="Featured book covers" />
+        <Gallery 
+images={[
+   {
+  src: "/Editorial-Desing-Cover (1).webp",
+  alt: "Editorial",
+  width: 480,
+  height: 480,
+},
+{
+  src: "/Editorial-Desing-Cover (8).webp",
+  alt: "Editorial 2",
+  width: 480,
+  height: 480,
+},
+{
+  src: "/Editorial-Desing-Cover (2).webp",
+  alt: "Editorial 3",
+  width: 480,
+  height: 480,
+},
+{
+  src: "/Editorial-Desing-Cover (3).webp",
+  alt: "Editorial 4",
+  width: 480,
+  height: 480,
+},
+{
+  src: "/Editorial-Desing-Cover (4).webp",
+  alt: "Editorial 5",
+  width: 480,
+  height: 480,
+},
+{
+  src: "/Editorial-Desing-Cover (5).webp",
+  alt: "Editorial 7",
+  width: 480,
+  height: 480,
+},
+{
+  src: "/Editorial-Desing-Cover (6).webp",
+  alt: "Editorial 7",
+  width: 480,
+  height: 480,
+},
+{
+  src: "/Editorial-Desing-Cover (7).webp",
+  alt: "Editorial 8",
+  width: 480,
+  height: 480,
+},
+
+
+
+
+]}
+columns={2}
+/>
 
       </section>
     </SectionContainer>
