@@ -12,12 +12,13 @@ import { Image } from "astro:assets";
 import ProjectSpecs from "../components/ProjectSpecs.astro";
 import Wand from "../icons/Wand.astro";
 import Hammer from "../icons/Hammer.astro";
-import FigmaEmbed from "../components/FigmaEmbed.astro";
 import UserIcon from "../icons/User.astro";
 import ImageGallery from "../components/ImageGallery.astro";
 import Pencil from "../icons/Pencil.astro";
 import Bulb from "../icons/Bulb.astro";
 import ChartDots from "../icons/ChartDots.astro";
+import ColorBox from '../components/ColorBox.astro';
+
 
 const images = [
   {
@@ -332,51 +333,11 @@ const SECOND_IMAGE = {
           </p>
         </div>
         <section class="grid grid-cols-2 sm:grid-cols-5 justify-items-center rounded-lg bg-[#fffdf3] dark:bg-[#22282e] shadow-sm mt-6 py-6">
-          <span class="flex flex-col items-center sm:col-span-1">
-            <div class="bg-[#454C73] w-24 h-24 rounded-lg mt-4"></div>
-            <p class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fffdf3] mt-4">
-              Primary
-            </p>
-            <p class="text-center text-sm font-normal dark:text-gray-200">
-              Hex #454C73
-            </p>
-          </span>
-          <span class="flex flex-col items-center">
-            <div class="bg-[#3B82F6] w-24 h-24 rounded-lg mt-4"></div>
-            <p class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fffdf3] mt-4">
-              Secondary
-            </p>
-            <p class="text-center text-sm font-normal dark:text-gray-200">
-              Hex #3B82F6
-            </p>
-          </span>
-          <span class="flex flex-col items-center">
-            <div class="bg-[#497CBF] w-24 h-24 rounded-lg mt-4"></div>
-            <p class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fffdf3] mt-4">
-              Tertiary
-            </p>
-            <p class="text-center text-sm font-normal dark:text-gray-200">
-              Hex #497CBF
-            </p>
-          </span>
-          <span class="flex flex-col items-center">
-            <div class="bg-[#454C73] w-24 h-24 rounded-lg mt-4"></div>
-            <p class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fffdf3] mt-4">
-              Tertiary 2
-            </p>
-            <p class="text-center text-sm font-normal dark:text-gray-200">
-              Hex #454C73
-            </p>
-          </span>
-          <span class="flex flex-col items-center">
-            <div class="bg-[#BFAD75] w-24 h-24 rounded-lg mt-4"></div>
-            <p class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fffdf3] mt-4">
-              Accent
-            </p>
-            <p class="text-center text-sm font-normal dark:text-gray-200">
-              Hex #BFAD75
-            </p>
-          </span>
+          <ColorBox color="#454C73" label="Primary" hex="#454C73" />
+          <ColorBox color="#3B82F6" label="Secondary" hex="#3B82F6" />
+          <ColorBox color="#497CBF" label="Tertiary" hex="#497CBF" />
+          <ColorBox color="#454C73" label="Tertiary 2" hex="#454C73" />
+          <ColorBox color="#BFAD75" label="Accent" hex="#BFAD75" />
         </section>
         <section class="grid grid-cols-1 sm:grid-cols-6 mt-6">
           <h4 class="text-xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] col-span-1">

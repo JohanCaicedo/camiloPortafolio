@@ -3,7 +3,17 @@ import SectionContainer from "../components/SectionContainer.astro";
 import Layout from "../layouts/Layout.astro";
 import ProjectSection from "../components/ProjectSection.astro";
 import Badge from "../components/Badge.astro";
+import ProjectSpecs from "../components/ProjectSpecs.astro";
+import Title from "../components/Title.astro";
 import CTA from "../components/CTA.astro";
+import Wand from "../icons/Wand.astro";
+import Palette from "../icons/Palette.astro";
+import Sparkles from "../icons/Sparkles.astro";
+import { Image } from "astro:assets";
+import ColorBox from '../components/ColorBox.astro';
+import ImageGallery from '../components/ImageGallery.astro';
+
+
 ---
 
 <Layout
@@ -39,7 +49,7 @@ import CTA from "../components/CTA.astro";
           darkBgColor="dark:bg-[#ffbd79]"
           darkTextColor="dark:text-[#5e332c]"
         />
-        
+
         <Badge
           content="Theory of color"
           bgColor="bg-[#584b29]"
@@ -97,12 +107,19 @@ import CTA from "../components/CTA.astro";
             American countries, it has focused on Colombia since 1988.
           </p>
         </div>
-        
+      </section>
 
-       
+      <section>
+        <ProjectSpecs
+          rol="Project Lead"
+          team="Stand alone"
+          duration="One month"
+          tools="Illustrator"
+          time="Duration"
+        />
       </section>
       <section class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
-        <div class="col-span-1 md:col-span-1"> 
+        <div class="col-span-1 md:col-span-1">
           <img
             width="572"
             height="572"
@@ -111,11 +128,13 @@ import CTA from "../components/CTA.astro";
             src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-2024-Imagotipo.webp?alt=media&token=a7a94b92-64e4-4c67-80bb-adc6aa4b21c8"
           />
         </div>
-        <div class="col-span-1 md:col-span-1"> 
-          <h4 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6">
+        <div class="col-span-1 md:col-span-1 place-content-center">
+          <h4
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
+          >
             Context
           </h4>
-          <p class="dark:text-gray-200">
+          <p class="dark:text-gray-200 ">
             ILSA, a well-established NGO in Latin America, sought to refresh its
             visual identity to better reflect its mission and values. The
             organization has experienced significant growth in its reach and
@@ -123,9 +142,8 @@ import CTA from "../components/CTA.astro";
             commitment to social and legal development in the region.
           </p>
         </div>
-        
-        
-        <div> 
+
+        <div>
           <h4
             class="text-lg md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
           >
@@ -139,7 +157,7 @@ import CTA from "../components/CTA.astro";
             define the organization.
           </p>
         </div>
-      
+
         <div>
           <h4
             class="text-lg md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
@@ -157,8 +175,139 @@ import CTA from "../components/CTA.astro";
         </div>
       </section>
       <section>
-        
+        <Title icon={Wand} text="Logo design" />
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="bg-[#efefef] flex items-center justify-center p-32 h-96 rounded-lg"
+          >
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA%20Logo%20Azul-12.svg?alt=media&token=37c8c193-7c27-4f38-ac70-1852d5cc7153"
+              alt="ILSA Logo blue"
+              width="600"
+              height="600"
+            />
+          </div>
+          <div
+            class="bg-[#4e7cce] flex items-center justify-center h-96 p-8 text-[#efefef] rounded-lg"
+          >
+            <p>
+              The logo has been redesigned from the existing one, creating a new
+              unique isotype that seeks to distinguish the institution in the
+              sector. This new isotype, a stylized world map, incorporates the
+              concept of growth with a germinating plant, representing ILSA's
+              historical work. Additionally, the ILSA acronym has been updated,
+              establishing design guidelines for its creation.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div
+            class="bg-[#efefef] h-96 p-8 text-[#3d3d3d] rounded-lg place-content-center"
+          >
+            <h5 class="text-lg font-bold">World Map</h5>
+            <p>
+              The design of the world map is based on simplicity, legibility,
+              and uniqueness. The golden ratio was used as the foundation for
+              its composition, ensuring the harmony of this graphic element.
+            </p>
+            <p class="mt-2 text-sm">
+              The maximum size of the world map served as a module to establish
+              the proportions of the other graphic elements.
+            </p>
+          </div>
+
+          <div
+            class="bg-[#4e7cce] flex items-center justify-center p-32 h-96 rounded-lg"
+          >
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA-Favicon-Blanco-16.svg?alt=media&token=4de42555-f478-4e00-a02c-8caf81746295"
+              alt="ILSA World Map"
+              width="150"
+              height="150"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div
+            class="bg-[#4e7cce] h-96 p-8 text-[#efefef] rounded-lg place-content-center"
+          >
+            <h5 class="text-lg font-bold">Acronym and type</h5>
+            <p>
+              In restructuring the ILSA acronym, the goal was to harmonize the
+              shape of the letters. Design guidelines were established, and
+              issues with kerning and font weight were resolved, bringing
+              cohesion to the two elements of the logo.
+            </p>
+          </div>
+
+          <div
+            class="bg-[#efefef] flex items-center justify-center p-32 h-96 rounded-lg"
+          >
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA-Type.svg?alt=media&token=abd052d3-29c2-44b7-9ebb-846fcb543d60"
+              alt="ILSA Logo Acronym"
+              width="250"
+              height="250"
+            />
+          </div>
+        </div>
       </section>
+      <Title icon={Palette} text="Color palette" />
+      <section class="grid grid-cols-2 sm:grid-cols-5 justify-items-center rounded-lg bg-[#fffdf3] dark:bg-[#22282e] shadow-sm mt-6 py-6">
+        <ColorBox color="#4e7cce" label="Lawyer" hex="#4e7cce" />
+        <ColorBox color="#686868" label="Monochrome" hex="#686868"/>
+        <ColorBox color="#efefef" label="Negative" hex="#efefef" />
+        <ColorBox color="#5e3b69" label="Women" hex="#5e3b69" />
+        <ColorBox color="#af9cb5" label="Women 2" hex="#af9cb5" />
+      </section>
+      <section>
+        <h3
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
+        >
+          <Sparkles class="size-6" />
+          Use cases
+        </h3>
+        
+        <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
+
+          <ImageGallery
+            images={[
+              {
+                src: "/Use Case (2).webp",
+                alt: "Use Cases 1",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (1).webp",
+                alt: "Use Cases 2",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (3).webp",
+                alt: "Use Cases 3",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (4).webp",
+                alt: "Use Cases 4",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (5).webp",
+                alt: "Use Cases 5",
+                width: 480,
+                height: 480,
+              },
+            ]}
+            columns={3}
+          />
+        </div>
+      </section>
+      
     </SectionContainer>
   </main>
 </Layout>

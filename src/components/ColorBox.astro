@@ -1,0 +1,19 @@
+---
+// ColorBox.astro
+export interface Props {
+  color: string;
+  label: string;
+  hex: string;
+}
+
+const { color, label, hex } = Astro.props;
+---
+<span class="flex flex-col items-center sm:col-span-1">
+  <div class="w-24 h-24 rounded-lg mt-4" style={`background-color: ${color};`}></div>
+  <p class="text-center text-lg font-semibold text-[#1e1e1e] dark:text-[#fffdf3] mt-4">
+    {label}
+  </p>
+  <p class="text-center text-sm font-normal dark:text-gray-200">
+    Hex {hex}
+  </p>
+</span>

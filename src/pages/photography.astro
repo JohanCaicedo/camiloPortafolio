@@ -6,8 +6,6 @@ import ImageGallery from "../components/ImageGallery.astro";
 import Badge from "../components/Badge.astro";
 import TargetArrow from "../icons/TargetArrow.astro";
 import Bifcase from "../icons/Bifcase.astro";
-
-
 ---
 
 <Layout
@@ -76,10 +74,12 @@ import Bifcase from "../icons/Bifcase.astro";
         <TargetArrow class="size-5 md:size-6" />
         Focus and Applications
       </h3>
-    
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <span>
-          <p class="bg-[#f3cf59] text-[#161208] p-4 md:p-6 rounded-lg shadow-md text-sm md:text-base">
+          <p
+            class="bg-[#f3cf59] text-[#161208] p-4 md:p-6 rounded-lg shadow-md text-sm md:text-base"
+          >
             My photographic approach focuses on recording projects and creating
             images that complement my design work. I use photography to:
           </p>
@@ -105,9 +105,13 @@ import Bifcase from "../icons/Bifcase.astro";
             </li>
           </ul>
         </span>
-        <span class="bg-[#97acc6] p-4 md:p-6 rounded-lg shadow-md text-[#22282e] flex flex-col justify-center h-full">
-          <h3 class="text-xl md:text-2xl font-semibold self-start mb-2 md:mb-4">Technical Skills</h3> 
-          <ul class="font-semibold space-y-1 md:space-y-2 text-sm md:text-base"> 
+        <span
+          class="bg-[#97acc6] p-4 md:p-6 rounded-lg shadow-md text-[#22282e] flex flex-col justify-center h-full"
+        >
+          <h3 class="text-xl md:text-2xl font-semibold self-start mb-2 md:mb-4">
+            Technical Skills
+          </h3>
+          <ul class="font-semibold space-y-1 md:space-y-2 text-sm md:text-base">
             <li>💡 Mastery of composition and lighting techniques.</li>
             <li>🌈 Excellent color management.</li>
             <li>
@@ -124,163 +128,162 @@ import Bifcase from "../icons/Bifcase.astro";
     </section>
     <section>
       <h3
-      class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
-    >
-      <Bifcase class="size-6" />
-      Personal showcase
-    </h3>
-    <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
-    <h4 class="text-lg font-semibold">✨ Portrait, nature and landscapaes  </h4>
-    <p class=" mt-4 mb-4 text-pretty ml-7 ">Selected photographs</p>
-    <ImageGallery 
-images={[
-   {
-  src: "/Portrait (1).webp",
-  alt: "Photo 1",
-  width: 320,
-  height: 480,
-},
-{
-  src: "/Portrait (2).webp",
-  alt: "Photo 2",
-  width: 320,
-  height: 480,
-},
+        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
+      >
+        <Bifcase class="size-6" />
+        Personal showcase
+      </h3>
+      <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
+        <h4 class="text-lg font-semibold">
+          ✨ Portrait, nature and landscapaes
+        </h4>
+        <p class="mt-4 mb-4 text-pretty ml-7">Selected photographs</p>
+        <ImageGallery
+          images={[
+            {
+              src: "/Portrait (1).webp",
+              alt: "Photo 1",
+              width: 320,
+              height: 480,
+            },
+            {
+              src: "/Portrait (2).webp",
+              alt: "Photo 2",
+              width: 320,
+              height: 480,
+            },
 
-
-{
-  src: "/Portrait (5).webp",
-  alt: "Photo 1",
-  width: 320,
-  height: 480,
-},
-{
-  src: "/Ñoquito-Portrait.webp",
-  alt: "Photo 5",
-  width: 320,
-  height: 480,
-},
-{
-  src: "/Nature.webp",
-  alt: "Photo 5",
-  width: 320,
-  height: 480,
-},
-{
-  src: "/Nature 2.webp",
-  alt: "Photo 5",
-  width: 320,
-  height: 480,
-},
-{
-  src: "/Nature 3.webp",
-  alt: "Photo 5",
-  width: 320,
-  height: 480,
-},
-{
-  src: "/Portrait (11).webp",
-  alt: "Photo 5",
-  width: 320,
-  height: 480,
-},
-
-]}
-columns={3}
-/>
-    
-
-</div>
+            {
+              src: "/Portrait (5).webp",
+              alt: "Photo 1",
+              width: 320,
+              height: 480,
+            },
+            {
+              src: "/Ñoquito-Portrait.webp",
+              alt: "Photo 5",
+              width: 320,
+              height: 480,
+            },
+            {
+              src: "/Nature.webp",
+              alt: "Photo 5",
+              width: 320,
+              height: 480,
+            },
+            {
+              src: "/Nature 2.webp",
+              alt: "Photo 5",
+              width: 320,
+              height: 480,
+            },
+            {
+              src: "/Nature 3.webp",
+              alt: "Photo 5",
+              width: 320,
+              height: 480,
+            },
+            {
+              src: "/Portrait (11).webp",
+              alt: "Photo 5",
+              width: 320,
+              height: 480,
+            },
+          ]}
+          columns={3}
+        />
+      </div>
     </section>
 
     <section>
       <h3
-      class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
-    >
-      <Bifcase class="size-6" />
-      Project Examples
-    </h3>
-    <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
-    <h4 class="text-lg font-semibold">🌤️ Voices in Movement </h4>
-    <p class=" mt-4 mb-4 text-pretty ">Photographic coverage of the "Voces en Movimiento" (Voices in Movement) event in Necoclí, Antioquia (February 13, 2024). The objective was to document the meetings of this women's collective, which seeks to empower women in the region through education and dialogue on gender issues.</p>
-    <ImageGallery 
-images={[
-   {
-  src: "/Necoclí 2024 (1).webp",
-  alt: "Photo 1",
-  width: 400,
-  height: 400,
-},
+        class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
+      >
+        <Bifcase class="size-6" />
+        Project Examples
+      </h3>
+      <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
+        <h4 class="text-lg font-semibold">🌤️ Voices in Movement</h4>
+        <p class="mt-4 mb-4 text-pretty">
+          Photographic coverage of the "Voces en Movimiento" (Voices in
+          Movement) event in Necoclí, Antioquia (February 13, 2024). The
+          objective was to document the meetings of this women's collective,
+          which seeks to empower women in the region through education and
+          dialogue on gender issues.
+        </p>
+        <ImageGallery
+          images={[
+            {
+              src: "/Necoclí 2024 (1).webp",
+              alt: "Photo 1",
+              width: 400,
+              height: 400,
+            },
 
-{
-  src: "/Necoclí 2024 (3).webp",
-  alt: "Photo 3",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (5).webp",
-  alt: "Photo 5",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (6).webp",
-  alt: "Photo 6",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (7).webp",
-  alt: "Photo 1",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (8).webp",
-  alt: "Photo 8",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (9).webp",
-  alt: "Photo 8",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (10).webp",
-  alt: "Photo 10",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (11).webp",
-  alt: "Photo 11",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (12).webp",
-  alt: "Photo 12",
-  width: 400,
-  height: 400,
-},
-{
-  src: "/Necoclí 2024 (13).webp",
-  alt: "Photo 13",
-  width: 400,
-  height: 400,
-},
-  
-]}
-columns={4}
-/>
-
-</div>
+            {
+              src: "/Necoclí 2024 (3).webp",
+              alt: "Photo 3",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (5).webp",
+              alt: "Photo 5",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (6).webp",
+              alt: "Photo 6",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (7).webp",
+              alt: "Photo 1",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (8).webp",
+              alt: "Photo 8",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (9).webp",
+              alt: "Photo 8",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (10).webp",
+              alt: "Photo 10",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (11).webp",
+              alt: "Photo 11",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (12).webp",
+              alt: "Photo 12",
+              width: 400,
+              height: 400,
+            },
+            {
+              src: "/Necoclí 2024 (13).webp",
+              alt: "Photo 13",
+              width: 400,
+              height: 400,
+            },
+          ]}
+          columns={4}
+        />
+      </div>
     </section>
   </SectionContainer>
 </Layout>
-
-
-
