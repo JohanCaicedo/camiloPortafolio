@@ -28,24 +28,26 @@ const gridClass = {
 
 <div class={`grid gap-4 ${gridClass}`}>
   {images.flat().map((image) => (
-    <div class="relative overflow-hidden hover:scale-105 duration-300 transition-transform ease-in-out" style={`padding-top: ${(image.height && image.width) ? (image.height / image.width * 100) : 100}%`}>
-      {typeof image.src === 'string' ? (
-        <img 
-          src={image.src} 
-          alt={image.alt} 
-          width={image.width} 
-          height={image.height}
-          class="absolute top-0 left-0 w-full h-full object-contain rounded-lg "
-        />
-      ) : (
-        <Image 
-          src={image.src} 
-          alt={image.alt} 
-          width={image.width} 
-          height={image.height}
-          class="absolute top-0 left-0 w-full h-full object-contain rounded-lg"
-        />
-      )}
-    </div>
+    <a href={typeof image.src === 'string' ? image.src : image.src.src} target="_blank" rel="noopener noreferrer" class="block">
+      <div class="relative overflow-hidden hover:scale-105 duration-300 transition-transform ease-in-out" style={`padding-top: ${(image.height && image.width) ? (image.height / image.width * 100) : 100}%`}>
+        {typeof image.src === 'string' ? (
+          <img 
+            src={image.src} 
+            alt={image.alt} 
+            width={image.width} 
+            height={image.height}
+            class="absolute top-0 left-0 w-full h-full object-contain rounded-lg"
+          />
+        ) : (
+          <Image 
+            src={image.src} 
+            alt={image.alt} 
+            width={image.width} 
+            height={image.height}
+            class="absolute top-0 left-0 w-full h-full object-contain rounded-lg"
+          />
+        )}
+      </div>
+    </a>
   ))}
 </div>
