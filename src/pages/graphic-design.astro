@@ -11,8 +11,10 @@ import Palette from "../icons/Palette.astro";
 import Sparkles from "../icons/Sparkles.astro";
 import { Image } from "astro:assets";
 import ColorBox from '../components/ColorBox.astro';
+import Illustration from "./Illustration.astro";
 import ImageGallery from '../components/ImageGallery.astro';
-
+import SectionContainer2 from "../components/SectionContainer2.astro";
+import GraphicPieces from "./GraphicPieces.astro"
 
 ---
 
@@ -309,5 +311,10 @@ import ImageGallery from '../components/ImageGallery.astro';
       </section>
       
     </SectionContainer>
+    <SectionContainer class="mt-10">
+      <GraphicPieces class="mb-10"/>
+      <Illustration class="mt-10"/>
+    </SectionContainer>
+
   </main>
 </Layout>

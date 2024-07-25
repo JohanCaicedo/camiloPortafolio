@@ -1,0 +1,211 @@
+---
+import ProjectSection from "../components/ProjectSection.astro"
+import ImageGallery from "../components/ImageGallery.astro"
+import Badge from "../components/Badge.astro"
+import Bifcase from "../icons/Bifcase.astro"
+---
+<section>
+<h1
+        class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fffdf3] mb-4"
+      >
+        portfolio/graphic-pieces
+      </h1>
+      <ProjectSection
+        title="Graphic Pieces"
+        image="/GraphicPieces.webp"
+        link="https://paperfoxstudio.site/grapic-design"
+      />
+      <nav class="flex gap-2 mt-4 justify-center mb-4">
+        <Badge
+          content="Composition 🖼️"
+          bgColor="bg-[#e56f45]"
+          textColor="text-[#170a08]"
+          darkBgColor="dark:bg-[#0c1007]"
+          darkTextColor="dark:text-[#81ab43]"
+        />
+        <Badge
+        content="Creativity 💡"
+        bgColor="bg-[#f3cf59]"
+        textColor="text-[#161208]"
+        darkBgColor="dark:bg-[#0c1007]"
+        darkTextColor="dark:text-[#81ab43]"
+      />
+      <Badge
+      content="Color 🌈"
+      bgColor="bg-[#4e5e37]"
+      textColor="text-[#efefef]"
+      darkBgColor="dark:bg-[#0c1007]"
+      darkTextColor="dark:text-[#81ab43]"
+    />
+      <Badge
+      content="Photoshop 💻"
+      bgColor="bg-[#001e36]"
+      textColor="text-[#efefef]"
+      darkBgColor="dark:bg-[#0c1007]"
+      darkTextColor="dark:text-[#81ab43]"
+    />
+    <Badge
+    content="Illustrator 📐"
+    bgColor="bg-[#ebbbaa]"
+    textColor="text-[#161210]"
+    darkBgColor="dark:bg-[#0c1007]"
+    darkTextColor="dark:text-[#81ab43]"
+  />
+        
+      </nav>
+      <section>
+        <h3
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
+        >
+          <Bifcase class="size-6" />
+          Project Examples
+        </h3>
+     <div class="bg-[#fffdf3] p-4 mt-6 mb-6 rounded-lg shadow-lg">
+           <h4 class="text-lg font-semibold mb-3">🌤️ Voices in Movement Postcards ✉️</h4>
+           <!--  <p class="mt-4 mb-4 text-pretty">
+            Photographic coverage of the "Voces en Movimiento" (Voices in
+            Movement) event in Necoclí, Antioquia (February 13, 2024). The
+            objective was to document the meetings of this women's collective,
+            which seeks to empower women in the region through education and
+            dialogue on gender issues.
+          </p> -->
+          <ImageGallery
+            images={[
+              {
+                src: "/Postales_1.webp",
+                alt: "Postcards 1",
+                width: 640,
+                height: 360,
+              },
+              {
+                src: "/Postales_2.webp",
+                alt: "Postcards 2",
+                width: 640,
+                height: 360,
+              },
+              {
+                src: "/Postales_3.webp",
+                alt: "Postcards 3",
+                width: 640,
+                height: 360,
+              },
+              {
+                src: "/Postales_4.webp",
+                alt: "Postcards 4",
+                width: 640,
+                height: 360,
+              },
+              {
+                src: "/Postales_5-1.webp",
+                alt: "Postcards 5",
+                width: 640,
+                height: 360,
+              },
+              {
+                src: "/Postales_6.webp",
+                alt: "Postcards 6",
+                width: 640,
+                height: 360,
+              },
+              {
+                src: "/Postales_7.webp",
+                alt: "Postcards 7",
+                width: 640,
+                height: 360,
+              },
+            ]}
+            columns={2}
+          />
+        </div>
+        <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
+            <h4 class="text-lg font-semibold mb-3"> 🌐 Web Banner</h4>
+            <!--  <p class="mt-4 mb-4 text-pretty">
+             Photographic coverage of the "Voces en Movimiento" (Voices in
+             Movement) event in Necoclí, Antioquia (February 13, 2024). The
+             objective was to document the meetings of this women's collective,
+             which seeks to empower women in the region through education and
+             dialogue on gender issues.
+           </p> -->
+           <ImageGallery
+             images={[
+               {
+                 src: "/Web-Banner (4).webp",
+                 alt: "Web Banner 1",
+                 width: 605,
+                 height: 266,
+               },
+               {
+                 src: "/Web-Banner (2).webp",
+                 alt: "Web Banner 2",
+                 width: 605,
+                 height: 266,
+               },
+
+               {
+                 src: "/Web-Banner (1).webp",
+                 alt: "Web Banner 3",
+                 width: 359,
+                 height: 640,
+               },
+               {
+                 src: "Web banner.webp",
+                 alt: "Web Banner 4",
+                 width: 359,
+                 height: 640,
+               },
+    
+             ]}
+             columns={2}
+           />
+         </div>
+
+         <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
+            <h4 class="text-lg font-semibold mb-3"> 🗒️ ACIJ Pices</h4>
+            <!--  <p class="mt-4 mb-4 text-pretty">
+             Photographic coverage of the "Voces en Movimiento" (Voices in
+             Movement) event in Necoclí, Antioquia (February 13, 2024). The
+             objective was to document the meetings of this women's collective,
+             which seeks to empower women in the region through education and
+             dialogue on gender issues.
+           </p> -->
+           <ImageGallery
+             images={[
+               {
+                 src: "/Publicaciones_1.webp",
+                 alt: "ACIJ Pices 1",
+                 width: 640,
+                 height: 640,
+               },
+               {
+                 src: "/Publicaciones_2.webp",
+                 alt: "ACIJ Pices 2",
+                 width: 640,
+                 height: 640,
+               },
+               {
+                 src: "/Publicaciones_3.webp",
+                 alt: "ACIJ Pices 3",
+                 width: 640,
+                 height: 640,
+               },
+               {
+                 src: "/Publicaciones_4.webp",
+                 alt: "ACIJ Pices 4",
+                 width: 640,
+                 height: 640,
+               },
+               {
+                 src: "/Publicaciones_5.webp",
+                 alt: "ACIJ Pices 5",
+                 width: 640,
+                 height: 640,
+               },
+
+    
+             ]}
+             columns={3}
+           />
+         </div>
+      </section>
+
+    </section>
