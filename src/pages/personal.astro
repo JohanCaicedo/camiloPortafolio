@@ -111,18 +111,17 @@ const poster2 = "/Nile-Style.webp";
           rol="Project Lead"
           team="Viviana Tovar"
           duration="Working on it"
-          tools="Figma, Illustrator, Photoshop, After Effects"
+          tools="Figma, Illustrator, Photoshop, Blender, Autodesk Maya, Substance Painter"
           time="Duration"
           link="https://www.instagram.com/quas.art/"
         />
       </section>
       <section class="mt-4">
-        <h3
-          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
-        >
-          <ChartDots class="size-6" /> Flowchart of the Paper Fox Studio creation
-          process
-        </h3>
+              <h3
+              class="flex gap-4 items-center md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-4"
+            >
+              <ChartDots class="size-6" /> Flowchart of the Paper Fox Studio creation process
+            </h3>
 
         <p class="mb-6">
           The flowchart illustrates my plan to create and grow Paper Fox Studio.
@@ -147,7 +146,7 @@ const poster2 = "/Nile-Style.webp";
               comprehensive business plan that includes
             </p>
           </div>
-          <div class="font-semibold bg-[#fffdf3] p-6 rounded-lg shadow-md">
+          <div class="font-semibold bg-[#fffdf3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
             <ul>
               <li>🦊 Market research</li>
 
@@ -162,13 +161,14 @@ const poster2 = "/Nile-Style.webp";
       </section>
 
       <section>
+        <section>
         <h3
           class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-2 mt-6 dark:text-[#fafaf6]"
         >
           <Fox class="size-6" /> Branding and Visual Identity
         </h3>
-        <section class="grid grid-cols-2 gap-6">
-          <div class="col-span-1">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
             <h3
               class="flex gap-4 items-center md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-4"
             >
@@ -195,9 +195,19 @@ const poster2 = "/Nile-Style.webp";
                 recognizably integrated into the logo, reinforcing the brand's identity.
               </li>
             </ul>
+            <!-- En móvil, el siguiente bloque se muestra debajo de la lista, en escritorio a la derecha -->
+            <div class="block md:hidden mt-6">
+              <p class="bg-[#fffdf3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+                The brand-building process for Paper Fox Studio was based on
+                creating a strong and cohesive visual identity, centered around
+                the main character, Nile the Fennec fox. His illustration style,
+                evoking warmth and curiosity, became the aesthetic foundation of
+                the studio.
+              </p>
+            </div>
           </div>
-          <div class="col-span-1 m-auto">
-            <p class="bg-[#fffdf3] p-8 rounded-lg shadow-md">
+          <div class="hidden md:flex items-center">
+            <p class="bg-[#fffdf3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
               The brand-building process for Paper Fox Studio was based on
               creating a strong and cohesive visual identity, centered around
               the main character, Nile the Fennec fox. His illustration style,
@@ -206,21 +216,22 @@ const poster2 = "/Nile-Style.webp";
             </p>
           </div>
         </section>
-        <div class="grid grid-cols-6">
-          <span class="col-start-2 col-span-4 mt-8">
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-6">
+          <div class="mt-8 md:col-start-2 md:col-span-4">
             <Image
               src="/Personal-MoodBoard.webp"
               alt="Logo MoodBoard"
-              width="1080"
-              height="540"
-              class="shadow-md rounded-lg"
+              width={1080}
+              height={540}
+              class="shadow-md rounded-lg w-full h-auto max-w-full"
             />
             <p class="text-sm text-right text-slate-600 mt-4">
               Visual identity and character MoodBoard
             </p>
-          </span>
+          </div>
         </div>
-        <section class="grid grid-cols-2 gap-6">
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <h3
             class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mt-6 dark:text-[#fafaf6]"
           >
@@ -229,7 +240,7 @@ const poster2 = "/Nile-Style.webp";
 
           <div class="col-span-1"></div>
           <div class="col-span-1 m-auto">
-            <p class="bg-[#fafaf6] p-8 rounded-lg shadow-md">
+            <p class="bg-[#fafaf6] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
               The result is a logo that is not only visually appealing but also
               effectively communicates the values and personality of Paper Fox
               Studio. It is a symbol that invites the audience to explore the
@@ -262,14 +273,14 @@ const poster2 = "/Nile-Style.webp";
           >
             <Palette class="size-6" /> Logo construction
           </h3>
-          <div class="grid grid-cols-2">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="col-span-1">
               <Image
-                width="500"
-                height="500"
                 alt="Paper Fox Studio V1"
                 src="/PaperFoxStudioV1.webp"
-                class="rounded-lg shadow-md"
+                width={500}
+                height={500}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
               />
               <p class="text-sm text-right text-slate-600 mt-4 mr-7">
                 Paper Fox Studio Logo V1
@@ -278,11 +289,9 @@ const poster2 = "/Nile-Style.webp";
             <div class="col-span-1">
               <video
                 controls
-                width="500"
-                height="500"
                 poster={poster}
                 autoplay
-                class="rounded-lg shadow-md"
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
               >
                 <source src={src} type="video/webm" />
                 Tu navegador no soporta la reproducción de video.
@@ -293,14 +302,14 @@ const poster2 = "/Nile-Style.webp";
             </div>
           </div>
 
-          <div class="grid grid-cols-2 mt-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
             <div class="col-span-1">
               <Image
-                width="500"
-                height="500"
                 alt="Paper Fox Studio V1"
                 src="/PaperFoxLogoV2.webp"
-                class="rounded-lg shadow-md"
+                width={500}
+                height={500}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
               />
               <p class="text-sm text-right text-slate-600 mt-4 mr-7">
                 Paper Fox Studio Logo V2 retouched by <a
@@ -311,11 +320,11 @@ const poster2 = "/Nile-Style.webp";
             </div>
             <div class="col-span-1">
               <Image
-                width="500"
-                height="500"
                 alt="Paper Fox Studio V1"
                 src="/PFS-SafeAreas.webp"
-                class="rounded-lg shadow-md"
+                width={500}
+                height={500}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
               />
 
               <p class="text-sm text-right text-slate-600 mt-4 mr-7">
@@ -332,20 +341,18 @@ const poster2 = "/Nile-Style.webp";
             <Sparkles class="size-6" />
             Style explore
           </h3>
-          <p class="bg-[#fafaf6] p-8 font-medium rounded-lg shadow-md">
+          <p class="bg-[#fafaf6] p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md">
             These videos showcase my skills in 2D animation and digital
             illustration. I love bringing characters to life and telling visual
             stories.
           </p>
 
-          <div class="grid grid-cols-2">
-            <span class="col-span-1 mt-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <span class="block w-full mt-6">
               <video
                 controls
-                width="500"
-                height="500"
                 autoplay
-                class="rounded-lg shadow-md"
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
               >
                 <source src={src1} type="video/webm" />
                 Web browser don't suport video
@@ -354,13 +361,11 @@ const poster2 = "/Nile-Style.webp";
                 2D Rigging in After Effects and Duik Angela
               </p>
             </span>
-            <span class="col-span-1 mt-6">
+            <span class="block w-full mt-6">
               <video
                 controls
-                width="500"
-                height="500"
                 poster={poster2}
-                class="rounded-lg shadow-md"
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
               >
                 <source src={src2} type="video/webm" />
                 Web browser don't suport video
@@ -378,7 +383,7 @@ const poster2 = "/Nile-Style.webp";
           >
             <ChartDots class="size-6" /> Launch strategy
           </h3>
-          <div class="grid grid-cols-2 gap-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
             <p class="col-span-1 sm:col-span-1 dark:text-gray-200">
               The construction of the visual identity was created through market
               research aimed at identifying common points and thereby
@@ -398,9 +403,9 @@ const poster2 = "/Nile-Style.webp";
           >
             <ChartDots class="size-6" /> Next Steps
           </h3>
-          <div class="grid grid-cols-5 gap-5">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-5">
             <p
-              class="col-start-2 col-span-3 bg-[#fffdf3] p-8 font-medium rounded-lg shadow-md"
+              class="md:col-start-2 md:col-span-3 bg-[#fffdf3] p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md"
             >
               With the business plan underway, I will focus on creating engaging
               content for Instagram and developing my website.

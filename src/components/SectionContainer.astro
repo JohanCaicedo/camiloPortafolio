@@ -3,7 +3,7 @@ const { class: className,id } = Astro.props;
 
 ---
 
-<section id={id} class={`w-full max-auto xl:w-[1050px] lg:w-[900px] md:w-[900px] ${className}`}>
+<section id={id} class={`w-full max-w-screen-xl mx-auto px-2 sm:px-4 md:px-8 ${className}`}>
   <slot />
 </section>
 

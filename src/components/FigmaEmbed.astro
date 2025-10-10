@@ -2,12 +2,12 @@
 const { src, width, height } = Astro.props;
 ---
 
-<iframe
-  class="m-auto rounded-mb shadow-md"
-  loading="lazy"
-  title="Figma Embed - Web Flowchart"
-  width={width}
-  height={height}
-  src={src}
-  allowfullscreen
-></iframe>
+<div class="w-full">
+  <iframe
+    class="w-full aspect-[16/9] md:aspect-auto md:h-[350px] m-auto rounded-mb shadow-md"
+    loading="lazy"
+    title="Figma Embed - Web Flowchart"
+    src={src}
+    allowfullscreen
+  ></iframe>
+</div>
