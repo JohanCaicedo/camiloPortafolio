@@ -1,53 +1,53 @@
-# Portafolio Profesional de Johan Camilo Caicedo
+# Johan Camilo Caicedo's Professional Portfolio
 
 <div align="center">
   <img src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Foxy-Blink.gif?alt=media&token=6fdef4b7-2f2f-4fbd-94a0-65a59868bfee" alt="Paper Fox Studio Logo" width="150"/>
 </div>
 
 <h1 align="center">
-  ¡Hola! Soy Johan Camilo Caicedo 🦊
+  Hi! I'm Johan Camilo Caicedo 🦊
 </h1>
 
 <p align="center">
-  Bienvenido al repositorio de mi portafolio profesional. Este proyecto es una ventana a mi mundo como diseñador digital y multimedia. Aquí no solo encontrarás el código que da vida a mi sitio, sino también un reflejo de mi pasión por contar historias a través del diseño y la animación.
+  Welcome to my professional portfolio's repository. This project is a window into my world as a digital and multimedia designer. Here, you'll not only find the code that brings my site to life but also a reflection of my passion for telling stories through design and animation.
 </p>
 
 <p align="center">
-  <strong>Visita el sitio en vivo:</strong> <a href="https://paperfoxstudio.site/"><strong>paperfoxstudio.site</strong></a>
+  <strong>Visit the live site:</strong> <a href="https://paperfoxstudio.site/"><strong>paperfoxstudio.site</strong></a>
 </p>
 
 ---
 
-## 🚀 Sobre el Proyecto
+## 🚀 About This Project
 
-Este portafolio es la materialización de mi marca personal, **Paper Fox Studio**, un estudio de animación e ilustración editorial que nace de una profunda pasión por la narrativa visual. El objetivo es inspirar a través de historias únicas y una estética cuidada, donde cada proyecto busca tener "diseño con alma, desarrollo con lógica y animación con pasión".
+This portfolio is the embodiment of my personal brand, **Paper Fox Studio**, an animation and editorial illustration studio born from a deep passion for visual storytelling. The goal is to inspire through unique stories and a carefully crafted aesthetic, where every project aims to have "design with soul, development with logic, and animation with passion."
 
-El protagonista de esta aventura es **Nile, el zorro Fennec**, cuya curiosidad y calidez definen la fundación estética del estudio y me acompañan en cada proyecto.
+The main character of this journey is **Nile, the Fennec fox**, whose curiosity and warmth define the studio's aesthetic foundation and accompany me in every project.
 
-### ✨ Características Principales
+### ✨ Key Features
 
-* **Experiencia Interactiva**: La página principal recibe a los visitantes con una escena 3D interactiva creada con **Spline**, ofreciendo una primera impresión memorable y dinámica.
-* **Diseño Moderno y Adaptable**: Una interfaz limpia construida con **Tailwind CSS**, que incluye un modo claro y oscuro para la comodidad visual del usuario.
-* **Animaciones Fluidas**: Componentes interactivos enriquecidos con **Framer Motion** para crear una experiencia de usuario fluida y atractiva.
-* **Navegación Intuitiva**: Una estructura de secciones bien definida que permite explorar mi trabajo en áreas como Diseño Web, Diseño Editorial, Ilustración y Fotografía.
+* **Interactive Experience**: The homepage greets visitors with an interactive 3D scene created with **Spline**, offering a memorable and dynamic first impression.
+* **Modern and Adaptive Design**: A clean interface built with **Tailwind CSS**, featuring a light and dark mode for user comfort.
+* **Fluid Animations**: Interactive components are enhanced with **Framer Motion** to create a smooth and engaging user experience.
+* **Intuitive Navigation**: A well-defined section structure that allows for easy exploration of my work in areas such as Web Design, Editorial Design, Illustration, and Photography.
 
-### 🛠️ Tecnologías Utilizadas
+### 🛠️ Tech Stack
 
-Este sitio fue construido utilizando un stack de tecnologías modernas enfocado en el rendimiento y la experiencia de desarrollo:
+This site was built using a modern tech stack focused on performance and developer experience:
 
 * **Framework**: [Astro](https://astro.build/)
-* **Librería UI**: [React](https://react.dev/)
-* **Estilos CSS**: [Tailwind CSS](https://tailwindcss.com/)
-* **Animaciones**: [Framer Motion](https://www.framer.com/motion/)
-* **Gráficos 3D**: [Spline](https://spline.design/)
-* **Despliegue**: [Cloudflare Pages](https://pages.cloudflare.com/)
+* **UI Library**: [React](https://react.dev/)
+* **CSS Styling**: [Tailwind CSS](https://tailwindcss.com/)
+* **Animations**: [Framer Motion](https://www.framer.com/motion/)
+* **3D Graphics**: [Spline](https://spline.design/)
+* **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
 
-## 🧑‍💻 Sobre Mí
+## 🧑‍💻 About Me
 
-Soy un diseñador digital y multimedia con 3 años de experiencia, especializado en diseño web, editorial e ilustración. Mi enfoque se centra en liderar proyectos desde la conceptualización hasta la implementación, asegurando resultados de alta calidad que no solo sean estéticamente atractivos, sino también funcionales y efectivos.
+I am a digital and multimedia designer with 3 years of experience, specializing in web, editorial, and illustration design. My focus is on leading projects from conceptualization to implementation, ensuring high-quality results that are not only aesthetically pleasing but also functional and effective.
 
-Me apasiona transformar ideas en realidades visuales que conecten e inspiren. Si quieres conocer más sobre mi trayectoria, puedes ver mi [currículum completo](https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/CV%20Johan%20Caicedo%20-%202024%20-%20Dise%C3%B1ador%20Digital%20y%20Multimedia.pdf?alt=media&token=f2ea16ad-f43c-4679-b6f8-7fc27fffe1e5#navpanes=0).
+I am passionate about transforming ideas into visual realities that connect and inspire. If you want to learn more about my professional journey, you can view my [full resume](https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/CV%20Johan%20Caicedo%20-%202024%20-%20Dise%C3%B1ador%20Digital%20y%20Multimedia.pdf?alt=media&token=f2ea16ad-f43c-4679-b6f8-7fc27fffe1e5#navpanes=0).
 
-## 🙏 Agradecimientos
+## 🙏 Acknowledgements
 
-Un agradecimiento especial a [**Midudev**](https://www.linkedin.com/in/midudev/), cuyo trabajo y conocimiento han sido una gran inspiración en mi camino como desarrollador y en la construcción de este portafolio.
+A special thanks to [**Midudev**](https://www.linkedin.com/in/midudev/), whose work and knowledge have been a great inspiration on my journey as a developer and in the construction of this portfolio.
