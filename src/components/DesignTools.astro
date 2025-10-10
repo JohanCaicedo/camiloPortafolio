@@ -4,21 +4,15 @@ import SkillCard from "../components/SkillCard.astro";
 ---
 
 <section
-  class="bg-[#fffbea] mt-6 gap-4 pl-8 pr-8 pt-2 pb-8 rounded-lg shadow-md overflow-hidden"
+  class="bg-[#fffbea] mt-6 gap-4 pl-8 pr-8 pt-2 pb-8 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border dark:border-gray-700"
 >
   <h3
     class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mt-6 dark:text-[#fafaf6]"
   >
     <Box class="size-6" /> Tools Box
   </h3>
-  <p class="font-semibold mb-6 mt-4">🌟 3D, design and develop</p>
+  <p class="font-semibold mb-6 mt-4 dark:text-[#fafaf6]">🌟 3D, design and develop</p>
   
-  {/* Este div ahora es un carrusel en móvil y una grilla en desktop.
-    - `flex overflow-x-auto`: Activa el modo carrusel con scroll horizontal.
-    - `pb-4 -mb-4`: Un truco para dar espacio al scrollbar sin afectar el layout.
-    - `md:grid md:grid-cols-6`: Vuelve al modo grilla en pantallas medianas y grandes.
-    - `md:overflow-x-visible md:p-0 md:m-0`: Resetea los estilos del carrusel en desktop.
-  */}
   <div class="flex overflow-x-auto gap-4 pb-4 -mb-4 md:grid md:grid-cols-6 md:overflow-x-visible md:p-0 md:m-0">
     <SkillCard
       title="Autdesk 3ds Max"

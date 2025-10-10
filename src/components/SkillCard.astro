@@ -5,15 +5,15 @@ const { title, imageSrc, imageAlt, experienceLevel,titleClass,experienceClass } 
 
 
 <span
-    class="col-span-1 bg-[#fffcf0] p-4 flex flex-col items-center justify-center rounded-lg shadow-md hover:scale-105 transition duration-250 ease-in-out flex-shrink-0 w-36 md:w-auto"
+    class="col-span-1 bg-[#fffcf0] dark:bg-gray-800 dark:border dark:border-gray-700 p-4 flex flex-col items-center justify-center rounded-lg shadow-md hover:scale-105 transition duration-250 ease-in-out flex-shrink-0 w-36 md:w-auto"
 >
-    <h5 class=`font-bold leading-tight text-sm text-center mb-2 ${titleClass}`>{title}</h5> 
+    <h5 class=`font-bold leading-tight text-sm text-center mb-2 ${titleClass} dark:text-[#fafaf6]`>{title}</h5> 
     <Image
         src={imageSrc}
         alt={imageAlt}
         width="80"
         height="80"
     />
-    <h6 class="font-semibold mt-2 text-xs">Experience</h6>
-    <p class=`text-xs ${experienceClass}`>{experienceLevel}</p>
+    <h6 class="font-semibold mt-2 text-xs dark:text-[#fafaf6]">Experience</h6>
+    <p class=`text-xs ${experienceClass} dark:text-[#fafaf6]`>{experienceLevel}</p>
 </span>

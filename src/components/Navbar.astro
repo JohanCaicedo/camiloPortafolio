@@ -3,7 +3,7 @@ import ThemeToggle from "../components/ThemeToggle.jsx";
 import { Image } from "astro:assets";
 import Home from "../icons/Home.astro";
 
-// Importamos las imágenes desde la carpeta `src/assets`
+
 import profileImage from "../assets/Profile-Foto-Camilo.webp";
 import foxGif from "../assets/Foxy-Blink-nav-bar.gif";
 ---
@@ -30,7 +30,7 @@ import foxGif from "../assets/Foxy-Blink-nav-bar.gif";
         <ThemeToggle client:load />
         <button type="button" class="group relative overflow-hidden w-16 h-16" id="user-menu-button-desktop" aria-expanded="false" data-dropdown-toggle="user-dropdown">
           <span class="sr-only">Open user menu</span>
-          {/* --- CAMBIO DE CALIDAD AQUÍ --- */}
+        
           <Image 
             class="rounded-full w-full h-full object-cover opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:scale-110" 
             src={profileImage} 
@@ -54,7 +54,7 @@ import foxGif from "../assets/Foxy-Blink-nav-bar.gif";
       <div class="md:hidden flex items-center justify-start">
         <button type="button" class="group relative overflow-hidden w-16 h-16" id="user-menu-button-mobile" aria-expanded="false" data-dropdown-toggle="user-dropdown">
           <span class="sr-only">Open user menu</span>
-          {/* --- CAMBIO DE CALIDAD AQUÍ --- */}
+   
           <Image 
             class="rounded-full w-full h-full object-cover opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:scale-110" 
             src={profileImage} 
