@@ -1,17 +1,18 @@
 ---
 import Box from "../icons/Box.astro";
 import SkillCard from "../components/SkillCard.astro";
+import ZbrushIcon from "../icons/ZbrushIcon.astro";
 ---
 
 <section
-  class="bg-[#fffbea] mt-6 gap-4 pl-8 pr-8 pt-2 pb-8 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border dark:border-gray-700"
+  class="bg-[#fffbea] mt-6 gap-4 pl-8 pr-8 pt-2 pb-8 rounded-lg shadow-md overflow-hidden dark:bg-[#22282e]"
 >
   <h3
-    class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mt-6 dark:text-[#fafaf6]"
+    class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-[#1d1735] mt-6 dark:text-[#fafaf6]"
   >
     <Box class="size-6" /> Tools Box
   </h3>
-  <p class="font-semibold mb-6 mt-4 dark:text-[#fafaf6]">🌟 3D, design and develop</p>
+  <p class="font-semibold mb-6 mt-4 text-[#1d1735] dark:text-[#fafaf6]">🌟 3D, design and develop</p>
   
   <div class="flex overflow-x-auto gap-4 pb-4 -mb-4 md:grid md:grid-cols-6 md:overflow-x-visible md:p-0 md:m-0">
     <SkillCard
@@ -129,12 +130,12 @@ import SkillCard from "../components/SkillCard.astro";
       experienceClass="text-[#8758f4] font-bold"
       titleClass="mb-7"
     />
-    <SkillCard
-      title="ZBrush"
-      imageSrc="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/SVG%2Fzbrush-svgrepo-com.svg?alt=media&token=73c86879-d288-4be3-990c-f362f0d78ec8"
-      imageAlt="ZBrush"
-      experienceLevel="Medium"
-      titleClass="mb-7"
-    />
+<SkillCard
+  title="ZBrush"
+  experienceLevel="Medium"
+  titleClass="mb-7"
+>
+  <ZbrushIcon slot="icon" />
+    </SkillCard>
   </div>
 </section>
