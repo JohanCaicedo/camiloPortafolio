@@ -3,9 +3,9 @@ import ThemeToggle from "../components/ThemeToggle.jsx";
 import { Image } from "astro:assets";
 import Home from "../icons/Home.astro";
 
-// Importamos las imágenes para que Astro las optimice
-import profileImage from "../../public/Profile-Foto-Camilo.webp";
-import foxGif from "../../public/Foxy-Blink-nav-bar.gif";
+// Importamos las imágenes desde la carpeta `src/assets`
+import profileImage from "../assets/Profile-Foto-Camilo.webp";
+import foxGif from "../assets/Foxy-Blink-nav-bar.gif";
 ---
 
 <div>
@@ -16,7 +16,6 @@ import foxGif from "../../public/Foxy-Blink-nav-bar.gif";
       <div class="hidden md:flex md:order-1 items-center">
         <ul class="flex items-center font-medium space-x-8 rtl:space-x-reverse flex-row bg-transparent">
           <li>
-            {/* --- CORRECCIÓN AQUÍ --- */}
             <a href="/camiloPortfolio/" aria-label="Home" class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent hover:text-blue-700 p-0 dark:text-white md:dark:hover:text-blue-500">
               <Home />
             </a>
@@ -31,8 +30,23 @@ import foxGif from "../../public/Foxy-Blink-nav-bar.gif";
         <ThemeToggle client:load />
         <button type="button" class="group relative overflow-hidden w-16 h-16" id="user-menu-button-desktop" aria-expanded="false" data-dropdown-toggle="user-dropdown">
           <span class="sr-only">Open user menu</span>
-          <img class="rounded-full w-full h-full object-cover opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:scale-110" src={profileImage.src} alt="Camilo Profile">
-          <img class="rounded-full w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110" src={foxGif.src} alt="PaperFoxBlink">
+          {/* --- CAMBIO DE CALIDAD AQUÍ --- */}
+          <Image 
+            class="rounded-full w-full h-full object-cover opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:scale-110" 
+            src={profileImage} 
+            alt="Camilo Profile"
+            width={128}
+            height={128}
+            loading="eager"
+          />
+          <Image 
+            class="rounded-full w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110" 
+            src={foxGif} 
+            alt="PaperFoxBlink"
+            width={128}
+            height={128}
+            loading="eager"
+          />
         </button>
       </div>
       
@@ -40,8 +54,23 @@ import foxGif from "../../public/Foxy-Blink-nav-bar.gif";
       <div class="md:hidden flex items-center justify-start">
         <button type="button" class="group relative overflow-hidden w-16 h-16" id="user-menu-button-mobile" aria-expanded="false" data-dropdown-toggle="user-dropdown">
           <span class="sr-only">Open user menu</span>
-          <img class="rounded-full w-full h-full object-cover opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:scale-110" src={profileImage.src} alt="Camilo Profile">
-          <img class="rounded-full w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110" src={foxGif.src} alt="PaperFoxBlink">
+          {/* --- CAMBIO DE CALIDAD AQUÍ --- */}
+          <Image 
+            class="rounded-full w-full h-full object-cover opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:scale-110" 
+            src={profileImage} 
+            alt="Camilo Profile"
+            width={128}
+            height={128}
+            loading="eager"
+          />
+          <Image 
+            class="rounded-full w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110" 
+            src={foxGif} 
+            alt="PaperFoxBlink"
+            width={128}
+            height={128}
+            loading="eager"
+          />
         </button>
       </div>
       <div class="md:hidden">
