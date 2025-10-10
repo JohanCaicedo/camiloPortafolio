@@ -4,17 +4,22 @@ import SkillCard from "../components/SkillCard.astro";
 ---
 
 <section
-  class="bg-[#fffbea] mt-6 gap-4 pl-8 pr-8 pt-2 pb-8 rounded-lg shadow-md"
+  class="bg-[#fffbea] mt-6 gap-4 pl-8 pr-8 pt-2 pb-8 rounded-lg shadow-md overflow-hidden"
 >
   <h3
-    class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary  mt-6 dark:text-[#fafaf6]"
+    class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mt-6 dark:text-[#fafaf6]"
   >
     <Box class="size-6" /> Tools Box
-    
   </h3>
   <p class="font-semibold mb-6 mt-4">🌟 3D, design and develop</p>
   
-  <div class="grid md:grid-cols-6 sm:grid-cols-3 items-center gap-4">
+  {/* Este div ahora es un carrusel en móvil y una grilla en desktop.
+    - `flex overflow-x-auto`: Activa el modo carrusel con scroll horizontal.
+    - `pb-4 -mb-4`: Un truco para dar espacio al scrollbar sin afectar el layout.
+    - `md:grid md:grid-cols-6`: Vuelve al modo grilla en pantallas medianas y grandes.
+    - `md:overflow-x-visible md:p-0 md:m-0`: Resetea los estilos del carrusel en desktop.
+  */}
+  <div class="flex overflow-x-auto gap-4 pb-4 -mb-4 md:grid md:grid-cols-6 md:overflow-x-visible md:p-0 md:m-0">
     <SkillCard
       title="Autdesk 3ds Max"
       imageSrc="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/SVG%2F3ds-max-full-logo-svgrepo-com.svg?alt=media&token=93c33d08-8889-4e73-937e-6e747bdb9852"
@@ -36,7 +41,7 @@ import SkillCard from "../components/SkillCard.astro";
     <SkillCard
       title="Astro FrameWork"
       imageSrc="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/SVG%2Fastro-svgrepo-com.svg?alt=media&token=b3795653-8014-40c8-88c9-7da922d351f2"
-      imageAlt="Autdesk 3ds Max Icon"
+      imageAlt="Astro FrameWork Icon"
       experienceLevel="High"
     />
     <SkillCard
@@ -122,15 +127,14 @@ import SkillCard from "../components/SkillCard.astro";
       experienceClass="text-[#8758f4] font-bold"
       titleClass="mb-7"
     />
-
     <SkillCard
-    title="WordPress"
-    imageSrc="https://www.svgrepo.com/show/475696/wordpress-color.svg"
-    imageAlt="WordPress"
-    experienceLevel="Expert"
-    experienceClass="text-[#8758f4] font-bold"
-    titleClass="mb-7"
-  />
+      title="WordPress"
+      imageSrc="https://www.svgrepo.com/show/475696/wordpress-color.svg"
+      imageAlt="WordPress"
+      experienceLevel="Expert"
+      experienceClass="text-[#8758f4] font-bold"
+      titleClass="mb-7"
+    />
     <SkillCard
       title="ZBrush"
       imageSrc="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/SVG%2Fzbrush-svgrepo-com.svg?alt=media&token=73c86879-d288-4be3-990c-f362f0d78ec8"

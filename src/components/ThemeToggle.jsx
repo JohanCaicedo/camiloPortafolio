@@ -1,38 +1,33 @@
 import { useState, useEffect } from 'react';
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    // Initialize darkMode state based on localStorage
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof localStorage === 'undefined') {
+      return true;
+    }
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme === 'dark' ? true : false;
+    return savedTheme ? savedTheme === 'dark' : true;
   });
 
   useEffect(() => {
-    // Update the document's class list based on darkMode
-    if (document.readyState === 'complete') {
-      updateTheme();
-    } else {
-      // Add a MutationObserver to handle DOMContentLoaded
-      const observer = new MutationObserver(updateTheme);
-      observer.observe(document.documentElement, {
-        childList: true,
-        subtree: true,
-      });
-    }
-  }, [darkMode]);
-
-  const updateTheme = () => {
-    if (document.documentElement.classList.contains('dark')) {
+    const htmlElement = document.documentElement;
+  
+    if (isDark) {
+      htmlElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     } else {
+      htmlElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
     }
-    document.documentElement.classList.toggle('dark', darkMode);
+  }, [isDark]);
+
+  const toggleTheme = () => {
+    setIsDark(prevIsDark => !prevIsDark);
   };
 
   return (
-    <button type="button" onClick={() => updateTheme()}>
-      {darkMode ? '☀️' : '🌙'}
+    <button type="button" onClick={toggleTheme}>
+      {isDark ? '☀️' : '🌙'}
     </button>
   );
 };
