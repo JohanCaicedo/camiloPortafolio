@@ -5,7 +5,6 @@ import ProjectSection from "../components/ProjectSection.astro";
 import Badge from "../components/Badge.astro";
 import ProjectSpecs from "../components/ProjectSpecs.astro";
 import Title from "../components/Title.astro";
-import CTA from "../components/CTA.astro";
 import Wand from "../icons/Wand.astro";
 import Palette from "../icons/Palette.astro";
 import Sparkles from "../icons/Sparkles.astro";
@@ -13,7 +12,6 @@ import { Image } from "astro:assets";
 import ColorBox from '../components/ColorBox.astro';
 import Illustration from "./Illustration.astro";
 import ImageGallery from '../components/ImageGallery.astro';
-import SectionContainer2 from "../components/SectionContainer2.astro";
 import GraphicPieces from "./GraphicPieces.astro"
 
 ---
@@ -36,49 +34,48 @@ import GraphicPieces from "./GraphicPieces.astro"
         image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Banner-2024.webp?alt=media&token=e2597250-4690-400d-89b7-f44bb61b53fb"
         link="https://paperfoxstudio.site/grapic-design"
       />
-      <nav class="flex gap-2 mt-4 justify-center mb-4">
+            <nav class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 mb-4">
         <Badge
           content="Creative Direction"
           bgColor="bg-[#4e5e37]"
           textColor="text-[#efefef]"
-          darkBgColor="dark:bg-[#0c1007]"
-          darkTextColor="dark:text-[#81ab43]"
+          darkBgColor="dark:bg-[#3a4a2d]"
+          darkTextColor="dark:text-[#c2e0b4]"
         />
         <Badge
           content="Visual Identity"
           bgColor="bg-[#5e332c]"
           textColor="text-[#efefef]"
-          darkBgColor="dark:bg-[#ffbd79]"
-          darkTextColor="dark:text-[#5e332c]"
+          darkBgColor="dark:bg-[#4a2823]"
+          darkTextColor="dark:text-[#ffc999]"
         />
-
         <Badge
           content="Theory of color"
           bgColor="bg-[#584b29]"
           textColor="text-[#efefef]"
-          darkBgColor="dark:bg-[#4a241b]"
-          darkTextColor="dark:text-[#e46f4d]"
+          darkBgColor="dark:bg-[#42381f]"
+          darkTextColor="dark:text-[#fff0cc]"
         />
         <Badge
           content="Typography"
           bgColor="bg-[#22282e]"
           textColor="text-[#efefef]"
-          darkBgColor="dark:bg-[#4a241b]"
-          darkTextColor="dark:text-[#e46f4d]"
+          darkBgColor="dark:bg-[#1a1f24]"
+          darkTextColor="dark:text-[#b0c4d8]"
         />
         <Badge
           content="Brand manual"
           bgColor="bg-[#53345c]"
           textColor="text-[#efefef]"
-          darkBgColor="dark:bg-[#4a241b]"
-          darkTextColor="dark:text-[#53345c]"
+          darkBgColor="dark:bg-[#3e2844]"
+          darkTextColor="dark:text-[#d0b8d8]"
         />
         <Badge
           content="Adobe Illustrator"
           bgColor="bg-[#e46f4d]"
           textColor="text-[#efefef]"
-          darkBgColor="dark:bg-[#4a241b]"
-          darkTextColor="dark:text-[#a3cd9f]"
+          darkBgColor="dark:bg-[#b45a42]"
+          darkTextColor="dark:text-[#ffb59e]"
         />
       </nav>
       <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
@@ -122,9 +119,9 @@ import GraphicPieces from "./GraphicPieces.astro"
       </section>
       <section class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
         <div class="col-span-1 md:col-span-1">
-          <img
-            width="572"
-            height="572"
+          <Image
+            width={572}
+            height={572}
             alt="ILSA-Web-mockup-1"
             class="rounded-lg w-full"
             src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-2024-Imagotipo.webp?alt=media&token=a7a94b92-64e4-4c67-80bb-adc6aa4b21c8"
@@ -178,19 +175,19 @@ import GraphicPieces from "./GraphicPieces.astro"
       </section>
       <section>
         <Title icon={Wand} text="Logo design" />
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div
-            class="bg-[#efefef] flex items-center justify-center p-32 h-96 rounded-lg"
+            class="bg-[#efefef] flex items-center justify-center p-8 rounded-lg"
           >
             <Image
               src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA%20Logo%20Azul-12.svg?alt=media&token=37c8c193-7c27-4f38-ac70-1852d5cc7153"
               alt="ILSA Logo blue"
-              width="600"
-              height="600"
+              width={600}
+              height={600}
             />
           </div>
           <div
-            class="bg-[#4e7cce] flex items-center justify-center h-96 p-8 text-[#efefef] rounded-lg"
+            class="bg-[#4e7cce] flex items-center justify-center p-8 text-[#efefef] rounded-lg"
           >
             <p>
               The logo has been redesigned from the existing one, creating a new
@@ -202,9 +199,9 @@ import GraphicPieces from "./GraphicPieces.astro"
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div
-            class="bg-[#efefef] h-96 p-8 text-[#3d3d3d] rounded-lg place-content-center"
+            class="bg-[#efefef] p-8 text-[#3d3d3d] rounded-lg place-content-center"
           >
             <h5 class="text-lg font-bold">World Map</h5>
             <p>
@@ -219,19 +216,19 @@ import GraphicPieces from "./GraphicPieces.astro"
           </div>
 
           <div
-            class="bg-[#4e7cce] flex items-center justify-center p-32 h-96 rounded-lg"
+            class="bg-[#4e7cce] flex items-center justify-center p-8 rounded-lg"
           >
             <Image
               src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA-Favicon-Blanco-16.svg?alt=media&token=4de42555-f478-4e00-a02c-8caf81746295"
               alt="ILSA World Map"
-              width="150"
-              height="150"
+              width={150}
+              height={150}
             />
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div
-            class="bg-[#4e7cce] h-96 p-8 text-[#efefef] rounded-lg place-content-center"
+            class="bg-[#4e7cce] p-8 text-[#efefef] rounded-lg place-content-center"
           >
             <h5 class="text-lg font-bold">Acronym and type</h5>
             <p>
@@ -243,19 +240,19 @@ import GraphicPieces from "./GraphicPieces.astro"
           </div>
 
           <div
-            class="bg-[#efefef] flex items-center justify-center p-32 h-96 rounded-lg"
+            class="bg-[#efefef] flex items-center justify-center p-8 rounded-lg"
           >
             <Image
               src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA-Type.svg?alt=media&token=abd052d3-29c2-44b7-9ebb-846fcb543d60"
               alt="ILSA Logo Acronym"
-              width="250"
-              height="250"
+              width={250}
+              height={250}
             />
           </div>
         </div>
       </section>
       <Title icon={Palette} text="Color palette" />
-      <section class="grid grid-cols-2 sm:grid-cols-5 justify-items-center rounded-lg bg-[#fffdf3] dark:bg-[#22282e] shadow-sm mt-6 py-6">
+      <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 justify-items-center rounded-lg bg-[#fffdf3] dark:bg-[#22282e] shadow-sm mt-6 py-6">
         <ColorBox color="#4e7cce" label="Lawyer" hex="#4e7cce" />
         <ColorBox color="#686868" label="Monochrome" hex="#686868"/>
         <ColorBox color="#efefef" label="Negative" hex="#efefef" />
