@@ -13,6 +13,10 @@ import Cube from "../icons/Cube.astro";
 import Palette from "../icons/Palette.astro";
 import { Image } from "astro:assets";
 
+// Importa las imágenes desde la carpeta `src/assets`
+import poster3 from "../assets/Zorrito-Nahim-Poster.png";
+import poster4 from "../assets/Render_New_Zorrito 360_Cycles-Poster.png";
+
 const src = "/PaperFoxStudio-Build.webm";
 const poster = "/poster.webp";
 
@@ -21,6 +25,9 @@ const poster1 = "/PaperFoxLogoV2.webp";
 
 const src2 = "/Neil-Style.webm";
 const poster2 = "/Nile-Style.webp";
+
+const src3 = "/Zorrito-Nahim-Paint.mp4";
+const src4 = "/Render_New_Zorrito 360_Cycles-Web.mp4";
 ---
 
 <Layout
@@ -146,7 +153,7 @@ const poster2 = "/Nile-Style.webp";
               comprehensive business plan that includes
             </p>
           </div>
-          <div class="font-semibold bg-[#fffdf3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+          <div class="font-semibold bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
             <ul>
               <li>🦊 Market research</li>
 
@@ -195,9 +202,9 @@ const poster2 = "/Nile-Style.webp";
                 recognizably integrated into the logo, reinforcing the brand's identity.
               </li>
             </ul>
-            <!-- En móvil, el siguiente bloque se muestra debajo de la lista, en escritorio a la derecha -->
+            {/* */}
             <div class="block md:hidden mt-6">
-              <p class="bg-[#fffdf3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+              <p class="bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
                 The brand-building process for Paper Fox Studio was based on
                 creating a strong and cohesive visual identity, centered around
                 the main character, Nile the Fennec fox. His illustration style,
@@ -207,7 +214,7 @@ const poster2 = "/Nile-Style.webp";
             </div>
           </div>
           <div class="hidden md:flex items-center">
-            <p class="bg-[#fffdf3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+            <p class="bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
               The brand-building process for Paper Fox Studio was based on
               creating a strong and cohesive visual identity, centered around
               the main character, Nile the Fennec fox. His illustration style,
@@ -220,13 +227,13 @@ const poster2 = "/Nile-Style.webp";
         <div class="grid grid-cols-1 md:grid-cols-6">
           <div class="mt-8 md:col-start-2 md:col-span-4">
             <Image
-              src="/Personal-MoodBoard.webp"
+              src={"/Personal-MoodBoard.webp"}
               alt="Logo MoodBoard"
               width={1080}
               height={540}
               class="shadow-md rounded-lg w-full h-auto max-w-full"
             />
-            <p class="text-sm text-right text-slate-600 mt-4">
+            <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4">
               Visual identity and character MoodBoard
             </p>
           </div>
@@ -240,7 +247,7 @@ const poster2 = "/Nile-Style.webp";
 
           <div class="col-span-1"></div>
           <div class="col-span-1 m-auto">
-            <p class="bg-[#fafaf6] p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+            <p class="bg-[#fafaf6] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
               The result is a logo that is not only visually appealing but also
               effectively communicates the values and personality of Paper Fox
               Studio. It is a symbol that invites the audience to explore the
@@ -277,26 +284,28 @@ const poster2 = "/Nile-Style.webp";
             <div class="col-span-1">
               <Image
                 alt="Paper Fox Studio V1"
-                src="/PaperFoxStudioV1.webp"
+                src={"/PaperFoxStudioV1.webp"}
                 width={500}
                 height={500}
                 class="rounded-lg shadow-md w-full h-auto max-w-full"
               />
-              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
                 Paper Fox Studio Logo V1
               </p>
             </div>
             <div class="col-span-1">
               <video
                 controls
-                poster={poster}
                 autoplay
+                muted
+                playsinline
+                poster={poster}
                 class="rounded-lg shadow-md w-full h-auto max-w-full"
               >
                 <source src={src} type="video/webm" />
                 Tu navegador no soporta la reproducción de video.
               </video>
-              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
                 Paper Fox Studio Logo V1 Build
               </p>
             </div>
@@ -306,12 +315,12 @@ const poster2 = "/Nile-Style.webp";
             <div class="col-span-1">
               <Image
                 alt="Paper Fox Studio V1"
-                src="/PaperFoxLogoV2.webp"
+                src={"/PaperFoxLogoV2.webp"}
                 width={500}
                 height={500}
                 class="rounded-lg shadow-md w-full h-auto max-w-full"
               />
-              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
                 Paper Fox Studio Logo V2 retouched by <a
                   href="https://www.instagram.com/quas.art/"
                   target="_blank">Viviana Tovar</a
@@ -321,13 +330,13 @@ const poster2 = "/Nile-Style.webp";
             <div class="col-span-1">
               <Image
                 alt="Paper Fox Studio V1"
-                src="/PFS-SafeAreas.webp"
+                src={"/PFS-SafeAreas.webp"}
                 width={500}
                 height={500}
                 class="rounded-lg shadow-md w-full h-auto max-w-full"
               />
 
-              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
                 Safe Areas
               </p>
             </div>
@@ -341,7 +350,7 @@ const poster2 = "/Nile-Style.webp";
             <Sparkles class="size-6" />
             Style explore
           </h3>
-          <p class="bg-[#fafaf6] p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md">
+          <p class="bg-[#fafaf6] dark:bg-gray-800 p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md">
             These videos showcase my skills in 2D animation and digital
             illustration. I love bringing characters to life and telling visual
             stories.
@@ -352,26 +361,65 @@ const poster2 = "/Nile-Style.webp";
               <video
                 controls
                 autoplay
+                muted
+                playsinline
                 class="rounded-lg shadow-md w-full h-auto max-w-full"
               >
                 <source src={src1} type="video/webm" />
                 Web browser don't suport video
               </video>
-              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
                 2D Rigging in After Effects and Duik Angela
               </p>
             </span>
             <span class="block w-full mt-6">
               <video
                 controls
+                autoplay
+                muted
+                playsinline
                 poster={poster2}
                 class="rounded-lg shadow-md w-full h-auto max-w-full"
               >
                 <source src={src2} type="video/webm" />
                 Web browser don't suport video
               </video>
-              <p class="text-sm text-right text-slate-600 mt-4 mr-7">
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
                 Illustration timelapse using Inifinite Painter
+              </p>
+            </span>
+          </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <span class="block w-full mt-6">
+              <video
+                controls
+                autoplay
+                muted
+                playsinline
+                poster={poster3.src}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              >
+                <source src={src3} type="video/mp4" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Nile fennec fox painting final version timelapse
+              </p>
+            </span>
+            <span class="block w-full mt-6">
+              <video
+                controls
+                autoplay
+                muted
+                playsinline
+                poster={poster4.src}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              >
+                <source src={src4} type="video/mp4" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                3D Model and Render in Blender using Cycles.
               </p>
             </span>
           </div>
@@ -405,7 +453,7 @@ const poster2 = "/Nile-Style.webp";
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-5">
             <p
-              class="md:col-start-2 md:col-span-3 bg-[#fffdf3] p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md"
+              class="md:col-start-2 md:col-span-3 bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md"
             >
               With the business plan underway, I will focus on creating engaging
               content for Instagram and developing my website.
