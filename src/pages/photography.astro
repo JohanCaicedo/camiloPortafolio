@@ -9,17 +9,17 @@ import Bifcase from "../icons/Bifcase.astro";
 ---
 
 <Layout
-  title="Johan Caicedo - Photography"
-  description="Johan Caicedo - Photography"
+  title="Photography Portfolio | Johan Caicedo"
+  description="Explore the photography portfolio of Johan Caicedo, featuring portrait, nature, and landscape photography, as well as project documentation."
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Photography%20Image.webp?alt=media&token=2f3bcee6-0ff5-4a1c-8ec4-4944542b2c4b"
   url="https://paperfoxstudio.site/photography"
   canonicalURL="https://paperfoxstudio.site/photography"
 >
   <SectionContainer>
     <h1
-      class="text-right text-xs sm:text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fffdf3] mb-4"
+      class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row flex-wrap justify-center items-center gap-4 dark:text-[#fafaf6] mt-10"
     >
-      portfolio/photography
+      Photography
     </h1>
     <ProjectSection
       link=""
@@ -286,4 +286,28 @@ import Bifcase from "../icons/Bifcase.astro";
       </div>
     </section>
   </SectionContainer>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Photography Portfolio | Johan Caicedo",
+      "description": "Explore the photography portfolio of Johan Caicedo, featuring portrait, nature, and landscape photography, as well as project documentation.",
+      "url": "https://paperfoxstudio.site/photography",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ImageObject",
+            "name": "Portrait, nature and landscapaes",
+            "image": "https://paperfoxstudio.site/Portrait%20(1).webp"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Voices in Movement",
+            "image": "https://paperfoxstudio.site/Necocl%C3%AD%202024%20(1).webp"
+          }
+        ]
+      }
+    }
+    </script>
 </Layout>

@@ -15,8 +15,8 @@ import Gallery from "../components/ImageGallery.astro";
 ---
 
 <Layout
-  title="Editorial Design - Portfolio"
-  description="Editorial design portfolio"
+  title="Editorial Design Portfolio | Johan Caicedo"
+  description="Explore the editorial design portfolio of Johan Caicedo, featuring book covers, layouts, and illustrations for clients like ILSA and JEP."
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Editorial%20Design%20Image.webp?alt=media&token=aabfa3b4-9eb3-452b-b0d2-bb66de2456ea"
   url="https://paperfoxstudio.site/editorial-design"
 >
@@ -24,9 +24,9 @@ import Gallery from "../components/ImageGallery.astro";
     <SectionContainer>
       <header class="mb-8">
         <h1
-          class="text-sm md:text-base lg:text-lg font-medium text-right text-gray-800 dark:text-gray-200"
+          class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row flex-wrap justify-center items-center gap-4 dark:text-[#fafaf6] mt-10"
         >
-          portfolio/editorial-design
+          Editorial Design
         </h1>
       </header>
 
@@ -319,4 +319,23 @@ columns={2}
       </section>
     </SectionContainer>
   </main>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Editorial Design Portfolio | Johan Caicedo",
+      "description": "Explore the editorial design portfolio of Johan Caicedo, featuring book covers, layouts, and illustrations for clients like ILSA and JEP.",
+      "url": "https://paperfoxstudio.site/editorial-design",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "CreativeWork",
+            "name": "ILSA Editorial Design",
+            "image": "https://paperfoxstudio.site/Editorial-Design%20ID.webp"
+          }
+        ]
+      }
+    }
+    </script>
 </Layout>

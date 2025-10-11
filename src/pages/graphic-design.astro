@@ -17,22 +17,22 @@ import GraphicPieces from "./GraphicPieces.astro"
 ---
 
 <Layout
-  title="Graphic design - Portfolio"
-  description="Graphic design portfolio"
+  title="Graphic Design Portfolio | Johan Caicedo"
+  description="Explore the graphic design portfolio of Johan Caicedo, featuring branding projects, logo designs, and illustrations for clients like ILSA."
   image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico.webp?alt=media&token=0c436fb0-d5cf-4618-ad1d-79f6952b01b2"
-  url="https://paperfoxstudio.site/grapic-design"
+  url="https://paperfoxstudio.site/graphic-design"
 >
   <main>
     <SectionContainer>
       <h1
-        class="text-right text-sm md:text-base lg:text-lg font-medium text-[#1e1e1e] dark:text-[#fffdf3] mb-4"
+        class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row flex-wrap justify-center items-center gap-4 dark:text-[#fafaf6] mt-10"
       >
-        portfolio/graphic-design
+        Graphic Design
       </h1>
       <ProjectSection
         title="ILSA - Branding 2024"
         image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Banner-2024.webp?alt=media&token=e2597250-4690-400d-89b7-f44bb61b53fb"
-        link="https://paperfoxstudio.site/grapic-design"
+        link="https://paperfoxstudio.site/graphic-design"
       />
             <nav class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 mb-4">
         <Badge
@@ -314,4 +314,23 @@ import GraphicPieces from "./GraphicPieces.astro"
     </SectionContainer>
 
   </main>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Graphic Design Portfolio | Johan Caicedo",
+      "description": "Explore the graphic design portfolio of Johan Caicedo, featuring branding projects, logo designs, and illustrations for clients like ILSA.",
+      "url": "https://paperfoxstudio.site/graphic-design",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "CreativeWork",
+            "name": "ILSA - Branding 2024",
+            "image": "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Banner-2024.webp?alt=media&token=e2597250-4690-400d-89b7-f44bb61b53fb"
+          }
+        ]
+      }
+    }
+    </script>
 </Layout>
