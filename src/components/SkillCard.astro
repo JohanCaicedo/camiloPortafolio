@@ -1,29 +1,33 @@
 ---
+// src/components/SkillCard.astro
+
 import { Image } from "astro:assets";
+import LiquidGlassCard from '../components/LiquidGlass.jsx';
+
 const { title, imageSrc, imageAlt, experienceLevel, titleClass, experienceClass } = Astro.props;
 ---
 
-<span class="col-span-1 bg-[#fffcf0] p-4 flex flex-col items-center justify-center rounded-lg shadow-md hover:scale-105 transition duration-250 ease-in-out flex-shrink-0 w-36 md:w-auto dark:bg-[#19111a] dark:text-[#fafaf6]">
-  
+<LiquidGlassCard 
+  client:visible
+  className="p-4 flex flex-col items-center justify-center flex-shrink-0 w-36 md:w-auto dark:text-[#fafaf6]"
+  glassColor="rgba(149, 172, 202, 0.25)" 
+  darkGlassColor="rgba(34, 40, 46, 0.25)" 
+>
   <h5 class=`font-bold leading-tight text-sm text-center mb-2 ${titleClass}`>{title}</h5>
   
-  {/* Este div asegura que el espacio para el ícono sea siempre el mismo */}
   <div class="w-[80px] h-[80px] flex items-center justify-center">
-    {/* Lógica condicional: Si existe un slot llamado "icon", lo renderiza.
-        Si no, renderiza el componente <Image> como lo hacía antes. 
-    */}
-    {Astro.slots.has('icon') ? (
+    {Astro.slots.has('icon')? (
       <slot name="icon" />
     ) : (
       <Image
-          src={imageSrc}
-          alt={imageAlt ?? title}
-          width="80"
-          height="80"
+        src={imageSrc}
+        alt={imageAlt?? title}
+        width="80"
+        height="80"
       />
     )}
   </div>
   
   <h6 class="font-semibold mt-2 text-xs">Experience</h6>
   <p class=`text-xs ${experienceClass}`>{experienceLevel}</p>
-</span>
+</LiquidGlassCard>
