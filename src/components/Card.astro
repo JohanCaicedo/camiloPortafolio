@@ -1,16 +1,17 @@
 ---
+import LiquidGlassCard from '../components/LiquidGlass.jsx';
 const education = [
   {
     id: "1",
-    title: "Digital and Multimedia Designer",
-    collage: "University Colegio Mayor de Cundinamarca",
-    type: "Bachelor's degree",
+    title: "Digital and Multimedia Design",
+    collage: "Colegiatura Colombiana",
+    type: "Undergraduate",
     state: "Graduate",
-    date: "2016 - 2020",
+    date: "2018 - 2023",
     colSpam: "md:col-span-3 md:row-span-2 sm:col-span-2",
-    bgColor: "bg-[#e56f45]",
+    bgColor: "bg-[#e56f45]/75",
     textColor: "text-[#170a08]",
-    darkBgColor: "dark:bg-[#170a08]",
+    darkBgColor: "dark:bg-[#170a08]/75",
     darkTextColor: "dark:text-[#e56f45]",
   },
   {
@@ -21,9 +22,9 @@ const education = [
     state: "Student",
     date: "2024 - 2025",
     colSpam: "md:col-span-3 md:row-span-2 md:col-start-4 sm:col-start-3",
-    bgColor: "bg-[#95acca]",
+    bgColor: "bg-[#95acca]/75",
     textColor: "text-[#111316]",
-    darkBgColor: "dark:bg-[#22282e]",
+    darkBgColor: "dark:bg-[#22282e]/75",
     darkTextColor: "dark:text-[#95acca]",
   },
   {
@@ -34,9 +35,9 @@ const education = [
     state: "Student",
     date: "2024 - 2025",
     colSpam: "md:col-span-2 md:row-span-2 md:row-start-3 sm:row-start-2",
-    bgColor: "bg-[#f3cf59]",
+    bgColor: "bg-[#f3cf59]/75",
     textColor: "text-[#161208]",
-    darkBgColor: "dark:bg-[#584b25]",
+    darkBgColor: "dark:bg-[#584b25]/75",
     darkTextColor: "dark:text-[#f3cf59]",
   },
   {
@@ -47,9 +48,9 @@ const education = [
     state: "Graduate",
     date: "2024",
     colSpam: "md:col-span-2 row-span-2 md:col-start-3 md:row-start-3 sm:row-start-2",
-    bgColor: "bg-[#a3cd9c]",
+    bgColor: "bg-[#a3cd9c]/75",
     textColor: "text-[#121611]",
-    darkBgColor: "dark:bg-[#293327]",
+    darkBgColor: "dark:bg-[#293327]/75",
     darkTextColor: "dark:text-[#a3cd9c]",
   },
   {
@@ -60,9 +61,9 @@ const education = [
     state: "Graduate",
     date: "2024",
     colSpam: "md:col-span-2 row-span-2 md:col-start-5 md:row-start-3 sm:row-start-2",
-    bgColor: "bg-[#ebbbaa]",
+    bgColor: "bg-[#ebbbaa]/75",
     textColor: "text-[#161210]",
-    darkBgColor: "dark:bg-[#51403a]",
+    darkBgColor: "dark:bg-[#51403a]/75",
     darkTextColor: "dark:text-[#ebbbaa]",
   },
 ];
@@ -71,38 +72,36 @@ const education = [
 <div class="grid md:grid-cols-6 md:grid-rows-4 sm:grid-cols-3 sm:grid-rows-2 gap-4">
   {
     education.map((edu) => (
-      <div
+      <LiquidGlassCard
+        client:visible
         key?={edu.id}
-        class={`
-        ${edu.colSpam} 
-        h-30
-        flex flex-col
-        justify-between
-        p-6
-        rounded-lg
-        shadow-md
-        hover:scale-105
-        duration-300
-        transition-transform
-        ease-in-out
-        ${edu.bgColor}
-        ${edu.textColor}
-        ${edu.darkBgColor}
-        ${edu.darkTextColor}
-      `}
+        className={`
+          ${edu.colSpam} 
+          h-30
+          p-6
+          shadow-md
+          hover:scale-105
+          duration-300
+          transition-transform
+          ease-in-out
+          ${edu.textColor}
+          ${edu.darkTextColor}
+        `}
+        glassBgClass={`${edu.bgColor} ${edu.darkBgColor}`}
       >
-        <div class="mb-2">
+        {/* El contenido interno de la tarjeta se pasa como "children" */}
+        <div class="mb-2 w-full">
           <h3 class="text-2xl font-extrabold text-left">{edu.title}</h3>
           <h4 class="text-base font-bold tracking-wide text-left">
             {edu.collage}
           </h4>
           <h5 class="text-sm text-left mb-4">{edu.type}</h5>
         </div>
-        <div class="flex justify-between items-end">
+        <div class="flex justify-between items-end w-full">
           <p class="text-sm text-left">{edu.state}</p>
           <p class="text-sm text-left">{edu.date}</p>
         </div>
-      </div>
+      </LiquidGlassCard>
     ))
   }
 </div>
