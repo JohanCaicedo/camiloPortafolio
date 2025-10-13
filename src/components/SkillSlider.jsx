@@ -30,13 +30,11 @@ export default function SkillSlider({ skills }) {
     return () => controls.stop();
   }, [x, skills.length, animationDuration, isHovered, isDragging]);
   
-
   const progress = useTransform(x, (v) => {
     const totalWidth = trackRef.current ? trackRef.current.scrollWidth / 2 : 0;
     if (totalWidth === 0) return 0;
     return ( (v / totalWidth) % 1) * -100;
   });
-
 
   const [indicatorWidth, setIndicatorWidth] = useState(0);
 
@@ -72,7 +70,7 @@ export default function SkillSlider({ skills }) {
         <motion.div
           ref={trackRef}
           className="flex gap-4"
-          style={{ x }} // Vinculamos el motion value al estilo
+          style={{ x }}
           drag="x"
           dragConstraints={{
             left: -trackRef.current?.scrollWidth / 2 || 0,

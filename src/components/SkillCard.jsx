@@ -1,4 +1,3 @@
-
 import LiquidGlassCard from "./LiquidGlass.jsx";
 
 export const SkillCard = ({
@@ -8,13 +7,14 @@ export const SkillCard = ({
   experienceLevel,
   experienceClass = "text-gray-600 dark:text-gray-400",
   icon,
+  bgColor,
 }) => {
   const levelClass = `text-xs font-medium ${experienceClass}`;
 
   return (
     <LiquidGlassCard
       className="h-48 w-40 flex-shrink-0 cursor-grab active:cursor-grabbing"
-      glassBgClass="bg-white/60 dark:bg-white/5"
+      glassBgClass={bgColor}
     >
       <div className="relative z-50 flex flex-col h-full w-full items-center p-4">
         <div className="flex-grow flex flex-col items-center justify-center">
@@ -30,7 +30,6 @@ export const SkillCard = ({
                 className="h-14 w-14 object-contain pointer-events-none"
               />
             ) : (
-
               <div
                 className="h-14 w-14 flex items-center justify-center"
                 dangerouslySetInnerHTML={{ __html: icon }}
