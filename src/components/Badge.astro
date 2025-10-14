@@ -1,23 +1,22 @@
 ---
 const { content, bgColor, textColor, darkBgColor, darkTextColor } = Astro.props;
+
+const badgeClasses = [
+  "text-sm",
+  "text-center",
+  "font-semibold",
+  "p-2",
+  "rounded-full",
+  bgColor,
+  textColor,
+  darkBgColor,
+  darkTextColor,
+  "items-center",
+  "m-auto",
+].join(" ");
 ---
 
-<span
-  class={`
-    text-sm 
-    text-center
-    font-semibold 
-    p-2 
-    rounded-full 
-    ${bgColor}
-    ${textColor} 
-    ${darkBgColor} 
-    
-    ${darkTextColor} 
-    items-center
-    m-auto	
-  `}
->
+<span class={badgeClasses}>
   {content}
 </span>
 

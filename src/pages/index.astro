@@ -1,29 +1,30 @@
 ---
 import LayoutStudio from '../layouts/LayoutStudio.astro';
 import ButtonPortfolio from '../components/Button.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+
+const pageTitle = "Paper Fox Studio";
+const pageDescription = "Paper Fox Studio's web site";
+const pageUrl = "https://paperfoxstudio.site/";
+const pageImage = "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Zorrito.png?alt=media&token=a8a6bfa8-fc10-41bf-8495-f9b7c4700749";
 ---
-<LayoutStudio title="Paper Fox Studio"
-  description="Paper Fox Studio's web site"
-  url='https://paperfoxstudio.site/'
-  image='https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Zorrito.png?alt=media&token=a8a6bfa8-fc10-41bf-8495-f9b7c4700749'
-
-
->
-
-  <main >
-    <section class="w-full lg:w-[740px] mx-auto py-44">
-    <section class="flex flex-col items-center">
-      <h1 class="text-wihite text-5xl font-bold flex flex-row gap-x-4 pb-4">
-        Paper Fox Studio's web site
-      </h1>
-      <h4 class="text-wihite text-3xl font-bold flex flex-row gap-x-4 pb-4">
-        It's under construction</h4>
-      <p>We're working to be online as soon as possible</p>
-      <div class="mt-10">
-        <a href='/camiloPortfolio/'><ButtonPortfolio /></a>
-    </div>
-    </section>
+<LayoutStudio title={pageTitle} description={pageDescription} url={pageUrl} image={pageImage}>
+  <main>
+    <SectionContainer class="w-full lg:w-[740px] mx-auto py-44">
+      <section class="flex flex-col items-center">
+        <h1 class="text-wihite text-5xl font-bold flex flex-row gap-x-4 pb-4">
+          Paper Fox Studio's web site
+        </h1>
+        <h4 class="text-wihite text-3xl font-bold flex flex-row gap-x-4 pb-4">
+          It's under construction
+        </h4>
+        <p>We're working to be online as soon as possible</p>
+        <div class="mt-10">
+          <a href='/camiloPortfolio/'>
+            <ButtonPortfolio label="Johan Caicedo's portfolio" />
+          </a>
+        </div>
+      </section>
+    </SectionContainer>
   </main>
-
-
 </LayoutStudio>

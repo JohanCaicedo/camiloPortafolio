@@ -45,7 +45,7 @@ export default function ResponsiveOptimizedSpline() {
       )}
 
       <div className="relative w-full h-full rounded-lg overflow-hidden">
-        <div 
+        <div
             className="absolute inset-0"
             style={{ transform: `scale(${scale})` }}
         >
@@ -55,9 +55,9 @@ export default function ResponsiveOptimizedSpline() {
           />
         </div>
 
-        <div 
+        <div
           className="
-            absolute inset-0 rounded-lg pointer-events-none 
+            absolute inset-0 rounded-lg pointer-events-none
             shadow-[inset_0_0_0_2px_#fffcee] dark:shadow-[inset_0_0_0_2px_#0b0a0b]
           "
         ></div>
