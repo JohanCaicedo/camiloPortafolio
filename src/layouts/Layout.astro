@@ -10,7 +10,7 @@ import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
-  description: string; 
+  description: string;
   url: string;
   image: string;
   canonicalURL?: string;
@@ -22,10 +22,19 @@ const { title, description,url,image, canonicalURL} = Astro.props;
 <!doctype html>
 <html lang="en" class="light">
   <head>
+    {/* */}
+<!-- Google Tag Manager -->
+<script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PDBTWFRJ');</script>
+<!-- End Google Tag Manager -->
+    {/* */}
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta property="og:image" content={image} />
-    <meta property="og:image" content={url} />
+    <meta property="og:url" content={url} />
     <meta property="og:title" content={title} />
     <link rel="canonical" href={canonicalURL} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +43,12 @@ const { title, description,url,image, canonicalURL} = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-white flex flex-col items-center min-h-screen">
-    <div class="transition-all duration-500 ease-in-out fixed inset-0 -z-10 min-h-screen w-full bg-[#fffcee] dark:bg-neutral-950 bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]">
+    {/* */}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDBTWFRJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {/* */}
+    <div class="transition-all duration-500 ease-in-out fixed inset-0 -z-10 min-h-screen 
+    w-full bg-[#fffcee] dark:bg-neutral-950 bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]">
       <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
     </div>
   <div class="w-full max-w-7xl px-2 sm:px-4 md:px-8 fade-in relative">
