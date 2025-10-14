@@ -1,6 +1,4 @@
 ---
-// src/layouts/MainLayout.astro
-
 import "../styles/global.css";
 import "@fontsource/twinkle-star";
 import "@fontsource/karma";
@@ -21,6 +19,13 @@ const { title, description, url, image } = Astro.props;
 <!doctype html>
 <html lang="en" class="light">
   <head>
+    <!-- Google Tag Manager -->
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s),
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PDBTWFRJ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta property="og:image" content={image} />
@@ -32,10 +37,10 @@ const { title, description, url, image } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-white text-white flex items-center justify-center min-h-screen ">
-    {/* Google Tag Manager (noscript) */}
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDBTWFRJ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    {/* End Google Tag Manager (noscript) */}
+    <!-- End Google Tag Manager (noscript) -->
     <div class="absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
 
     <!-- Contenedor principal para todo el sitio -->
@@ -45,11 +50,8 @@ const { title, description, url, image } = Astro.props;
       </main>
     </div>
   </body>
-</html>
-flex flex-col justify-center items-center text-center fade-in">
-      <main class="w-full flex flex-col justify-center items-center">
-        <slot />
-      </main>
-    </div>
-  </body>
+
+
+
+
 </html>
