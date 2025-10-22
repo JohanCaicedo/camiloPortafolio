@@ -5,7 +5,7 @@ export const education = [
     collage: "Colegiatura Colombiana",
     type: "Undergraduate",
     state: "Graduate",
-    date: "2018 - 2023",
+    date: "2016 - 2021",
     colSpam: "md:col-span-3 md:row-span-2 sm:col-span-2",
     bgColor: "bg-[#e56f45]/75",
     textColor: "text-[#170a08]",
@@ -64,4 +64,5 @@ export const education = [
     darkBgColor: "dark:bg-[#51403a]/75",
     darkTextColor: "dark:text-[#ebbbaa]",
   },
+
 ];
