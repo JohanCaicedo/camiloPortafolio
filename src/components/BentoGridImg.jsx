@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import LiquidGlassCard from "./LiquidGlass.jsx"; 
+
 function BentoGrid({ areas }) {
   return (
-    <div className="grid md:grid-cols-6 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-5 gap-4">
+    <div className="grid md:grid-cols-6 md:grid-rows-2 grid-cols-1 gap-4">
       {areas.map((area) => (
         <motion.a
           whileHover={{ scale: 1.02 }}
@@ -11,7 +12,6 @@ function BentoGrid({ areas }) {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           key={area.id}
           href={area.link}
-
           className={`
             ${area.colItem}
             rounded-lg

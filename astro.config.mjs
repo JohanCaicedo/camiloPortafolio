@@ -5,12 +5,12 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import "./src/styles/global.css";`
-        }
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/styles/global.css";`
       }
     }
+  }
 });

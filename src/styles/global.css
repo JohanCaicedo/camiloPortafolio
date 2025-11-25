@@ -5,8 +5,6 @@
 @tailwind utilities;
 
 html, body {
-
-  
   font-family: 'Work Sans Variable', 'Noto Serif', 'Source Sans Pro', system-ui, sans-serif;
   font-display: swap;
   scroll-behavior: smooth;
@@ -16,10 +14,9 @@ body {
   color: #1D1735;
   display: flex; /* Use flexbox to center the content */
   flex-direction: column;
+  /* Smooth transition for theme changes */
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
-
-
-
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -40,4 +37,3 @@ body {
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
-

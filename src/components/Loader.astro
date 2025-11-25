@@ -1,0 +1,51 @@
+---
+import foxVideo from "../assets/Foxy-Blink.webm";
+---
+
+<div
+    id="loader"
+    class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#1e0300] transition-opacity duration-500"
+>
+    <div class="relative flex flex-col items-center">
+        <video
+            src={foxVideo}
+            autoplay
+            loop
+            muted
+            playsinline
+            class="w-32 h-32 object-contain"></video>
+    </div>
+</div>
+
+<script>
+    const MIN_DISPLAY_TIME = 800; // ms
+    const startTime = Date.now();
+
+    function hideLoader() {
+        const loader = document.getElementById("loader");
+        if (!loader) return;
+
+        // Prevent running twice
+        if (loader.dataset.hidden === "true") return;
+        loader.dataset.hidden = "true";
+
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(0, MIN_DISPLAY_TIME - elapsedTime);
+
+        setTimeout(() => {
+            loader.style.opacity = "0";
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        }, remainingTime);
+    }
+
+    if (document.readyState === "complete") {
+        hideLoader();
+    } else {
+        window.addEventListener("load", hideLoader);
+    }
+
+    // Safety fallback: force hide after 5 seconds max
+    setTimeout(hideLoader, 5000);
+</script>

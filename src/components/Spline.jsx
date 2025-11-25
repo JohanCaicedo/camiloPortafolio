@@ -48,6 +48,7 @@ export default function ResponsiveOptimizedSpline() {
         <div
             className="absolute inset-0"
             style={{ transform: `scale(${scale})` }}
+            onWheelCapture={(e) => e.stopPropagation()}
         >
           <Spline
             scene="/scene.splinecode"

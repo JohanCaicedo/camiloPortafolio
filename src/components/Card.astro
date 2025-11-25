@@ -3,44 +3,39 @@ import LiquidGlassCard from "../components/LiquidGlass.jsx";
 import { education } from "../data/education.js";
 ---
 
-<div class="grid md:grid-cols-6 sm:grid-cols-3 grid-flow-row-dense gap-4">
+<div class="grid md:grid-cols-6 sm:grid-cols-2 grid-cols-1 gap-4">
   {
     education.map((edu) => (
       <LiquidGlassCard
         client:visible
-        key?={edu.id}
+        key={edu.id}
         className={`
-          ${edu.colSpam} 
-          h-30
-          p-6
-          shadow-md
-          hover:scale-105
-          duration-300
-          transition-transform
-          ease-in-out
-          ${edu.textColor}
-          ${edu.darkTextColor}
-        `}
+          ${edu.colSpam} 
+          p-6
+          shadow-md
+          hover:scale-[1.02]
+          duration-300
+          transition-transform
+          ease-in-out
+          ${edu.textColor}
+          ${edu.darkTextColor}
+          min-h-[200px]
+          flex flex-col justify-between
+        `}
         glassBgClass={`${edu.bgColor} ${edu.darkBgColor}`}
       >
-               {" "}
-        {/* El contenido interno de la tarjeta se pasa como "children" */}     
-         {" "}
-        <div class="mb-2 w-full">
-                   {" "}
-          <h3 class="text-2xl font-extrabold text-left">{edu.title}</h3>       
-           {" "}
-          <h4 class="text-base font-bold tracking-wide text-left">
-                        {edu.collage}         {" "}
+        <div class="mb-4 w-full">
+          <h3 class="text-2xl font-extrabold text-left mb-1">{edu.title}</h3>
+          <h4 class="text-base font-bold tracking-wide text-left opacity-90">
+            {edu.collage}
           </h4>
-                    <h5 class="text-sm text-left mb-4">{edu.type}</h5>       {" "}
+          <h5 class="text-sm text-left mt-2 opacity-80">{edu.type}</h5>
         </div>
-               {" "}
-        <div class="flex justify-between items-end w-full">
-                    <p class="text-sm text-left">{edu.state}</p>         {" "}
-          <p class="text-sm text-left">{edu.date}</p>       {" "}
+
+        <div class="flex justify-between items-end w-full mt-auto">
+          <p class="text-sm text-left font-medium">{edu.state}</p>
+          <p class="text-sm text-left font-medium">{edu.date}</p>
         </div>
-             {" "}
       </LiquidGlassCard>
     ))
   }

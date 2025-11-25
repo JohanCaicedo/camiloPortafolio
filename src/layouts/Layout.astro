@@ -1,13 +1,14 @@
 ---
-import Navbar from '../components/Navbar.astro';
-import '../styles/global.css';
-import '@fontsource/twinkle-star';
-import '@fontsource/karma';
-import '@fontsource-variable/work-sans';
-import '@fontsource/source-sans-pro';
-import '@fontsource-variable/merriweather-sans';
-import Footer from '../components/Footer.astro';
-import GoogleTagManager from '../components/GoogleTagManager.astro';
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+import "@fontsource/twinkle-star";
+import "@fontsource/karma";
+import "@fontsource-variable/work-sans";
+import "@fontsource/source-sans-pro";
+import "@fontsource-variable/merriweather-sans";
+import Footer from "../components/Footer.astro";
+import GoogleTagManager from "../components/GoogleTagManager.astro";
+import Loader from "../components/Loader.astro";
 
 interface Props {
   title: string;
@@ -17,7 +18,7 @@ interface Props {
   canonicalURL?: string;
 }
 
-const { title, description,url,image, canonicalURL} = Astro.props;
+const { title, description, url, image, canonicalURL } = Astro.props;
 ---
 
 <!doctype html>
@@ -31,19 +32,25 @@ const { title, description,url,image, canonicalURL} = Astro.props;
     <meta property="og:title" content={title} />
     <link rel="canonical" href={canonicalURL} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body class="bg-white flex flex-col items-center min-h-screen">
-    <div class="transition-all duration-500 ease-in-out fixed inset-0 -z-10 min-h-screen 
-    w-full bg-[#fffcee] dark:bg-neutral-950 bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]">
-      <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
+    <Loader />
+    <div
+      class="transition-all duration-500 ease-in-out fixed inset-0 -z-10 min-h-screen
+    w-full bg-[#fffcee] dark:bg-neutral-950 bg-[linear-gradient(to_right,rgba(0,182,142,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(232,182,142,0.06)_1px,transparent_1px)] dark:bg-none bg-[size:14px_24px]"
+    >
+      <div
+        class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"
+      >
+      </div>
     </div>
-  <div class="w-full max-w-7xl px-2 sm:px-4 md:px-8 fade-in relative">
+    <div class="w-full max-w-7xl px-2 sm:px-4 md:px-8 fade-in relative">
       <Navbar />
-      
-  <main class="mt-8 w-full flex flex-col">
+
+      <main class="mt-8 w-full flex flex-col">
         <slot />
       </main>
       <Footer />
