@@ -1,0 +1,322 @@
+---
+import SectionContainer from "../../components/SectionContainer.astro";
+import Layout from "../../layouts/Layout.astro";
+import ProjectSection from "../../components/ProjectSection.astro";
+import Badge from "../../components/Badge.astro";
+import ProjectSpecs from "../../components/ProjectSpecs.astro";
+import Title from "../../components/Title.astro";
+import Wand from "../../icons/Wand.astro";
+import Palette from "../../icons/Palette.astro";
+import Sparkles from "../../icons/Sparkles.astro";
+import { Image } from "astro:assets";
+import ColorBox from '../../components/ColorBox.astro';
+import Illustration from "./Illustration.astro";
+import ImageGallery from '../../components/ImageGallery.astro';
+import GraphicPieces from "./GraphicPieces.astro"
+
+---
+
+<Layout
+  title="Portafolio de Diseño Gráfico | Johan Caicedo"
+  description="Explora el portafolio de diseño gráfico de Johan Caicedo, con proyectos de branding, diseño de logotipos e ilustraciones para clientes como ILSA."
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20Grafico.webp?alt=media&token=0c436fb0-d5cf-4618-ad1d-79f6952b01b2"
+  url="https://paperfoxstudio.site/es/graphic-design"
+>
+  <main>
+    <SectionContainer>
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#3a4a2d]"
+          darkTextColor="dark:text-[#c2e0b4]"
+        />
+        <Badge
+          content="Identidad Visual"
+          bgColor="bg-[#5e332c]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#4a2823]"
+          darkTextColor="dark:text-[#ffc999]"
+        />
+        <Badge
+          content="Teoría del color"
+          bgColor="bg-[#584b29]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#42381f]"
+          darkTextColor="dark:text-[#fff0cc]"
+        />
+        <Badge
+          content="Tipografía"
+          bgColor="bg-[#22282e]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#1a1f24]"
+          darkTextColor="dark:text-[#b0c4d8]"
+        />
+        <Badge
+          content="Manual de marca"
+          bgColor="bg-[#53345c]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#3e2844]"
+          darkTextColor="dark:text-[#d0b8d8]"
+        />
+        <Badge
+          content="Adobe Illustrator"
+          bgColor="bg-[#e46f4d]"
+          textColor="text-[#efefef]"
+          darkBgColor="dark:bg-[#b45a42]"
+          darkTextColor="dark:text-[#ffb59e]"
+        />
+      </nav>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
+          >
+            Detalles del proyecto
+          </h3>
+          <p class="dark:text-gray-200">
+            Este proyecto de rediseño del logotipo de ILSA buscaba capturar su esencia como
+            catalizador de cambio y crecimiento en América Latina. El nuevo diseño
+            fusiona un mapa de América Latina en expansión con una planta brotando,
+            simbolizando vitalidad, conexión con la tierra y la aspiración de un
+            futuro mejor.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
+          >
+            Sobre la empresa
+          </h3>
+          <p class="dark:text-gray-200">
+            ILSA, fundada en 1978 como una ONG, se centra en servicios legales
+            alternativos y en apoyar movimientos sociales, organizaciones de base
+            y sectores desfavorecidos. Inicialmente operando en varios países de América
+            Latina, se ha centrado en Colombia desde 1988.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <ProjectSpecs
+          rol="Líder de Proyecto"
+          team="Independiente"
+          duration="Un mes"
+          tools="Illustrator"
+          time="Duración"
+        />
+      </section>
+      <section class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6">
+        <div class="col-span-1 md:col-span-1">
+          <Image
+            width={572}
+            height={572}
+            alt="ILSA-Web-mockup-1"
+            class="rounded-lg w-full"
+            src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-2024-Imagotipo.webp?alt=media&token=a7a94b92-64e4-4c67-80bb-adc6aa4b21c8"
+          />
+        </div>
+        <div class="col-span-1 md:col-span-1 place-content-center">
+          <h4
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
+          >
+            Contexto
+          </h4>
+          <p class="dark:text-gray-200 ">
+            ILSA, una ONG bien establecida en América Latina, buscaba renovar su
+            identidad visual para reflejar mejor su misión y valores. La
+            organización ha experimentado un crecimiento significativo en su alcance e
+            impacto, y necesitaba una imagen que comunicara su dinamismo y
+            compromiso con el desarrollo social y legal en la región.
+          </p>
+        </div>
+
+        <div>
+          <h4
+            class="text-lg md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
+          >
+            Objetivo Principal
+          </h4>
+          <p class="dark:text-gray-200">
+            Crear un nuevo logotipo que capture la esencia de ILSA como agente
+            de cambio y crecimiento constante en América Latina. Este logotipo debe ser
+            memorable, versátil y adaptable a diversos contextos, transmitiendo
+            los valores de empoderamiento, conocimiento y progreso social que
+            definen a la organización.
+          </p>
+        </div>
+
+        <div>
+          <h4
+            class="text-lg md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6"
+          >
+            Desafíos
+          </h4>
+          <p class="dark:text-[#fffdf3]">
+            Representar las diversas actividades de la organización en un solo
+            símbolo, transmitir el concepto de crecimiento y evolución, crear un
+            diseño memorable y versátil, mantener la coherencia con la
+            identidad anterior y desarrollar un manual de marca completo para
+            asegurar la correcta aplicación de la nueva imagen fueron los principales
+            desafíos que enfrenté en este proyecto.
+          </p>
+        </div>
+      </section>
+      <section>
+        <Title icon={Wand} text="Diseño de logotipo" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="bg-[#efefef] flex items-center justify-center p-8 rounded-lg"
+          >
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA%20Logo%20Azul-12.svg?alt=media&token=37c8c193-7c27-4f38-ac70-1852d5cc7153"
+              alt="ILSA Logo blue"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div
+            class="bg-[#4e7cce] flex items-center justify-center p-8 text-[#efefef] rounded-lg"
+          >
+            <p>
+              El logotipo ha sido rediseñado a partir del existente, creando un nuevo
+              isotipo único que busca distinguir a la institución en el
+              sector. Este nuevo isotipo, un mapa estilizado del mundo, incorpora el
+              concepto de crecimiento con una planta germinando, representando el
+              trabajo histórico de ILSA. Además, el acrónimo ILSA ha sido actualizado,
+              estableciendo pautas de diseño para su creación.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div
+            class="bg-[#efefef] p-8 text-[#3d3d3d] rounded-lg place-content-center"
+          >
+            <h5 class="text-lg font-bold">Mapa Mundial</h5>
+            <p>
+              El diseño del mapa mundial se basa en la simplicidad, legibilidad
+              y singularidad. La proporción áurea se utilizó como base para su
+              composición, asegurando la armonía de este elemento gráfico.
+            </p>
+            <p class="mt-2 text-sm">
+              El tamaño máximo del mapa mundial sirvió como módulo para establecer
+              las proporciones de los otros elementos gráficos.
+            </p>
+          </div>
+
+          <div
+            class="bg-[#4e7cce] flex items-center justify-center p-8 rounded-lg"
+          >
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA-Favicon-Blanco-16.svg?alt=media&token=4de42555-f478-4e00-a02c-8caf81746295"
+              alt="ILSA World Map"
+              width={150}
+              height={150}
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div
+            class="bg-[#4e7cce] p-8 text-[#efefef] rounded-lg place-content-center"
+          >
+            <h5 class="text-lg font-bold">Acrónimo y tipografía</h5>
+            <p>
+              Al reestructurar el acrónimo ILSA, el objetivo fue armonizar la
+              forma de las letras. Se establecieron pautas de diseño y se
+              resolvieron problemas de kerning y peso de fuente, aportando
+              cohesión a los dos elementos del logotipo.
+            </p>
+          </div>
+
+          <div
+            class="bg-[#efefef] flex items-center justify-center p-8 rounded-lg"
+          >
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Dise%C3%B1o%20grafico%2FILSA-Type.svg?alt=media&token=abd052d3-29c2-44b7-9ebb-846fcb543d60"
+              alt="ILSA Logo Acronym"
+              width={250}
+              height={250}
+            />
+          </div>
+        </div>
+      </section>
+      <Title icon={Palette} text="Paleta de colores" />
+      <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 justify-items-center rounded-lg bg-[#fffdf3] dark:bg-[#22282e] shadow-sm mt-6 py-6">
+        <ColorBox color="#4e7cce" label="Abogado" hex="#4e7cce" />
+        <ColorBox color="#686868" label="Monocromo" hex="#686868"/>
+        <ColorBox color="#efefef" label="Negativo" hex="#efefef" />
+        <ColorBox color="#5e3b69" label="Mujeres" hex="#5e3b69" />
+        <ColorBox color="#af9cb5" label="Mujeres 2" hex="#af9cb5" />
+      </section>
+      <section>
+        <h3
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
+        >
+          <Sparkles class="size-6" />
+          Casos de uso
+        </h3>
+        
+        <div class="bg-[#fffdf3] p-4 mt-6 rounded-lg shadow-lg">
+
+          <ImageGallery
+            images={[
+              {
+                src: "/Use Case (2).webp",
+                alt: "Use Cases 1",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (1).webp",
+                alt: "Use Cases 2",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (3).webp",
+                alt: "Use Cases 3",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (4).webp",
+                alt: "Use Cases 4",
+                width: 480,
+                height: 480,
+              },
+              {
+                src: "/Use Case (5).webp",
+                alt: "Use Cases 5",
+                width: 480,
+                height: 480,
+              },
+            ]}
+            columns={3}
+          />
+        </div>
+      </section>
+      
+    </SectionContainer>
+    <SectionContainer class="mt-10">
+      <GraphicPieces class="mb-10"/>
+      <Illustration class="mt-10"/>
+    </SectionContainer>
+
+  </main>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Portafolio de Diseño Gráfico | Johan Caicedo",
+      "description": "Explora el portafolio de diseño gráfico de Johan Caicedo, con proyectos de branding, diseño de logotipos e ilustraciones para clientes como ILSA.",
+      "url": "https://paperfoxstudio.site/es/graphic-design",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "CreativeWork",
+            "name": "ILSA - Branding 2024",
+            "image": "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Banner-2024.webp?alt=media&token=e2597250-4690-400d-89b7-f44bb61b53fb"
+          }
+        ]
+      }
+    }
+    </script>
+</Layout>

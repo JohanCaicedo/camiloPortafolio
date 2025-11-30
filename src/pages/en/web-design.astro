@@ -1,0 +1,499 @@
+---
+import SectionContainer from "../../components/SectionContainer.astro";
+import "@fontsource/source-sans-pro";
+import "@fontsource-variable/merriweather-sans";
+import Layout from "../../layouts/Layout.astro";
+import ReactBeforeSliderComponent from "react-before-after-slider-component";
+import "react-before-after-slider-component/dist/build.css";
+import Badge from "../../components/Badge.astro";
+import ProjectSection from "../../components/ProjectSection.astro";
+import Palette from "../../icons/Palette.astro";
+import { Image } from "astro:assets";
+import ProjectSpecs from "../../components/ProjectSpecs.astro";
+import Wand from "../../icons/Wand.astro";
+import Hammer from "../../icons/Hammer.astro";
+import UserIcon from "../../icons/User.astro";
+import ImageGallery from "../../components/ImageGallery.astro";
+import Pencil from "../../icons/Pencil.astro";
+import Bulb from "../../icons/Bulb.astro";
+import ChartDots from "../../icons/ChartDots.astro";
+import ColorBox from '../../components/ColorBox.astro';
+
+
+const images = [
+  {
+    src: "/Web-Gallery6.webp",
+    alt: "Illustration 1",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery7.webp",
+    alt: "Illustration 2",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery8.webp",
+    alt: "Illustration 3",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery9.webp",
+    alt: "Illustration 4",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery10.webp",
+    alt: "Illustration 5",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery1.webp",
+    alt: "Illustration 6",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery11.webp",
+    alt: "Illustration 7",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery5.webp",
+    alt: "Illustration 8",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/Web-Gallery12.webp",
+    alt: "Illustration 9",
+    width: 400,
+    height: 400,
+  },
+];
+const FIRST_IMAGE = {
+  imageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Before.webp?alt=media&token=93376329-7e5d-47c2-8bfa-0f6b1a20847a",
+};
+const SECOND_IMAGE = {
+  imageUrl:
+    "https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20After.webp?alt=media&token=938eeb1f-52df-4cc4-8b0d-2fd44e6b9b9c",
+};
+---
+
+<Layout
+  canonicalURL="https://paperfoxstudio.site/web-design"
+  title="Web Design Portfolio | Johan Caicedo"
+  description="Explore the web design portfolio of Johan Caicedo, featuring the redesign of the ILSA website, a project focused on UI/UX, visual identity, and SEO optimization."
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-web-mockup-V1-left.webp?alt=media&token=ffaa1e36-fb49-49b6-b19c-a5bf2baff3eb"
+  url="https://paperfoxstudio.site/web-design"
+>
+  <main class="dark:text-[#fffdf3]">
+    <SectionContainer>
+      <section class="max-w-6xl mx-auto px-4 py-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row flex-wrap justify-center items-center gap-4 dark:text-[#fafaf6] mt-4">
+          Web Design
+        </h1>
+      
+        <ProjectSection
+          link="#"
+          title="Reimagining ILSA's Digital Presence"
+          image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup.webp?alt=media&token=780054d4-1628-4e29-8652-29148ff403e5"
+        />
+      
+        <nav class="flex flex-wrap gap-2 my-6 justify-center">
+          {[
+            { content: "Web Design", bgColor: "bg-[#e46f4d]", textColor: "text-[#4a241b]", darkBgColor: "dark:bg-[#4a241b]", darkTextColor: "dark:text-[#e46f4d]" },
+            { content: "Image Editing", bgColor: "bg-[#97acc6]", textColor: "text-[#22282e]", darkBgColor: "dark:bg-[#22282e]", darkTextColor: "dark:text-[#97acc6]" },
+            { content: "Illustration", bgColor: "bg-[#f1cd71]", textColor: "text-[#584b2c]", darkBgColor: "dark:bg-[#584b2c]", darkTextColor: "dark:text-[#f1cd71]" },
+            { content: "WordPress", bgColor: "bg-[#a3cda1]", textColor: "text-[#293329]", darkBgColor: "dark:bg-[#293329]", darkTextColor: "dark:text-[#a3cda1]" }
+          ].map((badge) => (
+            <Badge {...badge} />
+          ))}
+        </nav>
+      
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-4">
+              Project Details
+            </h3>
+            <p class="dark:text-gray-200">
+              I served as the lead designer in creating the new website for ILSA,
+              a non-governmental organization with over 40 years of experience
+              focusing its efforts on supporting social movements, grassroots
+              organizations, and disadvantaged sectors of society. This experience
+              was rewarding, as it allowed me to apply my knowledge as a designer,
+              utilizing Design Thinking as the primary methodology.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-4">
+              About the company
+            </h3>
+            <p class="dark:text-gray-200">
+              ILSA, founded in 1978 as an NGO, focuses on alternative legal
+              services and supporting social movements, grassroots organizations,
+              and disadvantaged sectors. Initially operating in various Latin
+              American countries, it has focused on Colombia since 1988.
+            </p>
+          </div>
+        </div>
+      
+        <ProjectSpecs
+          rol="Web Designer, UI/UX"
+          team="Viviana Tovar"
+          duration="4 months"
+          tools="Figma, Illustrator, Photoshop, WordPress"
+          time="Duration"
+          link="https://www.instagram.com/quas.art/"
+        />
+      
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-10 gap-6">
+          <div class="md:col-span-2">
+            <Image
+              width="572"
+              height="572"
+              alt="ILSA-Web-mockup-1"
+              class="w-full"
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA-Web-mockup-1.webp?alt=media&token=20977961-0397-4c6e-b91f-efd038073d62"
+            />
+          </div>
+          <div class="md:col-span-2 lg:col-span-2 space-y-6">
+            <h4 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-4">
+              Context
+            </h4>
+            <p class="dark:text-gray-200">
+              As a starting point, I established an overall goal for the project,
+              derived from an interview with ILSA's board of directors. During
+              this conversation, the need to improve the visual representation of
+              the website and ensure proper readability for visitors was
+              identified. To address this issue, we chose to work with a
+              simplified version of Design Thinking, with a special focus on the
+              construction phase. This was due to the client's emphasis on the
+              aesthetic aspect of the page.
+            </p>
+          </div>
+          <div class="lg:col-span-2">
+            <h4 class="text-xl md:text-2xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-4">
+              Main Objective
+            </h4>
+            <p class="dark:text-gray-200">
+              Provide an accurate, coherent, and aesthetically pleasing
+              communication tool. Through a design process, establish a creative
+              foundation to continue evolving the identity, hand in hand with the
+              organization's growth.
+            </p>
+          </div>
+          <div class="lg:col-span-2">
+            <h4 class="text-xl md:text-2xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-4">
+              Challenges
+            </h4>
+            <p class="dark:text-gray-200">
+              ILSA lacked an online presence commensurate with its relevance in
+              the sector. Additionally, it did not have a defined visual identity
+              or communication language. Furthermore, the website was not
+              optimized for SEO search engines.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-12 h-0.5 border-t-0 bg-[#1e1e1e] dark:bg-neutral-100" />
+
+ 
+      <section>
+        <h3
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]"
+        >
+          <Wand class="size-6" />Design Process
+        </h3>
+    
+        <div>
+          <a href="https://ilsa.org.co/voces-en-movimiento/">
+            <Image
+              width="940"
+              height="350"
+              alt="ILSA's moodboard"
+              class="w-full rounded-lg col-span-1 shadow-md"
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Artboard%201.webp?alt=media&token=3f717565-0d68-4b7a-bb5c-e60ece2ebbbc"
+            />
+          </a>
+        </div>
+        <section class="max-w-5xl mx-auto px-4 py-8">
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div>
+              <h4 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-4">
+                Problem Definition
+              </h4>
+              <p class="dark:text-[#fffdf3]">
+                The project began with an in-depth interview with the client,
+                where they expressed the need for a website that reflected the
+                importance and impact of their work. We identified the following
+                key challenges:
+              </p>
+            </div>
+            <div class="dark:text-[#fffdf3]">
+              <ol class="space-y-4">
+                {[
+                  {
+                    title: "Lack of visual appeal:",
+                    description: "The existing website was not visually appealing nor did it effectively communicate ILSA's mission."
+                  },
+                  {
+                    title: "Difficult navigation:",
+                    description: "The dense content and lack of hierarchy made it difficult to navigate and access information."
+                  },
+                  {
+                    title: "Low online visibility:",
+                    description: "The site was not optimized for search engines, limiting its reach."
+                  }
+                ].map((item, index) => (
+                  <li>
+                    <strong>{item.title}</strong> {item.description}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+          <div class="dark:text-[#fffdf3]">
+            <p>
+              With these challenges in mind, we established the goal of creating
+              a website that was visually appealing, easy to use, readable, and
+              optimized for SEO.
+            </p>
+          </div>
+        </section>
+      </section>
+
+
+      <section class="max-w-5xl mx-auto px-4 py-8">
+        <h4 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6">
+          Conceptualization and Design
+        </h4>
+        
+        <div class="w-full aspect-[16/9] relative mb-10">
+          <iframe
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2Fy8YZXMIIogI6XgTZNQXQmb%2FUntitled%3Fnode-id%3D0-1%26t%3Dbkn2jdLYoVMPi8gU-1"
+            class="absolute top-0 left-0 w-full h-full border-0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      
+        <div class="grid md:grid-cols-3 gap-6 my-10 dark:text-[#fffdf3]">
+          <p class="md:col-span-2">
+            To address these challenges, we adopted a simplified Design Thinking
+            approach, focusing on the construction phase due to the client's
+            prioritization of aesthetics. I started with hand investigation to
+            explore different structures and content hierarchies.
+          </p>
+          <p>
+            Then, I created a flowchart to visualize the site navigation and
+            wireframes in Figma to define the layout of elements on each page.
+          </p>
+        </div>
+      
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 justify-items-center">
+          {[
+            { title: "Map", subtitle: "Delimit", bgColor: "bg-[#9695b5]", size: "w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28" },
+            { title: "Explore", subtitle: "Understanding", bgColor: "bg-[#7544a6]", size: "w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28" },
+            { title: "Build", subtitle: "Develop", bgColor: "bg-[#3d4a98]", size: "w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32" },
+            { title: "Test", subtitle: "Feedback", bgColor: "bg-[#f0e2d4]", size: "w-20 h-20 sm:w-24 sm:h-24", border: "border border-gray-800 dark:border-gray-200" }
+          ].map((item) => (
+            <div class="flex flex-col items-center">
+              <p class="text-center text-base sm:text-lg font-semibold text-[#1e1e1e] dark:text-[#fffdf3]">
+                {item.title}
+              </p>
+              <p class="text-center text-xs sm:text-sm font-normal dark:text-gray-200">
+                {item.subtitle}
+              </p>
+              <div class={`${item.bgColor} ${item.size} rounded-lg mt-2 sm:mt-4 ${item.border || ''}`}></div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h3 class="flex gap-4 items-center text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6 mt-6">
+          <Palette class="size-6" /> Visual Identity
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-6 gap-4 mt-6">
+          <h4 class="text-xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] col-span-1">
+            Color Palette
+          </h4>
+          <p class="col-span-2 sm:col-span-3 dark:text-gray-200">
+            The construction of the visual identity was created through market research aimed at identifying common points and thereby understanding the visual language used by entities participating in this niche.
+          </p>
+          <p class="col-span-2 dark:text-gray-200">
+            With that information, a distinctive color palette was created, aligned with the themes the client addresses and their fields of action.
+          </p>
+        </div>
+        <section class="grid grid-cols-2 sm:grid-cols-5 justify-items-center rounded-lg bg-[#fffdf3] dark:bg-[#22282e] shadow-sm mt-6 py-6">
+          <ColorBox color="#454C73" label="Primary" hex="#454C73" />
+          <ColorBox color="#3B82F6" label="Secondary" hex="#3B82F6" />
+          <ColorBox color="#497CBF" label="Tertiary" hex="#497CBF" />
+          <ColorBox color="#454C73" label="Tertiary 2" hex="#454C73" />
+          <ColorBox color="#BFAD75" label="Accent" hex="#BFAD75" />
+        </section>
+        <section class="grid grid-cols-1 sm:grid-cols-6 mt-6">
+          <h4 class="text-xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] col-span-1">
+            Typography
+          </h4>
+          <p class="col-span-5 dark:text-gray-200">
+            Chosen based on readability and uniformity criteria.
+          </p>
+        </section>
+        <section class="grid grid-cols-1 sm:grid-cols-2 mt-6 gap-6">
+          <div>
+            <h5 class="text-lg font-medium text-[#1e1e1e] dark:text-[#fffdf3]">
+              Merriweather Sans
+            </h5>
+            <p class="mt-3 font-['Merriweather_Sans_Variable'] text-[#1e1e1e] dark:text-[#fffdf3]">
+              Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Ññ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 0 1 2 3 4 5 6 7 8 9 ¡ ! ¿ ? , . : ; - _ ' "
+            </p>
+          </div>
+          <div>
+            <h5 class="text-lg font-medium text-[#1e1e1e] dark:text-[#fffdf3]">
+              Source Sans Pro
+            </h5>
+            <p class="mt-3 font-['Source_Sans_Pro'] text-[#1e1e1e] dark:text-[#fffdf3]">
+              Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Ññ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 0 1 2 3 4 5 6 7 8 9 ¡ ! ¿ ? , . : ; - _ ' "
+            </p>
+          </div>
+        </section>
+      
+        <section>
+          <div>
+            <h3 class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]">
+              <UserIcon class="size-6" /> Interface Design and User Experience (UI/UX)
+            </h3>
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-6">
+              <span class="col-span-1">
+                <Image
+                  width="616"
+                  height="1000"
+                  alt="ILSA Wireframe"
+                  class="h-auto max-w-full rounded-lg hover:shadow-md"
+                  src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-Wireframe%20-Home.webp?alt=media&token=9942a7aa-1739-46b0-a690-dfa4d8a04033"
+                />
+                <p class="text-sm mt-2">
+                  Wireframe for the home page of the ILSA website.
+                </p>
+              </span>
+              <span class="col-span-1">
+                <p class="bg-[#fffdf3] dark:bg-[#1e1e1e] rounded-lg mb-4 p-4 shadow-md">
+                  I prioritized visual hierarchy and information synthesis, using high-quality images to complement the textual content and make it more engaging.
+                </p>
+                <Image
+                  width="616"
+                  height="1000"
+                  alt="ILSA Wireframe"
+                  class="h-auto max-w-full rounded-lg hover:shadow-md"
+                  src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-Wireframe%20-Multimedia.webp?alt=media&token=fd066bba-fb7c-4788-983d-080570bcf825"
+                />
+                <p class="text-sm mt-2">
+                  Wireframe for the multimedia page of the ILSA website.
+                </p>
+              </span>
+            </div>
+          </div>
+          <h4 class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6 mt-6">
+            <Pencil /> Illustrations
+          </h4>
+          <p class="text-pretty">
+            Original illustrations were integrated throughout the ILSA website to enhance content, guide users, and create a more engaging experience.
+          </p>
+          <div class="container mx-auto mt-6">
+            <ImageGallery images={images} columns={3} />
+          </div>
+        </section>
+      
+        <section>
+          <div>
+            <h3 class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fffdf3]">
+              <Hammer class="size-6" /> Implementation and Optimization
+            </h3>
+            <div class="2">
+              <span class="col-start-4 col-span-2">
+                <p>
+                  WordPress was selected as the platform due to its ease of use and
+                  <strong>flexibility.</strong> Elementor builder and Bridge template were leveraged to streamline development and enable design customization. Yoast SEO was implemented to optimize metadata, links, and images, ultimately improving the site's search engine visibility.
+                </p>
+                <Image
+                  class="w-full rounded-lg col-span-1 shadow-md mt-6"
+                  src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20Wordpress%20backend.webp?alt=media&token=77aa0c98-e10a-4c38-ac8d-1832c57d5cdb"
+                  width="940"
+                  height="350"
+                  alt="Backend Wordpress"
+                />
+              </span>
+            </div>
+          </div>
+        </section>
+      
+        <section>
+          <h4 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6 mt-6 flex items-center gap-2">
+            <ChartDots class="size-6" /> Results and Learnings
+          </h4>
+          <div>
+            <p>
+              The redesigned ILSA website successfully aligns with the organization's mission, attracting over 15,000 visitors. Utilizing Design Thinking and WordPress streamlined development, resulting in an effective and maintainable site. This project was a valuable learning experience, highlighting the importance of client communication, project management, and adaptability in real-world design scenarios.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 p-4 gap-6 rounded-lg">
+            <Image
+              class="w-full rounded-lg col-span-1 shadow-md"
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-%20Clodflare%20stadistics%20(1).webp?alt=media&token=e30afec0-0a9e-467a-a4d8-01a1d3fcc116"
+              width="350"
+              height="350"
+              alt="Backend Wordpress"
+            />
+            <Image
+              class="w-full rounded-lg col-span-1 shadow-md"
+              src="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/ILSA%20-%20Clodflare%20stadistics%20(2).webp?alt=media&token=726e9429-d215-4577-8108-4ffc6763426b"
+              width="350"
+              height="350"
+              alt="Backend Wordpress"
+            />
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h3 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mt-6 mb-6">
+          ILSA's Website Comparison
+        </h3>
+      
+        <ReactBeforeSliderComponent
+          client:visible
+          firstImage={FIRST_IMAGE}
+          secondImage={SECOND_IMAGE}
+        />
+      
+        <section>
+          <h4 class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fffdf3] mb-6 mt-6 flex items-center gap-2">
+            <Bulb class="size-6" /> Conclusion
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-6 p-4 gap-6">
+            <p class="text-[#121611] sm:col-start-2 sm:col-span-4 font-bold bg-[#a3cd9c] p-10 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
+              The redesigned ILSA website successfully aligns with the organization's mission, attracting over 15,000 daily visitors. Utilizing Design Thinking and WordPress streamlined development, resulting in an effective and maintainable site. This project was a valuable learning experience, highlighting the importance of client communication, project management, and adaptability in real-world design scenarios.
+            </p>
+          </div>
+        </section>
+      </section>
+      
+      
+     
+
+      
+
+
+ 
+
+    </SectionContainer>
+  </main>
+</Layout>

@@ -1,0 +1,484 @@
+import Layout from "../../layouts/Layout.astro";
+import ProjectSection from "../../components/ProjectSection.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import Badge from "../../components/Badge.astro";
+import ProjectSpecs from "../../components/ProjectSpecs.astro";
+import FigmaEmbed from "../../components/FigmaEmbed.astro";
+import "../../styles/global.css";
+import ChartDots from "../../icons/ChartDots.astro";
+import Fox from "../../icons/Fox.astro";
+import Sparkles from "../../icons/Sparkles.astro";
+import Cube from "../../icons/Cube.astro";
+import Palette from "../../icons/Palette.astro";
+import { Image } from "astro:assets";
+
+// Importa las imágenes desde la carpeta `src/assets`
+import poster3 from "../../assets/Zorrito-Nahim-Poster.png";
+import poster4 from "../../assets/Render_New_Zorrito 360_Cycles-Poster.png";
+
+const src = "/PaperFoxStudio-Build.webm";
+const poster = "/poster.webp";
+
+const src1 = "/Nile Riggin.webm";
+const poster1 = "/PaperFoxLogoV2.webp";
+
+const src2 = "/Neil-Style.webm";
+const poster2 = "/Nile-Style.webp";
+
+const src3 = "/Zorrito-Nahim-Paint.mp4";
+const src4 = "/Render_New_Zorrito 360_Cycles-Web.mp4";
+---
+
+<Layout
+  title="Portafolio de Proyectos Personales | Johan Caicedo"
+  description="Explora los proyectos personales de Johan Caicedo, incluyendo animación, ilustración y branding para su proyecto personal Paper Fox Studio."
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Foxy-Blink.gif?alt=media&token=6fdef4b7-2f2f-4fbd-94a0-65a59868bfee"
+  url="https://paperfoxstudio.site/es/personal"
+  canonicalURL="https://paperfoxstudio.site/es/personal"
+>
+  <main class="dark:text-gray-200">
+    <SectionContainer>
+      <h1
+        class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row flex-wrap justify-center items-center gap-4 dark:text-[#fafaf6] mt-10"
+      >
+        Proyectos Personales
+      </h1>
+      <ProjectSection
+        link=""
+        title="Paper Fox Studio"
+        image="/ID-Personal.webp"
+      />
+      <nav class="flex flex-wrap gap-2 mt-4 justify-center mb-4">
+        <Badge
+          content="Ilustración"
+          bgColor="bg-[#e46f4d]"
+          textColor="text-[#4a241b]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#e46f4d]"
+        />
+        <Badge
+          content="Branding"
+          bgColor="bg-[#97acc6]"
+          textColor="text-[#22282e]"
+          darkBgColor="dark:bg-[#22282e]"
+          darkTextColor="dark:text-[#97acc6]"
+        />
+        <Badge
+          content="Narrativa"
+          bgColor="bg-[#ffe5b6]"
+          textColor="text-[#584b2c]"
+          darkBgColor="dark:bg-[#584b2c]"
+          darkTextColor="dark:text-[#ffe5b6]"
+        />
+        <Badge
+          content="Animación ✨"
+          bgColor="bg-[#a3cda1]"
+          textColor="text-[#293329]"
+          darkBgColor="dark:bg-[#293329]"
+          darkTextColor="dark:text-[#a3cda1]"
+        />
+      </nav>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div>
+          <h3
+            class="text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6"
+          >
+            Detalles del proyecto
+          </h3>
+          <p class="dark:text-gray-200">
+            Paper Fox Studio es mi proyecto personal, un estudio de animación e
+            ilustración editorial. Nace de mi pasión por la animación y la
+            narrativa visual, con el objetivo de inspirar a través de historias
+            y estéticas únicas.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <strong>🌟 Misión:</strong> Inspirar a través de la creatividad, historias
+              cautivadoras e ilustraciones visualmente impactantes.
+            </li>
+            <li class="mt-2">
+              <strong>🔭 Visión:</strong> Convertirse en un estudio líder mundial en la
+              creación de experiencias creativas que emocionen y conecten con personas
+              de todas las edades y culturas.
+            </li>
+            <li class="mt-2">
+              <strong>💡 Valores:</strong> Creatividad, calidad y pasión por el arte
+              en todas sus formas.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section>
+        <ProjectSpecs
+          rol="Líder de Proyecto"
+          team="Viviana Tovar"
+          duration="En proceso"
+          tools="Figma, Illustrator, Photoshop, Blender, Autodesk Maya, Substance Painter"
+          time="Duración"
+          link="https://www.instagram.com/quas.art/"
+        />
+      </section>
+      <section class="mt-4">
+              <h3
+              class="flex gap-4 items-center md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-4"
+            >
+              <ChartDots class="size-6" /> Diagrama de flujo del proceso de creación de Paper Fox Studio
+            </h3>
+
+        <p class="mb-6">
+          El diagrama de flujo ilustra mi plan para crear y hacer crecer Paper Fox Studio.
+          Actualmente estoy en la fase de planificación empresarial, investigando el mercado
+          y definiendo la misión y objetivos del estudio. Este plan detallado
+          guiará las próximas etapas, desde la creación de la marca hasta la expansión del estudio.
+        </p>
+        <FigmaEmbed
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2Fp7w4TjLESvQfPmxLsfrv84%2FMindmap-(Community)%3Fnode-id%3D0-1%26t%3DiFmcAKuGvymkMgI5-1"
+          width="940"
+          height="350"
+        />
+      </section>
+      <section class="mt-8">
+        <h3 class="text-base font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6">
+          Flujo de trabajo (Pre-producción)
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p class="dark:text-gray-200">
+              Actualmente estoy en la fase de pre-producción, trabajando en un
+              plan de negocios integral que incluye:
+            </p>
+          </div>
+          <div class="font-semibold bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+            <ul>
+              <li>🦊 Investigación de mercado</li>
+
+              <li class="mt-2">🪄 Creación de marca</li>
+              <li class="mt-2">📝 Estructura legal y financiación</li>
+              <li class="mt-2">💸 Marketing y ventas</li>
+              <li class="mt-2">👨‍💻 Operaciones y administración</li>
+              <li class="mt-2">🪴 Crecimiento y expansión</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <section>
+        <h3
+          class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-2 mt-6 dark:text-[#fafaf6]"
+        >
+          <Fox class="size-6" /> Branding e Identidad Visual
+        </h3>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3
+              class="flex gap-4 items-center md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-4"
+            >
+              <Palette class="size-6" /> Diseño de logotipo
+            </h3>
+            <p>
+              El logotipo, símbolo central de la marca, fue diseñado siguiendo
+              rigurosos cánones de diseño:
+            </p>
+            <ul class="text-sm mt-3">
+              <li class="text-sm mt-3">
+                <strong>💛 Proporción Áurea:</strong> Se utilizó la proporción áurea para crear
+                los módulos que componen el logotipo, asegurando armonía visual y equilibrio
+                estético.
+              </li>
+              <li class="text-sm mt-3">
+                <strong>⭕ Formas Circulares:</strong> La inclusión de elementos circulares
+                en el diseño busca transmitir una sensación de cercanía, amabilidad
+                y accesibilidad a la audiencia.
+              </li>
+              <li class="text-sm mt-3">
+                <strong>✏️ Representación del Zorro Fennec:</strong> El zorro Fennec, con
+                su silueta distintiva y rasgos expresivos, se integra sutil pero
+                reconociblemente en el logotipo, reforzando la identidad de la marca.
+              </li>
+            </ul>
+            {/* */}
+            <div class="block md:hidden mt-6">
+              <p class="bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+                El proceso de construcción de marca para Paper Fox Studio se basó en
+                crear una identidad visual fuerte y cohesiva, centrada en el
+                personaje principal, Nile el zorro Fennec. Su estilo de ilustración,
+                evocando calidez y curiosidad, se convirtió en la base estética del
+                estudio.
+              </p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center">
+            <p class="bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+              El proceso de construcción de marca para Paper Fox Studio se basó en
+              crear una identidad visual fuerte y cohesiva, centrada en el
+              personaje principal, Nile el zorro Fennec. Su estilo de ilustración,
+              evocando calidez y curiosidad, se convirtió en la base estética del
+              estudio.
+            </p>
+          </div>
+        </section>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-6">
+          <div class="mt-8 md:col-start-2 md:col-span-4">
+            <Image
+              src={"/Personal-MoodBoard.webp"}
+              alt="Logo MoodBoard"
+              width={1080}
+              height={540}
+              class="shadow-md rounded-lg w-full h-auto max-w-full"
+            />
+            <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4">
+              MoodBoard de identidad visual y personajes
+            </p>
+          </div>
+        </div>
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h3
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mt-6 dark:text-[#fafaf6]"
+          >
+            <Cube class="size-6" /> Determinantes del logotipo
+          </h3>
+
+          <div class="col-span-1"></div>
+          <div class="col-span-1 m-auto">
+            <p class="bg-[#fafaf6] dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+              El resultado es un logotipo que no solo es visualmente atractivo sino que también
+              comunica eficazmente los valores y la personalidad de Paper Fox
+              Studio. Es un símbolo que invita a la audiencia a explorar el
+              mundo de la animación y la ilustración a través de los ojos de Nile, el
+              zorro Fennec.
+            </p>
+          </div>
+          <ul class="text-sm">
+            <li class="text-sm mt-3">
+              <strong>📝 Ilustrado: </strong> Se utilizó la proporción áurea para crear
+              los módulos que componen el logotipo, asegurando armonía visual y equilibrio
+              estético.
+            </li>
+            <li class="text-sm mt-3">
+              <strong>🙂 Identidad de Marca:</strong> La inclusión de elementos circulares
+              en el diseño busca transmitir una sensación de cercanía, amabilidad y
+              accesibilidad a la audiencia.
+            </li>
+            <li class="text-sm mt-3">
+              <strong>👁️ Silueta Reconocible: </strong> El zorro Fennec, con
+              su silueta distintiva y rasgos expresivos, se integra sutil pero reconociblemente
+              en el logotipo, reforzando la identidad de la marca.
+            </li>
+          </ul>
+        </section>
+
+        <div class="mt-6">
+          <h3
+            class="flex gap-4 items-center text-2xl md:text-3xl font-bold text-[#1e1e1e] dark:text-[#fafaf6] mb-6 mt-6"
+          >
+            <Palette class="size-6" /> Construcción del logotipo
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="col-span-1">
+              <Image
+                alt="Paper Fox Studio V1"
+                src={"/PaperFoxStudioV1.webp"}
+                width={500}
+                height={500}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              />
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Logotipo Paper Fox Studio V1
+              </p>
+            </div>
+            <div class="col-span-1">
+              <video
+                controls
+                autoplay
+                muted
+                playsinline
+                poster={poster}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              >
+                <source src={src} type="video/webm" />
+                Tu navegador no soporta la reproducción de video.
+              </video>
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Construcción Logotipo Paper Fox Studio V1
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="col-span-1">
+              <Image
+                alt="Paper Fox Studio V1"
+                src={"/PaperFoxLogoV2.webp"}
+                width={500}
+                height={500}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              />
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Logotipo Paper Fox Studio V2 retocado por <a
+                  href="https://www.instagram.com/quas.art/"
+                  target="_blank">Viviana Tovar</a
+                >
+              </p>
+            </div>
+            <div class="col-span-1">
+              <Image
+                alt="Paper Fox Studio V1"
+                src={"/PFS-SafeAreas.webp"}
+                width={500}
+                height={500}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              />
+
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Áreas de seguridad
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <h3
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+          >
+            <Sparkles class="size-6" />
+            Exploración de estilo
+          </h3>
+          <p class="bg-[#fafaf6] dark:bg-gray-800 p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md">
+            Estos videos muestran mis habilidades en animación 2D e ilustración digital.
+            Me encanta dar vida a personajes y contar historias visuales.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <span class="block w-full mt-6">
+              <video
+                controls
+                autoplay
+                muted
+                playsinline
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              >
+                <source src={src1} type="video/webm" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Rigging 2D en After Effects y Duik Angela
+              </p>
+            </span>
+            <span class="block w-full mt-6">
+              <video
+                controls
+                autoplay
+                muted
+                playsinline
+                poster={poster2}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              >
+                <source src={src2} type="video/webm" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Timelapse de ilustración usando Infinite Painter
+              </p>
+            </span>
+          </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <span class="block w-full mt-6">
+              <video
+                controls
+                autoplay
+                muted
+                playsinline
+                poster={poster3.src}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              >
+                <source src={src3} type="video/mp4" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Timelapse versión final pintura zorro fennec Nile
+              </p>
+            </span>
+            <span class="block w-full mt-6">
+              <video
+                controls
+                autoplay
+                muted
+                playsinline
+                poster={poster4.src}
+                class="rounded-lg shadow-md w-full h-auto max-w-full"
+              >
+                <source src={src4} type="video/mp4" />
+                Web browser don't suport video
+              </video>
+              <p class="text-sm text-right text-slate-600 dark:text-slate-300 mt-4 mr-7">
+                Modelo 3D y Render en Blender usando Cycles.
+              </p>
+            </span>
+          </div>
+        </section>
+
+        <section>
+          <h3
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+          >
+            <ChartDots class="size-6" /> Estrategia de lanzamiento
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+            <p class="col-span-1 sm:col-span-1 dark:text-gray-200">
+              La construcción de la identidad visual se creó a través de una investigación
+              de mercado destinada a identificar puntos comunes y así comprender
+              el lenguaje visual utilizado por las entidades que participan en este nicho.
+            </p>
+            <p class="col-span-1 dark:text-gray-200">
+              Con esa información, se creó una paleta de colores distintiva,
+              alineada con los temas que aborda el cliente y sus campos de acción.
+            </p>
+          </div>
+        </section>
+        <section class="mb-6">
+          <h3
+            class="flex gap-2 items-center text-3xl md:text-3xl font-bold text-primary mb-6 mt-6 dark:text-[#fafaf6]"
+          >
+            <ChartDots class="size-6" /> Próximos Pasos
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-5">
+            <p
+              class="md:col-start-2 md:col-span-3 bg-[#fffdf3] dark:bg-gray-800 p-4 sm:p-6 md:p-8 font-medium rounded-lg shadow-md"
+            >
+              Con el plan de negocios en marcha, me centraré en crear contenido atractivo
+              para Instagram y desarrollar mi sitio web.
+            </p>
+          </div>
+        </section>
+      </section>
+
+
+      
+    </SectionContainer>
+  </main>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Portafolio de Proyectos Personales | Johan Caicedo",
+      "description": "Explora los proyectos personales de Johan Caicedo, incluyendo animación, ilustración y branding para su proyecto personal Paper Fox Studio.",
+      "url": "https://paperfoxstudio.site/es/personal",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "CreativeWork",
+            "name": "Paper Fox Studio",
+            "image": "https://paperfoxstudio.site/ID-Personal.webp"
+          }
+        ]
+      }
+    }
+    </script>
+</Layout>

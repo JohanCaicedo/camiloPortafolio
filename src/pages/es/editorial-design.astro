@@ -1,0 +1,344 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import ProjectSection from "../../components/ProjectSection.astro";
+import Badge from "../../components/Badge.astro";
+import ProjectSpecs from "../../components/ProjectSpecs.astro";
+import Title from "../../components/Title.astro";
+import TargetArrow from "../../icons/TargetArrow.astro";
+import Bifcase from "../../icons/Bifcase.astro";
+import HandClick from "../../icons/HandClick.astro";
+import Collage from "../../icons/Collage.astro";
+import Start from "../../icons/Start.astro";
+import Book from "../../icons/Book.astro";
+import Gallery from "../../components/ImageGallery.astro";
+---
+
+<Layout
+  title="Portafolio de Diseño Editorial | Johan Caicedo"
+  description="Explora el portafolio de diseño editorial de Johan Caicedo, con portadas de libros, maquetación e ilustraciones para clientes como ILSA y JEP."
+  image="https://firebasestorage.googleapis.com/v0/b/camilo-portfolio-77b8a.appspot.com/o/Editorial%20Design%20Image.webp?alt=media&token=aabfa3b4-9eb3-452b-b0d2-bb66de2456ea"
+  url="https://paperfoxstudio.site/es/editorial-design"
+>
+  <main class="mx-auto max-w-7xl px-2 sm:px-4 md:px-6 lg:px-8">
+    <SectionContainer>
+      <header class="mb-8">
+        <h1
+          class="text-4xl md:text-5xl font-bold text-primary mb-4 flex flex-row flex-wrap justify-center items-center gap-4 dark:text-[#fafaf6] mt-10"
+        >
+          Diseño Editorial
+        </h1>
+      </header>
+
+      <ProjectSection
+        link="https://ilsa.org.co/"
+        title="Diseño Editorial ILSA"
+        image="/Editorial-Design ID.webp"
+      />
+
+      <nav class="flex flex-wrap justify-center gap-2 my-6">
+        <Badge
+          content="Diseño Editorial"
+          bgColor="bg-[#e46f4d]"
+          textColor="text-[#4a241b]"
+          darkBgColor="dark:bg-[#4a241b]"
+          darkTextColor="dark:text-[#e46f4d]"
+        />
+        <Badge
+          content="Photoshop"
+          bgColor="bg-[#97acc6]"
+          textColor="text-[#22282e]"
+          darkBgColor="dark:bg-[#22282e]"
+          darkTextColor="dark:text-[#97acc6]"
+        />
+        <Badge
+          content="Ilustración"
+          bgColor="bg-[#f1cd71]"
+          textColor="text-[#584b2c]"
+          darkBgColor="dark:bg-[#584b2c]"
+          darkTextColor="dark:text-[#f1cd71]"
+        />
+        <Badge
+          content="InDesign"
+          bgColor="bg-[#a3cda1]"
+          textColor="text-[#293329]"
+          darkBgColor="dark:bg-[#293329]"
+          darkTextColor="dark:text-[#a3cda1]"
+        />
+        <Badge
+          content="Tipografía"
+          bgColor="bg-[#e4d6f2]"
+          textColor="text-[#343037]"
+          darkBgColor="dark:bg-[#343037]"
+          darkTextColor="dark:text-[#e4d6f2]"
+        />
+        <Badge
+          content="Composición"
+          bgColor="bg-[#ebbbaa]"
+          textColor="text-[#161210]"
+          darkBgColor="dark:bg-[#161210]"
+          darkTextColor="dark:text-[#ebbbaa]"
+        />
+      </nav>
+
+      <div class="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2">
+        <section>
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4"
+          >
+            Descripción general
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300">
+            <strong>Diseñador editorial experimentado desde 2016.</strong> Comencé
+            mi carrera en ILSA con la publicación "El Otro Derecho 52". Desde entonces,
+            he liderado el diseño editorial de la organización, creando portadas
+            originales, adaptando ilustraciones y maquetando diversas publicaciones,
+            incluyendo colecciones como "El Otro Derecho" y "Textos de Aquí y Ahora".
+            Mi experiencia también incluye colaboraciones con la JEP y otras ONG
+            de derechos humanos.
+          </p>
+        </section>
+
+        <section>
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4"
+          >
+            Sobre la empresa
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300">
+            ILSA, fundada en 1978 como una ONG, se centra en servicios legales
+            alternativos y en apoyar movimientos sociales, organizaciones de
+            base y sectores desfavorecidos. Inicialmente operando en varios
+            países de América Latina, se ha centrado en Colombia desde 1988.
+          </p>
+        </section>
+      </div>
+
+      <ProjectSpecs
+        rol="Diseñador Editorial Principal, Ilustrador"
+        team="Freddy Ordoñez"
+        duration="8 años"
+        tools="Photoshop, Illustrator, InDesign"
+        time="Experiencia"
+      />
+
+      <section class="mt-12">
+        <Title icon={TargetArrow} text="Enfoque y experiencia" />
+        <div
+          class="bg-[#fffdf3] dark:bg-gray-800 p-6 rounded-lg shadow-md mt-4"
+        >
+          <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            Mi enfoque del diseño editorial se basa en
+          </h3>
+          <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+            <li>
+              <strong class="text-gray-900 dark:text-gray-100"
+                >👁️ Claridad y legibilidad:</strong
+              > Priorizo la comunicación efectiva de ideas, asegurando que el contenido
+              sea fácil de leer y entender.
+            </li>
+            <li>
+              <strong class="text-gray-900 dark:text-gray-100"
+                >🌟 Estética impactante:</strong
+              > Creo diseños visualmente atractivos que reflejan el tema y el tono
+              de cada publicación.
+            </li>
+            <li>
+              <strong class="text-gray-900 dark:text-gray-100"
+                >⭕ Coherencia con la identidad de marca:</strong
+              > Diseño portadas y publicaciones que se alinean con la identidad visual
+              de ILSA y otras organizaciones con las que colaboro.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6"
+      >
+        <div
+          class="bg-[#ff906e] dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-mb col-span-1 sm:col-span-2 row-span-4 text-[#170a08]"
+        >
+          <h3
+            class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 dark:text-[#fffdf3]"
+          >
+            <HandClick class="size-6 text-[#4a241b]" /> Habilidades
+          </h3>
+
+          <ul class="text-[#4a241b] dark:text-gray-300">
+            <li class="mt-3">
+              <strong>🖌️ Conceptualización y diseño de portadas:</strong> Creación
+              de portadas originales que capturan la esencia de la publicación.
+            </li>
+            <li class="mt-3">
+              <strong>💻 Adaptación de ilustraciones y murales:</strong> Integración
+              de elementos visuales preexistentes en el diseño editorial.
+            </li>
+            <li class="mt-3">
+              <strong>📏 Maquetación y composición:</strong> Organización del contenido
+              de manera clara y atractiva, optimizando la legibilidad y el flujo
+              visual.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-[#a5bdd6] dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm col-span-1 sm:col-span-2 row-span-4"
+        >
+          <h3
+            class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 dark:text-[#fffdf3]"
+          >
+            <Bifcase class="size-6 text-[#22282e]" />Proyectos destacados
+          </h3>
+          <ul class="text-[#22282e] dark:text-gray-300">
+            <li class="mt-3">
+              <strong>📕 El Otro Derecho 62:</strong> Diseño de portada e interior,
+              manteniendo la coherencia con la colección.
+            </li>
+            <li class="mt-3">
+              <strong>🪄 Rediseño de colecciones: </strong> Actualización de la identidad
+              visual de "El Otro Derecho" y "Textos de Aquí y Ahora."
+            </li>
+            <li class="mt-3">
+              <strong>🤝 Colaboraciones:</strong> Diseño de cartillas, revistas académicas
+              y otros materiales para la JEP y diversas ONG.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-6 mt-4">
+        <article
+          class="bg-[#a3cda1] dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm md:col-start-2 md:col-span-4"
+        >
+          <h3
+            class="flex gap-2 items-center text-2xl md:text-3xl font-bold text-primary mb-6 text-[#293329] dark:text-[#fffdf3]"
+          >
+            <Collage class="size-6" />Estructura de diseño de portadas
+          </h3>
+          <ul class="text-[#293329] dark:text-gray-300">
+            <li>
+              📝 Análisis de texto, género, audiencia y reunión con el cliente.
+            </li>
+            <li class="mt-3">
+              ✏️ Creación de bocetos y mood boards para explorar conceptos
+              visuales.
+            </li>
+            <li class="mt-3">
+              💬 Selección de tipografía y formato de página.
+            </li>
+            <li class="mt-3">
+              🎨 Experimentación con composiciones y paletas de colores.
+            </li>
+            <li class="mt-3">
+              💻 Presentación de opciones al cliente y revisiones.
+            </li>
+            <li class="mt-3">
+              🖨️ Preparación de archivos finales para impresión.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="bg-[#fffdf3] p-4 sm:p-6 mt-6 rounded-lg shadow-lg">
+        <Title icon={Start} text="Portadas destacadas" />
+        <Gallery
+          images={[
+            {
+              src: "/Editorial-Desing-Cover (1).webp",
+              alt: "Editorial",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (8).webp",
+              alt: "Editorial 2",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (2).webp",
+              alt: "Editorial 3",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (9).webp",
+              alt: "Editorial 4",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (4).webp",
+              alt: "Editorial 5",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (5).webp",
+              alt: "Editorial 7",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (6).webp",
+              alt: "Editorial 7",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (7).webp",
+              alt: "Editorial 8",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Editorial-Desing-Cover (3).webp",
+              alt: "Editorial 8",
+              width: 480,
+              height: 480,
+            },
+          ]}
+          columns={2}
+        />
+      </section>
+
+      <section class="bg-[#fffdf3] p-4 sm:p-6 mt-6 rounded-lg shadow-lg">
+        <Title icon={Book} text="Interior de libros destacados" />
+        <Gallery
+          images={[
+            {
+              src: "/Inside.webp",
+              alt: "Inside 1",
+              width: 480,
+              height: 480,
+            },
+            {
+              src: "/Inside 2.webp",
+              alt: "Inside 2",
+              width: 480,
+              height: 480,
+            },
+          ]}
+          columns={2}
+        />
+      </section>
+    </SectionContainer>
+  </main>
+</Layout>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portafolio de Diseño Editorial | Johan Caicedo",
+    "description": "Explora el portafolio de diseño editorial de Johan Caicedo, con portadas de libros, maquetación e ilustraciones para clientes como ILSA y JEP.",
+    "url": "https://paperfoxstudio.site/es/editorial-design",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "CreativeWork",
+          "name": "Diseño Editorial ILSA",
+          "image": "https://paperfoxstudio.site/Editorial-Design%20ID.webp"
+        }
+      ]
+    }
+  }
+</script>
